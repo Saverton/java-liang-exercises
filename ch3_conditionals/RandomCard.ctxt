@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RandomCard
+comment0.text=\r\n\ Program\ to\ draw\ a\ random\ card\ from\ a\ deck\ of\ 52\ cards.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ RandomCard.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+numComments=2

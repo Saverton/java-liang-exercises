@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.target=GeometricObject
+comment1.params=color\ filled
+comment1.target=GeometricObject(java.lang.String,\ boolean)
+comment1.text=\r\n\ Constructor\ to\ create\ a\ Geometric\ object\ with\ a\ specified\r\n\ color\ and\ fill\ status.\r\n\ \r\n\ @params\ (color\ of\ the\ geometric\ object)\ (true\:\ object\ is\ filled,\ false\:\r\n\ \ \ \ \ \ \ \ \ \ object\ is\ outlined)\r\n
+comment10.params=
+comment10.target=double\ getPerimeter()
+comment10.text=\r\n\ Abstract\ method;\ returns\ perimeter\ of\ geometric\ object.\r\n\ \r\n\ @return\ (perimeter\ of\ geo\ object)\r\n
+comment11.params=o
+comment11.target=int\ compareTo(GeometricObject)
+comment11.text=\r\n\ Overridden\ method\ from\ Comparable,\ compares\ the\ area\ of\ two\ Geometric\ objects.\r\n\ \r\n\ @param\ Second\ Geometric\ Object\r\n\ @return\ +\ \=\ larger,\ -\ \=\ smaller,\ 0\ \=\ equal\r\n
+comment2.params=
+comment2.target=GeometricObject()
+comment2.text=\r\n\ Overloaded\ no-arg\ constructor\ to\ create\ a\ default\ geometric\ object\r\n\ that\ is\ white\ and\ not\ filled.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+comment3.text=\r\n\ Method\ to\ get\ the\ color\ of\ this\ geometric\ object.\r\n\ \r\n\ @return\ (the\ color\ of\ the\ geometric\ object)\r\n
+comment4.params=color
+comment4.target=void\ setColor(java.lang.String)
+comment4.text=\r\n\ Method\ to\ set\ the\ color\ of\ this\ geometric\ object.\r\n\ \r\n\ @params\ (the\ new\ color\ of\ this\ geometric\ object)\r\n
+comment5.params=
+comment5.target=boolean\ isFilled()
+comment5.text=\r\n\ Method\ to\ check\ if\ the\ geometric\ object\ is\ filled.\r\n\ \r\n\ @return\ (true\:\ the\ object\ is\ filled,\ false\:\ the\ object\ is\ outlined)\r\n
+comment6.params=filled
+comment6.target=void\ setFilled(boolean)
+comment6.text=\r\n\ Method\ to\ set\ whether\ or\ not\ the\ geometric\ object\ is\ filled.\r\n\ \r\n\ @params\ (true\:\ set\ to\ filled,\ false\:\ set\ to\ outlined)\r\n
+comment7.params=
+comment7.target=java.util.Date\ getDateCreated()
+comment7.text=\r\n\ Method\ to\ get\ the\ date\ this\ object\ was\ created\ in\ the\ form\ of\ a\ \r\n\ java.util.Date\ object.\r\n\ \r\n\ @return\ (The\ date\ this\ object\ was\ created)\r\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\r\n\ Method\ to\ override\ the\ default\ toString()\ method.\ Returns\ a\ string\ that\r\n\ shows\ the\ color,\ whether\ or\ not\ the\ object\ is\ filled,\ and\ the\ date\ the\r\n\ object\ was\ created.\r\n\ \r\n\ @return\ (String\ representing\ the\ object)\r\n
+comment9.params=
+comment9.target=double\ getArea()
+comment9.text=\r\n\ Abstract\ method;\ returns\ area\ of\ geometric\ object.\r\n\ \r\n\ @return\ (area\ of\ geo\ object)\r\n
+numComments=12

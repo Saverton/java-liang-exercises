@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=IntersectingPoint
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=p
+comment2.target=double[]\ getIntersectingPoint(double[][])
+comment2.text=\r\n\ Method\ to\ find\ and\ return\ the\ intersection\ point\ of\ a\ set\ of\ 4\ points\r\n
+comment3.params=a\ b
+comment3.target=double[]\ linearEquation(double[][],\ double[])
+comment3.text=\r\n\ Method\ to\ solve\ a\ linear\ equation\ using\ Crammer's\ rule\r\n
+numComments=4

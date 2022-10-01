@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Emirp
+comment0.text=\r\n\ Program\ to\ display\ the\ first\ 100\ Emirps\ (Prime\ \#s\ who's\ reverse\ is\ also\ prime).\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Emirp.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=num
+comment2.target=boolean\ reversePrime(int)
+comment2.text=\r\n\ Method\ to\ check\ if\ the\ reverse\ of\ a\ number\ is\ prime.\r\n
+numComments=3

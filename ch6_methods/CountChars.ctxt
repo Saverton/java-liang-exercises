@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CountChars
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=str\ a
+comment2.target=int\ count(java.lang.String,\ char)
+comment2.text=\r\n\ Method\ to\ count\ a\ specific\ type\ of\ char\ in\ a\ String.\r\n
+numComments=3

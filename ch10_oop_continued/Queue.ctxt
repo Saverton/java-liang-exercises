@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Queue
+comment0.text=\r\n\ Class\ to\ define\ the\ Queue\ object\ type,\ similar\ to\ the\ Stack\ class\ but\ using\r\n\ a\ first-in-first-out\ order\ to\ retrieve\ data.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Queue.java\r\n
+comment1.params=
+comment1.target=Queue()
+comment2.params=val
+comment2.target=void\ enqueue(int)
+comment3.params=
+comment3.target=int\ dequeue()
+comment4.params=
+comment4.target=void\ empty()
+comment5.params=
+comment5.target=int\ getSize()
+numComments=6

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=EliminateDuplicates
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=list
+comment2.target=int[]\ eliminateDuplicates(int[])
+comment2.text=\r\n\ Method\ to\ eliminate\ duplicates\ from\ an\ array\ and\ return\ the\ resulting\ array.\r\n
+comment3.params=array\ key\ a\ b
+comment3.target=int\ searchArrayPortion(int[],\ int,\ int,\ int)
+comment3.text=\r\n\ Method\ to\ search\ for\ a\ key\ in\ an\ array\ from\ index\ a\ to\ b\ (not\ including\ b).\r\n
+comment4.params=array\ a\ b
+comment4.target=int[]\ arraySegment(int[],\ int,\ int)
+comment4.text=\r\n\ Method\ to\ return\ an\ array\ from\ index\ a\ to\ b\ not\ including\ b.\r\n
+numComments=5

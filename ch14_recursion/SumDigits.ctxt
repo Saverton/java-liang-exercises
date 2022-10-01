@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SumDigits
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=n
+comment2.target=long\ sumDigits(long)
+comment2.text=\ Return\ the\ sum\ of\ digits\ (recursively)\r\n\ @params\ integer\r\n\ @return\ sum\ of\ digits\r\n
+numComments=3

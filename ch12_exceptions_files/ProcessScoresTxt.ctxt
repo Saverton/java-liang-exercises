@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ProcessScoresTxt
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=arr
+comment2.target=int\ sum(java.util.ArrayList)
+comment2.text=Return\ sum\ of\ ints\ in\ an\ array\ list
+comment3.params=arr
+comment3.target=double\ average(java.util.ArrayList)
+comment3.text=Return\ average\ value\ in\ array\ list\ of\ integers
+numComments=4

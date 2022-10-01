@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Partition
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=list
+comment2.target=void\ partition(int[])
+comment2.text=\r\n\ Method\ to\ partition\ a\ list.\r\n
+comment3.params=list
+comment3.target=void\ printArray(int[])
+comment3.text=\r\n\ method\ to\ print\ the\ list.\r\n
+numComments=4

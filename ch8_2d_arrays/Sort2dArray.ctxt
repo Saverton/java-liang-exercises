@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Sort2dArray
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=int[][]\ sortRowSubsets(int[][])
+comment2.text=\r\n\ Method\ to\ sort\ arrays\ in\ an\ array\ based\ on\ subsequent\ entries.\r\n
+comment3.params=array
+comment3.target=int[][]\ sortRows(int[][])
+comment3.text=\r\n\ Method\ to\ sort\ rows\ of\ a\ 2d\ array\ by\ first\ index.\r\n
+numComments=4

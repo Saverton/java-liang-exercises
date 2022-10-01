@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=DisplayCalendar
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=year\ month
+comment2.target=void\ printCalendar(int,\ int)
+comment2.text=\ Method\ to\ print\ a\ calendar\ for\ a\ given\ month\ and\ year\ \r\n\ @params\ year,\ month\r\n
+comment3.params=c
+comment3.target=void\ printTitle(java.util.Calendar)
+comment3.text=\ Method\ to\ print\ a\ calendar\ Title\r\n\ @params\ Calendar\r\n
+comment4.params=
+comment4.target=void\ printHeader()
+comment4.text=Method\ to\ print\ a\ calendar\ Header
+comment5.params=c
+comment5.target=void\ printBody(java.util.Calendar)
+comment5.text=\ Method\ to\ print\ a\ calendar\ body\r\n\ @params\ Calendar\r\n
+comment6.params=c
+comment6.target=java.lang.String[][]\ getDays(java.util.Calendar)
+comment6.text=\ Method\ to\ get\ an\ array\ representing\ the\ calendar\ body\r\n\ @params\ Calendar\r\n
+numComments=7

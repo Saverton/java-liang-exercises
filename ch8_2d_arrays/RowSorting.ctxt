@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=RowSorting
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program\r\n
+comment2.params=array
+comment2.target=double[][]\ sortRows(double[][])
+comment2.text=\r\n\ Method\ to\ sort\ the\ rows\ of\ a\ 2d\ array.\r\n
+comment3.params=array\ j
+comment3.target=int\ getMinIndex(double[],\ int)
+comment3.text=\r\n\ Method\ to\ get\ the\ minimum\ index\ of\ an\ array\ from\ starting\ value\ j\r\n
+numComments=4

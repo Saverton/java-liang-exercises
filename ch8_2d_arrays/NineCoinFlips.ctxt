@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NineCoinFlips
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=binary
+comment2.target=void\ printHOrT(java.lang.String)
+comment2.text=\r\n\ Method\ to\ convert\ binary\ string\ into\ H\ or\ T\ array.\r\n
+numComments=3

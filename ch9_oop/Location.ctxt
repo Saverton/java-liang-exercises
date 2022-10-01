@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Location
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ test\ class.\r\n
+comment2.params=a
+comment2.target=Location\ locateLargest(double[][])
+comment2.text=\r\n\ Method\ to\ create\ a\ location\ object\ for\ the\ largest\ value\ in\ a\ 2d\ array\r\n\ of\ doubles.\r\n
+comment3.params=row\ column\ maxValue
+comment3.target=Location(int,\ int,\ double)
+comment4.params=
+comment4.target=void\ printLocation()
+numComments=5

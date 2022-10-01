@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SameLine
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=points
+comment2.target=boolean\ sameLine5(double[][])
+comment2.text=\r\n\ Method\ to\ find\ if\ 5\ points\ are\ on\ the\ same\ line.\r\n
+numComments=3

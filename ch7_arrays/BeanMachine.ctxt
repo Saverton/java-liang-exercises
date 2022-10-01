@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=BeanMachine
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=numOfSlots\ slots
+comment2.target=void\ ballDrop(int,\ int[])
+comment2.text=\r\n\ Method\ to\ simulate\ a\ single\ ball\ drop.\r\n
+comment3.params=slots
+comment3.target=void\ printSlots(int[])
+comment3.text=\r\n\ Method\ to\ print\ the\ number\ of\ balls\ in\ each\ slot.\r\n
+numComments=4

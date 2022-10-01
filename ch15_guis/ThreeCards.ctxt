@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ThreeCards
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=stage
+comment2.target=void\ start(javafx.stage.Stage)
+comment2.text=\ Shuffle\ and\ display\ three\ cards.\r\n\ @params\ stage\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ getCards()
+comment3.text=\ Return\ an\ arrayList\ of\ playing\ cards.\r\n\ @return\ Deck\ of\ Cards\:\ ArrayList\r\n
+numComments=4

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=GCD
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=m\ n
+comment2.target=long\ gcd(long,\ long)
+comment2.text=\ Return\ the\ GCD\ of\ two\ longs.\r\n\ @params\ two\ integers\r\n\ @return\ GCD\r\n
+numComments=3

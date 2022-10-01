@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Hangman
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=java.lang.String\ arrayToString(char[])
+comment2.text=\r\n\ Method\ to\ convert\ an\ array\ to\ a\ string\ of\ text.\r\n
+comment3.params=array\ key
+comment3.target=int\ searchArray(char[],\ char)
+comment3.text=\r\n\ Method\ to\ search\ an\ array\ for\ a\ specific\ key.\r\n
+numComments=4

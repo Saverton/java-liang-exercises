@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SumSeriesv1
+comment0.text=\r\n\ Program\ to\ calculate\ a\ series\ sum\ using\ a\ method\ and\ build\ a\ table\ based\ on\ different\ degrees\ of\ the\ summation.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ SumSeriesv1.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=i
+comment2.target=double\ sum(int)
+comment2.text=\r\n\ Method\ to\ find\ the\ sum\ of\ a\ series.\r\n
+numComments=3

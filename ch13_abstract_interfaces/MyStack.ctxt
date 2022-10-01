@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MyStack
+comment1.params=o
+comment1.target=void\ push(java.lang.Object)
+comment1.text=\r\n\ Method\ to\ push\ a\ new\ value\ to\ the\ stack.\r\n\ \r\n\ @params\ (the\ object\ to\ push)\r\n
+comment2.params=
+comment2.target=java.lang.Object\ peek()
+comment2.text=\r\n\ Method\ to\ peek\ at\ the\ top\ object\ of\ the\ stack.\r\n\ \r\n\ @return\ (top\ object)\r\n
+comment3.params=
+comment3.target=java.lang.Object\ pop()
+comment3.text=\r\n\ Method\ to\ return\ and\ then\ remove\ the\ top\ object.\r\n\ \r\n\ @return\ (top\ object)\r\n
+comment4.params=
+comment4.target=int\ size()
+comment4.text=\ Return\ the\ size\ of\ the\ stack.\r\n\ \r\n\ @return\ size\ of\ stack\r\n
+numComments=5

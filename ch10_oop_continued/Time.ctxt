@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Time
+comment0.text=\r\n\ The\ Time\ class\ contains\ fields\ for\ the\ Hour,\ minute,\ and\ second.\ There\ is\ behavior\r\n\ to\ get\ these\ fields,\ and\ to\ set\ the\ time\ to\ a\ certain\ amount\ of\ milliseconds\ that\r\n\ have\ elapsed\ since\ January\ 1,\ 1970.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Time.java\r\n
+comment1.params=elapseTime
+comment1.target=Time(long)
+comment1.text=\r\n\ Constructors\r\n
+comment2.params=
+comment2.target=Time()
+comment3.params=hour\ min\ sec
+comment3.target=Time(int,\ int,\ int)
+comment4.params=
+comment4.target=int\ getSeconds()
+comment5.params=
+comment5.target=int\ getMinutes()
+comment6.params=
+comment6.target=int\ getHour()
+comment7.params=elapseTime
+comment7.target=void\ setTime(long)
+numComments=8

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CircleTest
+comment0.text=\ Test\ driver\ class\ to\ check\ the\ implementation\ of\ the\ Circle\ class\ and\ its\r\n\ compatability\ with\ the\ Comparable\ interface.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ CircleTest.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program
+numComments=2

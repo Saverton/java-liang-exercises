@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CrapsStatistics
+comment0.text=\r\n\ Program\ to\ simulate\ 10,000\ games\ of\ craps\ and\ output\ the\ chance\ of\ winning.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ CrapsStatistics.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=
+comment2.target=boolean\ craps()
+comment2.text=\r\n\ Method\ to\ simulate\ a\ game\ of\ Craps\ (returns\ true\ if\ win,\ false\ if\ lose).\r\n
+comment3.params=
+comment3.target=int\ roll()
+comment3.text=\r\n\ Method\ to\ simulate\ a\ dice\ roll.\r\n
+comment4.params=roll
+comment4.target=int\ win(int)
+comment4.text=\r\n\ Method\ to\ check\ if\ won.\r\n
+numComments=5

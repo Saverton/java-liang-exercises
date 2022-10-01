@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=FlippedCell
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=boolean\ checkArray(int[])
+comment2.text=\r\n\ Method\ to\ return\ if\ a\ row\ has\ an\ even\ number\ of\ 1s\r\n
+numComments=3

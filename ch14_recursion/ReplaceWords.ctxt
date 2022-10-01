@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ReplaceWords
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=file\ oldWord\ newWord
+comment2.target=void\ replaceWords(java.io.File,\ java.lang.String,\ java.lang.String)
+comment2.text=\ Return\ the\ number\ of\ instances\ of\ a\ keyword\ in\ a\ directory.\r\n\ @params\ File\ or\ Directory\ to\ measure\:\ java.io.File,\ old\ word\ to\ replace\:\ String,\ word\ to\ replace\ with\:\ String\r\n
+numComments=3

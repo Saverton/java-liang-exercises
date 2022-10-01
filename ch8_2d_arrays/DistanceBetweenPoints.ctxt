@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DistanceBetweenPoints
+comment0.text=\r\n\ Program\ to\ find\ the\ two\ points\ in\ a\ 3d\ space\ nearest\ to\ one\ another\r\n\ \r\n\ @author\ Scott\ M.\r\n\ DistanceBetweenPoints.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=points\ point1\ point2
+comment2.target=double\ distance(double[][],\ int,\ int)
+comment2.text=\r\n\ Method\ to\ calculate\ the\ distance\ between\ two\ points.\r\n
+comment3.params=points
+comment3.target=java.lang.String[]\ smallestDistance(double[][])
+comment3.text=\r\n\ Method\ to\ return\ the\ smallest\ distance\ between\ points.\r\n
+numComments=4

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BMI
+comment0.text=\r\n\ The\ BMI\ class\ has\ fields\ for\ the\ name,\ age,\ height\ (feet\ and\ inches),\ weight\ of\r\n\ a\ patient.\ The\ class\ has\ behavior\ to\ get\ each\ value,\ construct\ with\ every\ parameter,\r\n\ or\ with\ a\ default\ age\ of\ 20,\ and\ to\ return\ the\ BMI\ and\ BMI\ based\ status\ of\ the\r\n\ patient.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ BMI.java\r\n
+comment1.params=name\ age\ hFeet\ hInches\ weight
+comment1.target=BMI(java.lang.String,\ int,\ int,\ int,\ int)
+comment2.params=name\ hFeet\ hInches\ weight
+comment2.target=BMI(java.lang.String,\ int,\ int,\ int)
+comment3.params=
+comment3.target=int\ getFeet()
+comment4.params=
+comment4.target=int\ getInches()
+comment5.params=
+comment5.target=int\ getWeight()
+comment6.params=
+comment6.target=java.lang.String\ getName()
+comment7.params=
+comment7.target=int\ getAge()
+comment8.params=
+comment8.target=double\ getBMI()
+comment9.params=
+comment9.target=java.lang.String\ getStatus()
+numComments=10

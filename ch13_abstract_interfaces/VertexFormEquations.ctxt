@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=VertexFormEquations
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=a\ b
+comment2.target=Rational\ getH(double,\ double)
+comment2.text=\ Return\ h\r\n\ @params\ a,\ b,\ c\r\n\ @return\ Rational\ h\r\n
+comment3.params=a\ b\ c
+comment3.target=Rational\ getK(double,\ double,\ double)
+comment3.text=\ Return\ k\r\n\ @params\ a,\ b,\ c\r\n\ @return\ Rational\ k\r\n
+numComments=4

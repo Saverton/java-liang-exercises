@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RationalSummation
+comment0.text=\ Program\ to\ use\ the\ BigRational\ class\ to\ calculate\ a\ summation\:\r\n\ \ \ \ \ \ 1/2\ +\ 2/3\ +\ 3/4\ +\ ...\ +\ 98/99\ +\ 99/100\r\n\ \ \ \ \ \ \r\n\ @author\ Scott\ M.\r\n\ RationalSummation.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+numComments=2

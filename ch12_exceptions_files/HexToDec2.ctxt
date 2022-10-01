@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=HexToDec2
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=hex
+comment2.target=int\ hexToDec(java.lang.String)
+comment2.text=Convert\ a\ hex\ String\ into\ a\ decimal\ int
+comment3.params=ch
+comment3.target=int\ hexCharToDecimal(char)
+comment3.text=Convert\ a\ hex\ Char\ into\ a\ decimal\ int
+numComments=4

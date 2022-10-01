@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=StringPermutation
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=s
+comment2.target=void\ permutate(java.lang.String)
+comment2.text=\ Print\ all\ permutations\ of\ a\ String.\r\n\ @params\ String\ to\ permutate\:\ String\r\n
+comment3.params=s\ index
+comment3.target=void\ permutate(java.lang.String,\ int)
+comment3.text=\ Print\ all\ permutations\ of\ a\ String.\r\n\ @params\ String\ to\ permutate\:\ String,\ index\:\ int\r\n
+numComments=4

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=CountChars
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=str\ key
+comment2.target=int\ countChar(java.lang.String,\ char)
+comment2.text=\ Recursively\ return\ the\ amount\ of\ instances\ of\ a\ key\ character\ in\ a\ String.\r\n\ @params\ String,\ key\ character\r\n\ @return\ number\ of\ instances\r\n
+comment3.params=str\ key\ index
+comment3.target=int\ countChar(java.lang.String,\ char,\ int)
+comment3.text=\ Recursively\ return\ the\ amount\ of\ instances\ of\ a\ key\ character\ in\ a\ String.\r\n\ @params\ String,\ key\ character\r\n\ @return\ number\ of\ instances\r\n
+comment4.params=arr\ key
+comment4.target=int\ countChar(char[],\ char)
+comment4.text=\ Recursively\ return\ the\ amount\ of\ instances\ of\ a\ key\ character\ in\ a\ char\ array.\r\n\ @params\ Char\ array\:\ char[]\r\n\ @return\ number\ of\ instances\:\ int\r\n
+comment5.params=arr\ key\ index
+comment5.target=int\ countChar(char[],\ char,\ int)
+comment5.text=\ Recursively\ return\ the\ amount\ of\ instances\ of\ a\ key\ character\ in\ a\ char\ array.\r\n\ @params\ Char\ array\:\ char[],\ index\:\ int\r\n\ @return\ number\ of\ instances\:\ int\r\n
+numComments=6

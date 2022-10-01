@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ConnectFour
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=int\ checkWin(int[][])
+comment2.text=\r\n\ Method\ to\ check\ if\ a\ player\ has\ won\ connect\ 4\r\n
+comment3.params=array
+comment3.target=boolean\ boardFull(int[][])
+comment3.text=\r\n\ Method\ to\ check\ if\ the\ board\ is\ full.\r\n
+comment4.params=board
+comment4.target=void\ printBoard(int[][])
+comment4.text=\r\n\ Method\ to\ print\ the\ board\ for\ connect\ 4\r\n
+comment5.params=board\ column\ turn
+comment5.target=void\ inputChip(int[][],\ int,\ int)
+comment5.text=\r\n\ Method\ to\ input\ a\ chip\ in\ a\ user\ defined\ column\r\n
+comment6.params=board\ column
+comment6.target=boolean\ validEntry(int[][],\ int)
+comment6.text=\r\n\ Method\ to\ check\ if\ a\ column\ input\ is\ valid\r\n
+numComments=7

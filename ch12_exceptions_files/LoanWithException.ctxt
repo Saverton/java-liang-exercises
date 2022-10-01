@@ -1,0 +1,31 @@
+#BlueJ class context
+comment0.target=LoanWithException
+comment0.text=\r\n\ Class\ to\ define\ a\ loan\ object\ with\ a\ Principle,\ APR,\ and\ term\ data\ field.\ Methods\r\n\ will\ be\ used\ to\ get\ each\ data\ field,\ refinance\ with\ a\ new\ APR\ and\ term,\ get\r\n\ interest\ for\ one\ month.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ LoanWithException.java\r\n
+comment1.params=
+comment1.target=LoanWithException()
+comment1.text=\r\n\ Constructor\ to\ make\ a\ default\ Loan\ for\ $1000,\ APR\ 1.0%,\ and\ term\ of\ 1\ year.\r\n
+comment2.params=principle\ apr\ term
+comment2.target=LoanWithException(double,\ double,\ int)
+comment2.text=\r\n\ Constructor\ to\ make\ a\ Loan\ with\ a\ specified\ principle,\ apr,\ and\ term.\r\n\ \r\n\ @params\ (the\ amount\ of\ money\ borrowed,\ the\ annual\ percentage\ interest\ rate,\r\n\ \ \ \ \ \ \ \ \ \ the\ term\ of\ the\ Loan)\r\n
+comment3.params=
+comment3.target=double\ getPrinciple()
+comment3.text=\r\n\ Method\ to\ get\ the\ amount\ of\ money\ borrowed\ (principle)\r\n\ \r\n\ @return\ (principle)\r\n
+comment4.params=
+comment4.target=double\ getAPR()
+comment4.text=\r\n\ Method\ to\ get\ the\ apr\ of\ the\ loan\ (not\ as\ a\ decimal,\ but\ as\ a\ number\ with\r\n\ a\ decimal\ end,\ i.e.\ 0.345\ \=>\ 34.5)\r\n\ \r\n\ @return\ (annual\ percent\ interest)\r\n
+comment5.params=
+comment5.target=int\ getTerm()
+comment5.text=\r\n\ Method\ to\ get\ the\ term\ of\ the\ loan.\r\n\ \r\n\ @return\ (term\ (years))\r\n
+comment6.params=apr\ term
+comment6.target=void\ refinance(double,\ int)
+comment6.text=\r\n\ Method\ to\ refinance\ the\ loan\ (i.e.\ set\ new\ apr\ and\ term)\r\n\ \r\n\ @params\ (new\ annual\ percent\ interest,\ new\ term)\r\n
+comment7.params=
+comment7.target=double\ getMonthlyInterest()
+comment7.text=\r\n\ Method\ to\ get\ the\ monthly\ interest\ on\ the\ loan.\r\n\ \r\n\ @return\ (monthly\ interest)\r\n
+comment8.params=
+comment8.target=double\ getMonthlyPayment()
+comment8.text=\r\n\ Method\ to\ get\ the\ amount\ of\ money\ owed\ in\ a\ month\ on\ this\ loan.\ Assumes\ that\r\n\ each\ payment\ covers\ equal\ amounts\ of\ principle\ and\ interest.\r\n\ \r\n\ @return\ (amount\ of\ $\ owed\ for\ 1\ month)\r\n
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\r\n\ Method\ to\ return\ an\ identifying\ String\ with\ aspects\ of\ the\ Loan.\r\n\ \r\n\ @return\ (String\ representing\ the\ Loan)\r\n
+numComments=10

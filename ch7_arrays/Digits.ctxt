@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Digits
+comment0.text=\r\n\ Program\ to\ count\ the\ occurrence\ of\ each\ single\ digit\ in\ an\ array\ of\ 100\ numbers\ 0-9.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Digits.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=
+comment2.target=int[]\ genArray()
+comment2.text=\r\n\ Method\ to\ generate\ an\ array\ of\ 100\ random\ integers\ from\ 0-9.\r\n
+comment3.params=nums
+comment3.target=int[]\ countNums(int[])
+comment3.text=\r\n\ Method\ to\ count\ the\ numbers\ in\ an\ array.\r\n
+comment4.params=counts
+comment4.target=void\ printCounts(int[])
+comment4.text=\r\n\ Method\ to\ print\ the\ counts\ of\ each\ digit.\r\n
+numComments=5

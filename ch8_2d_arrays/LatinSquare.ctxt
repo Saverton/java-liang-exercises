@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=LatinSquare
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=s
+comment2.target=boolean\ isLatinSquare(char[][])
+comment2.text=\r\n\ Method\ to\ determine\ if\ a\ 2d\ array\ of\ letters\ is\ a\ latin\ square\r\n
+comment3.params=r
+comment3.target=boolean\ isLatinRow(char[])
+comment3.text=\r\n\ Method\ to\ determine\ if\ an\ array\ of\ chars\ has\ unique\ chars\r\n
+comment4.params=t\ k
+comment4.target=boolean\ contains(char[],\ char)
+comment4.text=\r\n\ Method\ to\ check\ if\ an\ array\ contains\ a\ certain\ key\r\n
+numComments=5

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Octagon
+comment0.text=\ Octagon\ Class;\ subclass\ of\ Geometric\ object,\ contains\ instance\ data\ for\ the\ \r\n\ length\ of\ each\ side.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Octagon.java\r\n
+comment1.params=
+comment1.target=Octagon()
+comment1.text=Construct\ a\ default\ Octagon
+comment2.params=side
+comment2.target=Octagon(double)
+comment2.text=\ Construct\ an\ Octagon\ with\ specific\ side\ lengths\r\n\ @params\ Side\ length\r\n
+comment3.params=
+comment3.target=double\ getSide()
+comment3.text=\ Return\ side\ length\r\n\ @return\ Side\ length\r\n
+comment4.params=side
+comment4.target=void\ setSide(double)
+comment4.text=\ Set\ a\ new\ side\ length\r\n\ @params\ Side\ length\r\n
+comment5.params=
+comment5.target=double\ getArea()
+comment5.text=\ Return\ the\ area.\r\n\ @return\ Area\r\n
+comment6.params=
+comment6.target=double\ getPerimeter()
+comment6.text=\ Return\ the\ perimeter.\r\n\ @return\ Perimeter\r\n
+comment7.params=o2
+comment7.target=int\ compareTo(Octagon)
+comment7.text=\ Compare\ this\ Octagon\ to\ another\ Octagon.\r\n\ @params\ Octagon\ 2\r\n\ @return\ 1\ \=\ larger,\ -1\ \=\ smaller,\ 0\ \=\ equal\r\n
+numComments=8

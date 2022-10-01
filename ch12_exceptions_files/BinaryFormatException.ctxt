@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BinaryFormatException
+comment0.text=\ Define\ an\ exception\ for\ an\ invalid\ format\ for\ Binary\ strings.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ BinaryFormatException.java\r\n
+comment1.params=
+comment1.target=BinaryFormatException()
+comment1.text=Construct\ a\ Default\ BinaryFormatException
+comment2.params=bin
+comment2.target=BinaryFormatException(java.lang.String)
+comment2.text=Construct\ a\ BinaryFormatException\ that\ holds\ the\ exception\ string
+comment3.params=
+comment3.target=java.lang.String\ getMessage()
+comment3.text=Return\ a\ message\ about\ the\ exception
+numComments=4

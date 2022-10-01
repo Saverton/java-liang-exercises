@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CheckingAccount
+comment0.text=\r\n\ Checking\ account\ class\ with\ a\ 10%\ overdraft\ ability\ based\ on\ the\ current\ balance.\r\n\ Inherits\ from\ Account.java.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ CheckingAccount.java\r\n
+comment1.params=id\ initialBalance
+comment1.target=CheckingAccount(int,\ double)
+comment1.text=\r\n\ Constructer\ to\ call\ the\ Account\ constructor.\r\n\ \r\n\ @params\ (Accound\ ID,\ initial\ balance)\r\n
+comment2.params=withdrawal
+comment2.target=void\ withdraw(double)
+comment2.text=\r\n\ Overridden\ withdrawal\ method\ that\ allows\ withdrawal\ up\ to\ a\ 10%\ balance\r\n\ overdraft.\r\n\ \r\n\ @params\ (Amount\ withdrawn)\r\n
+numComments=3

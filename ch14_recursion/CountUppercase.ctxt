@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=CountUppercase
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=s
+comment2.target=int\ countUppercase(java.lang.String)
+comment2.text=\ Return\ the\ number\ of\ uppercase\ Letters\ in\ a\ String.\r\n\ @params\ String\r\n\ @return\ number\ of\ Uppercase\r\n
+comment3.params=s\ index
+comment3.target=int\ countUppercase(java.lang.String,\ int)
+comment3.text=\ Return\ the\ number\ of\ uppercase\ Letters\ in\ a\ String.\r\n\ @params\ String,\ index\r\n\ @return\ number\ of\ Uppercase\r\n
+comment4.params=arr
+comment4.target=int\ countUppercase2(char[])
+comment4.text=\ Return\ the\ number\ of\ uppercase\ letters\ in\ a\ char\ array.\r\n\ @params\ char\ array\:\ char[]\r\n\ @return\ number\ of\ uppercase\ letters\:\ int\r\n
+comment5.params=arr\ index
+comment5.target=int\ countUppercase2(char[],\ int)
+comment5.text=\ Return\ the\ number\ of\ uppercase\ letters\ in\ a\ char\ array.\r\n\ @params\ char\ array\:\ char[],\ index\:\ int\r\n\ @return\ number\ of\ uppercase\ letters\:\ int\r\n
+numComments=6

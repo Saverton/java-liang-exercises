@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RenameFiles3
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=file
+comment2.target=boolean\ rename(java.io.File)
+comment2.text=\ Rename\ a\ single\ file\ to\ format\ single\ digit\ integers\ as\ two\ digit\ integers.\r\n\ \r\n\ @params\ file\r\n\ @return\ true\ if\ file\ was\ renamed,\ false\ otherwise\r\n
+numComments=3

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=RecursiveSeries
+comment0.text=\ Program\ to\ calculate\ the\ summations\ of\ the\ series\ described\ in\ Programming\ exercises\r\n\ 14.4\ -\ 14.6.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ RecursiveSeries.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ test\ program.
+comment2.params=i
+comment2.target=double\ series1(int)
+comment2.text=\ Return\ the\ summation\ of\ series\ 14.4\r\n\ @params\ length\ of\ series\ (value\ of\ i)\r\n\ @return\ summation\r\n
+comment3.params=i
+comment3.target=double\ series2(int)
+comment3.text=\ Return\ the\ summation\ of\ series\ 14.5\r\n\ @params\ value\ of\ i\r\n\ @return\ summation\r\n
+comment4.params=i
+comment4.target=double\ series3(int)
+comment4.text=\ Return\ the\ summation\ of\ series\ 14.6\r\n\ @params\ value\ of\ i\r\n\ @return\ summation\r\n
+numComments=5

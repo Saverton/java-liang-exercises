@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=OctagonTest
+comment0.text=\ Driver\ class\ to\ test\ the\ Octagon\ class,\ specifically\ its\ implementation\ of\ the\ compareTo\r\n\ method.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ OctagonTest.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program
+numComments=2

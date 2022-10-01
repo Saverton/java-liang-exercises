@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=QuadraticEquations
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=a\ b\ c
+comment2.target=java.lang.Number[]\ solve(double,\ double,\ double)
+comment2.text=\ solve\ a\ quadratic\ equation\ given\ a,\ b,\ and\ c\r\n\ @params\ a,\ b,\ c\r\n\ @return\ solution\ to\ the\ quadratic\ equation\r\n
+comment3.params=a\ b\ c
+comment3.target=double\ getDiscriminant(double,\ double,\ double)
+comment3.text=\ return\ the\ discriminant\ of\ a\ quadratic\ equation\ given\r\n\ a,\ b,\ and\ c.\r\n\ @params\ a,\ b,\ c\r\n\ @return\ discriminant\r\n
+numComments=4

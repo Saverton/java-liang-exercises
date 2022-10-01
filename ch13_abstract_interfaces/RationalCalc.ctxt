@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RationalCalc
+comment0.text=\ Program\ to\ simulate\ a\ calculator\ with\ string\ input\ in\ the\ form\ "num1/den1\ operator\ num2/den2",\ which\r\n\ returns\ the\ appropriate\ rational\ solution\ to\ the\ console.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ RationalCalc.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program
+numComments=2

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RegularPolygon
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=sides\ length
+comment2.target=double\ area(int,\ double)
+comment2.text=\r\n\ Method\ to\ calculate\ the\ area\ of\ a\ regular\ polygon.\r\n
+numComments=3

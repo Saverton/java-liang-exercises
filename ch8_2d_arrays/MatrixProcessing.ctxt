@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MatrixProcessing
+comment0.text=\r\n\ Program\ to\ generate\ a\ 6x6\ 2d\ array\ of\ 0s\ and\ 1s,\ then\ process\ each\ row\ and\ column\ and\ returns\r\n\ whether\ or\ not\ that\ row\ or\ column\ has\ an\ even\ number\ of\ 1s.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ MatrixProcessing.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=
+comment2.target=int[][]\ genArray()
+comment2.text=\r\n\ Method\ to\ generate\ a\ 6x6\ array\ of\ 0s\ and\ 1s\r\n
+comment3.params=array
+comment3.target=boolean\ checkArray(int[])
+comment3.text=\r\n\ Method\ to\ return\ if\ an\ array\ has\ an\ even\ number\ of\ 1s\r\n
+numComments=4

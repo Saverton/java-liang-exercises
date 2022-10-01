@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=EstimateAreas
+comment0.text=\r\n\ Program\ to\ calculate\ the\ area\ enclosed\ by\ the\ four\ cities\:\ Atlanta,\ Orlando,\ Savannah,\ and\ Charlotte.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ EstimateAreas.java\r\n
+comment1.params=latitude1\ longitude1\ latitude2\ longitude2
+comment1.target=double\ distance(double,\ double,\ double,\ double)
+comment2.params=side1\ side2\ side3
+comment2.target=double\ triangleArea(double,\ double,\ double)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+numComments=4

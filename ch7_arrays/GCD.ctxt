@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=GCD
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=list
+comment2.target=int\ getGCD(int[])
+comment2.text=\r\n\ Method\ to\ calculate\ GCD\ of\ a\ list\ of\ unspecified\ list.\r\n
+comment3.params=list\ gcd
+comment3.target=boolean\ isGCD(int[],\ int)
+comment3.text=\r\n\ Method\ to\ check\ if\ a\ value\ is\ a\ GCD\ of\ an\ array.\r\n
+comment4.params=array
+comment4.target=int\ min(int[])
+comment4.text=\r\n\ Method\ to\ find\ the\ minimum\ value\ of\ an\ array.\r\n
+numComments=5

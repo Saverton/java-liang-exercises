@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=LargestRowAndColumn
+comment0.text=\r\n\ Program\ to\ generate\ a\ random\ array\ of\ 0s\ and\ 1s\ then\ find\ the\ index\ of\ the\ row\ and\ column\ with\ the\ most\ 1s\r\n\ \r\n\ @author\ Scott\ M.\r\n\ LargestRowAndColumn.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=rows\ columns
+comment2.target=int[][]\ genArray(int,\ int)
+comment2.text=\r\n\ Method\ to\ generate\ a\ multidimensional\ array\ of\ 0s\ and\ 1s.\r\n
+comment3.params=array
+comment3.target=int\ largestRow(int[][])
+comment3.text=\r\n\ Method\ to\ return\ the\ index\ of\ the\ row\ with\ the\ most\ 1s.\r\n
+comment4.params=array
+comment4.target=int\ largestColumn(int[][])
+comment4.text=\r\n\ Method\ to\ return\ the\ index\ of\ the\ column\ with\ the\ most\ 1s.\r\n
+numComments=5

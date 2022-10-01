@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Triangle
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=side1\ side2\ side3
+comment2.target=boolean\ isValid(double,\ double,\ double)
+comment2.text=\r\n\ Method\ to\ determine\ if\ a\ triangle\ is\ valid.\r\n
+comment3.params=side1\ side2\ side3
+comment3.target=double\ area(double,\ double,\ double)
+comment3.text=\r\n\ Method\ to\ compute\ the\ area\ of\ a\ triangle\ using\ side\ lengths.\r\n
+comment4.params=num1\ num2\ num3
+comment4.target=java.lang.String\ displaySortedNumbers(double,\ double,\ double)
+comment4.text=\r\n\ Method\ to\ sort\ three\ doubles.\r\n
+numComments=5

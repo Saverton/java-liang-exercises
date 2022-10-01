@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Faculty
+comment0.text=\r\n\ Faculty\ class\ is\ a\ subtype\ of\ Employee.\ Faculty\ has\ office\ hours\ and\ a\ rank.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Faculty.java\r\n
+comment1.params=name\ address\ phoneNumber\ email\ officeNumber\ salary\ officeHours\ rank
+comment1.target=Faculty(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ to\ create\ a\ Faculty\ member\ with\ a\ specified\ name,\ address,\ phone\r\n\ number,\ email,\ office\ number,\ salary,\ office\ hours,\ and\ rank,\ hired\ on\ today's\r\n\ date.\r\n\ \r\n\ @params\ (faculty\ name,\ faculty\ address,\ faculty\ phone\ number,\ faculty\ email,\r\n\ \ \ \ \ \ \ \ \ \ faculty\ office\ number,\ faculty\ salary,\ faculty\ office\ hours,\ faculty\r\n\ \ \ \ \ \ \ \ \ \ rank)\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Overridden\ toString()\ method\ to\ return\ a\ String\ representing\ a\ Faculty\ member.\r\n\ \r\n\ @return\ (String\ representing\ Faculty\ Member)\r\n
+numComments=3

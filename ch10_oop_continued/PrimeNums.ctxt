@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PrimeNums
+comment0.text=\r\n\ Program\ to\ create\ an\ Integer\ Stack\ that\ stores\ all\ prime\ numbers\ less\ than\ 120,\r\n\ then\ displays\ the\ stack\ (in\ decreasing\ order);\r\n\ \r\n\ @author\ Scott\ M.\r\n\ PrimeNums.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+numComments=2

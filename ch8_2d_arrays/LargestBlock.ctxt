@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=LargestBlock
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=m
+comment2.target=int[]\ findLargestBlock(int[][])
+comment2.text=\r\n\ Method\ to\ find\ the\ largest\ square\ submatrix\ in\ a\ larger\ matrix\ of\ 0s\ and\ 1s\r\n
+comment3.params=m\ y\ x\ k
+comment3.target=boolean\ allOnes(int[][],\ int,\ int,\ int)
+comment3.text=\r\n\ Method\ to\ determine\ if\ a\ submatrix\ has\ all\ 1s\r\n
+numComments=4

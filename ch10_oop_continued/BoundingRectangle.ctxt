@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=BoundingRectangle
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=arr\ col
+comment2.target=double\ getColumnMax(double[][],\ int)
+comment2.text=\r\n\ Method\ to\ get\ the\ max\ value\ of\ a\ column\ in\ a\ 2D\ array\r\n\ \r\n\ @params\ (the\ 2D\ array\ to\ be\ examined)\ (the\ column\ that\ will\ be\ processed)\r\n\ @return\ (max\ of\ the\ column)\r\n
+comment3.params=arr\ col
+comment3.target=double\ getColumnMin(double[][],\ int)
+comment3.text=\r\n\ Method\ to\ get\ the\ min\ value\ of\ a\ column\ in\ a\ 2D\ array\r\n\ \r\n\ @params\ (the\ 2D\ array\ to\ be\ examined)\ (the\ column\ that\ will\ be\ processed)\r\n\ @return\ (min\ of\ the\ column)\r\n
+comment4.params=arr\ col
+comment4.target=double\ getCenterPoint(double[][],\ int)
+comment4.text=\r\n\ Method\ to\ find\ the\ center\ value\ (average\ of\ max\ and\ min)\ for\ a\ certain\ column\r\n\ in\ a\ 2D\ double\ array.\r\n\ \r\n\ @params\ (the\ 2D\ array\ to\ be\ examined)\ (the\ column\ that\ will\ be\ processed)\r\n\ @return\ (the\ center\ point\ between\ the\ max\ and\ min\ of\ the\ column)\r\n
+comment5.params=arr
+comment5.target=double\ getMax(double[])
+comment5.text=\r\n\ Method\ to\ return\ the\ max\ value\ of\ an\ array\r\n\ \r\n\ @params\ (the\ array\ to\ be\ examined)\r\n\ @return\ (the\ max\ value)\r\n
+comment6.params=arr
+comment6.target=double\ getMin(double[])
+comment6.text=\r\n\ Method\ to\ return\ the\ min\ value\ of\ an\ array\r\n\ \r\n\ @params\ (the\ array\ to\ be\ examined)\r\n\ @return\ (the\ min\ value)\r\n
+numComments=7

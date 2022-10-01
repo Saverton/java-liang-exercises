@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Identical
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=m1\ m2
+comment2.target=boolean\ equals(int[][],\ int[][])
+comment2.text=\r\n\ Method\ to\ evaluate\ whether\ or\ not\ 2\ arrays\ are\ identical\ in\ contents,\ regardless\r\n\ of\ the\ order\ of\ said\ contents.\r\n
+comment3.params=array\ key
+comment3.target=boolean\ search(int[][],\ int)
+comment3.text=\r\n\ Method\ to\ return\ true\ or\ false\ if\ an\ array\ contains\ a\ specific\ key,\ then\ removes\r\n\ that\ key\ from\ the\ array.\r\n
+numComments=4

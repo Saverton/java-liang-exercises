@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TestColorable
+comment0.text=\ Driver\ class\ to\ test\ the\ Colorable\ interface\ by\ creating\ an\ array\ of\ Geometric\r\n\ Objects\ and\ displaying\ their\ colorable\ messages\ if\ they\ are\ colorable.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ TestColorable.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program
+numComments=2

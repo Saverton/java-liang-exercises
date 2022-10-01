@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=LeapYears
+comment0.text=\r\n\ Program\ to\ display\ all\ leap\ years\ from\ 101\ -\ 2100.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ LeapYears.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ Method\ to\ run\ program.\r\n
+numComments=2

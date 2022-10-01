@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BinaryToDecimal
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=binary
+comment2.target=int\ binToDec(java.lang.String)
+comment2.text=\ Return\ the\ Decimal\ equivalent\ of\ a\ Binary\ number.\r\n\ \r\n\ @params\ Binary\ number\:\ String\r\n\ @return\ Decimal\ number\:\ int\r\n
+numComments=3

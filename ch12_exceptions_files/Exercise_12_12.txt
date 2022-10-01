@@ -1,0 +1,13 @@
+/** Hello World program.
+ * @author Scott M.
+ * HelloWorld.java
+ */
+
+public class HelloWorld 
+{
+	/** Main method to run program. */
+	public static void main(String[] args) 
+	{
+		System.out.print("Hello World!");
+	}
+}

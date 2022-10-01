@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Colorable
+comment0.text=\ Colorable\ interface;\ defines\ a\ method\ which\ returns\ a\ string\ that\ tells\ how\ to\r\n\ color\ an\ object.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Colorable.java\r\n
+comment1.params=
+comment1.target=void\ howToColor()
+comment1.text=abstract\ method;\ print\ how\ to\ color\ an\ object
+numComments=2

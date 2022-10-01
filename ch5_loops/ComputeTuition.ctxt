@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ComputeTuition
+comment0.text=\r\n\ Program\ to\ calculate\ tuition\ after\ 10\ years\ for\ 1\ and\ 4\ years\ of\ college.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ ComputeTuition.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+numComments=2

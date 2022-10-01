@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RightmostLowest
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=p
+comment2.target=double[]\ getRightmostLowestPoint(double[][])
+comment2.text=\r\n\ Method\ to\ find\ the\ rightmost\ lowest\ point\ in\ a\ 2d\ array\ of\ points.\r\n
+numComments=3

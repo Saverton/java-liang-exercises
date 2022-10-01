@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Student
+comment0.text=\r\n\ Class\ to\ define\ a\ Student\ object\ as\ a\ subtype\ of\ a\ Person.\ Contains\ datafield\r\n\ representing\ the\ class\ status\ (freshman,\ sophomore,\ etc.).\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Student.java\r\n
+comment1.params=name\ address\ phoneNumber\ email\ status
+comment1.target=Student(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ to\ make\ a\ Student\ object\ with\ parameters\ for\ the\ Person\ supertype.\r\n\ \r\n\ @params\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Overridden\ toString\ method\ to\ return\ a\ String\ representation\ of\ the\ Student.\r\n\ \r\n\ @return\ (String\ representing\ Student)\r\n
+numComments=3

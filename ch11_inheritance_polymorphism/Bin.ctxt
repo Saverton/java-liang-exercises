@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Bin
+comment1.params=
+comment1.target=Bin()
+comment1.text=\r\n\ construct\ a\ bin\ with\ empty\ contents.\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getContents()
+comment2.text=\r\n\ return\ the\ ArrayList\ of\ contents.\r\n\ \r\n\ @return\ (box\ content)\r\n
+comment3.params=
+comment3.target=int\ getWeight()
+comment3.text=\r\n\ return\ the\ total\ weight\ in\ the\ box.\r\n\ \r\n\ @return\ (total\ weight)\r\n
+comment4.params=w
+comment4.target=boolean\ pack(int)
+comment4.text=\r\n\ add\ an\ item\ to\ the\ bin,\ returns\ true\ if\ item\ is\ boxed,\ false\ if\ it\ doesn't\r\n\ fit.\r\n\ \r\n\ @params\ (weight\ of\ item\ to\ be\ added)\r\n\ @return\ (true\:\ item\ was\ packed,\ false\:\ item\ wasn't\ packed)\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ return\ a\ string\ with\ the\ weights\ of\ all\ contents.\r\n\ \r\n\ @return\ (string\ of\ all\ content\ weights)\r\n
+numComments=6

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NumberList
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=list
+comment2.target=void\ shuffle(java.util.ArrayList)
+comment2.text=\ Method\ to\ shuffle\ an\ ArrayList\r\n@params\ Array\ list\ of\ Numbers
+comment3.params=list
+comment3.target=void\ sort(java.util.ArrayList)
+comment3.text=\ Method\ to\ sort\ an\ ArrayList\ of\ Number\ objects\r\n@params\ Array\ List\ of\ Numbers
+comment4.params=list
+comment4.target=java.lang.Number\ max(java.util.ArrayList)
+comment4.text=\ Method\ to\ find\ the\ max\ element\ in\ a\ list\ of\ Number\ objects.\r\n\ @params\ List\ of\ Numbers\r\n\ @return\ Max\ element\r\n
+numComments=5

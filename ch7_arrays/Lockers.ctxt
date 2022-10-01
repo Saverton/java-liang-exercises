@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Lockers
+comment0.text=\r\n\ Program\ to\ solve\ the\ locker\ puzzle\ explained\ in\ exercise\ 7.23\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Lockers.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=locker
+comment2.target=void\ printLockers(boolean[])
+comment2.text=\r\n\ Method\ to\ print\ locker\ status.\r\n
+numComments=3

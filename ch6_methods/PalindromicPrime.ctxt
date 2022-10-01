@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=PalindromicPrime
+comment0.text=\r\n\ Program\ to\ display\ 100\ palindromic\ prime\ numbers.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ PalindromicPrime.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=num
+comment2.target=boolean\ isPrime(int)
+comment2.text=\r\n\ Method\ to\ check\ if\ a\ number\ is\ prime.\r\n
+comment3.params=num
+comment3.target=boolean\ isPalindrome(int)
+comment3.text=\r\n\ Method\ to\ check\ if\ a\ number\ is\ a\ palindrome.\r\n
+numComments=4

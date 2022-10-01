@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=DirectorySize
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=file
+comment2.target=long\ getSize(java.io.File)
+comment2.text=\ Return\ the\ size\ of\ a\ file/directory\ in\ bytes.\r\n\ @params\ File\ or\ Directory\ to\ measure\:\ java.io.File\r\n\ @return\ File\ size\ in\ bytes\:\ long\r\n
+numComments=3

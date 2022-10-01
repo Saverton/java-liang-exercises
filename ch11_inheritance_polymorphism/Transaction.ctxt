@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Transaction
+comment1.params=type\ amount\ balance\ description
+comment1.target=Transaction(char,\ double,\ double,\ java.lang.String)
+comment1.text=\r\n\ Construct\ a\ transaction\ with\ a\ specified\ transaction\ type,\ amount\ in\ transaction,\ initial\ balance,\ and\ description.\r\n\ \r\n\ @params\ (transaction\ type,\ amount\ of\ transaction,\ initial\ balance,\ transaction\ description)\r\n
+comment2.params=
+comment2.target=java.util.Date\ getDate()
+comment2.text=\r\n\ Method\ to\ get\ the\ date\ of\ the\ transaction.\r\n\ \r\n\ @return\ (date\ of\ transaction)\r\n
+comment3.params=
+comment3.target=char\ getTransaction()
+comment3.text=\r\n\ Method\ to\ get\ the\ type\ of\ transaction\ ('w'\ or\ 'd').\r\n\ \r\n\ @return\ (transaction\ type)\r\n
+comment4.params=
+comment4.target=double\ getAmount()
+comment4.text=\r\n\ Method\ to\ get\ the\ transaction\ amount.\r\n\ \r\n\ @return\ (transaction\ amount)\r\n
+comment5.params=
+comment5.target=double\ getBalance()
+comment5.text=\r\n\ Method\ to\ get\ the\ new\ balance\ after\ the\ transaction.\r\n\ \r\n\ @return\ (new\ balance)\r\n
+comment6.params=
+comment6.target=java.lang.String\ getDescription()
+comment6.text=\r\n\ Method\ to\ get\ the\ transaction\ description.\r\n\ \r\n\ @return\ (transaction\ description)\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Method\ to\ return\ a\ string\ description\ of\ the\ transaction.\r\n\ \r\n\ @return\ (transaction\ string)\r\n
+numComments=8

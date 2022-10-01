@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GeometricObjectArray
+comment0.text=\ Driver\ class\ to\ test\ implementation\ of\ the\ Geometric\ object\ class\ and\ its\ child\r\n\ classes\ by\ creating\ an\ array\ of\ Geometric\ objects\ and\ summing\ the\ area\ of\ each\r\n\ element.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ GeometricObjectArray.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=arr
+comment2.target=double\ sumArea(GeometricObject[])
+comment2.text=\ Return\ the\ total\ area\ of\ all\ Geometric\ objects\ in\ the\ array.\r\n\ @params\ Array\ of\ Geometric\ Objects\r\n\ @return\ Total\ Area\r\n
+numComments=3

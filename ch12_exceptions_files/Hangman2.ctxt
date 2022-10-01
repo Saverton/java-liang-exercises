@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hangman2
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=bank
+comment2.target=void\ getWords(java.util.ArrayList)
+comment2.text=\ Method\ to\ insert\ all\ words\ in\ a\ text\ file\ called\ hangman.txt\ into\ an\ ArrayList\r\n\ word\ bank.\r\n\ @params\ word\ bank\r\n
+numComments=3

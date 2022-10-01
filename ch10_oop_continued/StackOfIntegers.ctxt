@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=StackOfIntegers
+comment0.text=\r\n\ Class\ to\ define\ the\ Stack\ of\ Integers\ object\r\n\ \r\n\ @author\ Scott\ M.\r\n\ StackOfIntegers.java\r\n
+comment1.params=capacity
+comment1.target=StackOfIntegers(int)
+comment1.text=\r\n\ Behaviors\r\n
+comment2.params=
+comment2.target=StackOfIntegers()
+comment3.params=val
+comment3.target=void\ push(int)
+comment4.params=
+comment4.target=int\ pop()
+comment5.params=
+comment5.target=int\ getSize()
+comment6.params=
+comment6.target=int\ peek()
+numComments=7

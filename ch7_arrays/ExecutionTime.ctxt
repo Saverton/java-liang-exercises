@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ExecutionTime
+comment0.text=\r\n\ Program\ to\ calculate\ the\ time\ it\ takes\ to\ sort\ an\ array\ of\ 100,000\ elements\ and\ perform\ a\ binary\ search\ for\ a\ random\ key.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ ExecutionTime.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=elements
+comment2.target=int[]\ genArray(int)
+comment2.text=\r\n\ Method\ to\ generate\ an\ array\ of\ x\ integers.\r\n
+comment3.params=array
+comment3.target=int[]\ sortArrayUp(int[])
+comment3.text=\r\n\ Method\ to\ sort\ an\ array\ in\ ascending\ order.\r\n
+comment4.params=array\ key
+comment4.target=int\ binarySearch(int[],\ int)
+comment4.text=\r\n\ Method\ to\ perform\ a\ binary\ search\ for\ a\ specific\ key.\r\n
+comment5.params=array\ key
+comment5.target=int\ linearSearch(int[],\ int)
+comment5.text=\r\n\ Method\ to\ perform\ a\ linear\ search\ for\ a\ specific\ key\ in\ an\ array.\r\n
+comment6.params=array\ key
+comment6.target=int\ binarySearchShort(int[],\ int)
+comment6.text=\r\n\ Method\ to\ perform\ a\ binary\ search\ for\ a\ key\ in\ an\ array\ without\ finding\ the\ earliest\ instance\ of\ that\ key.\r\n
+numComments=7

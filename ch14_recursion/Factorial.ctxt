@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Factorial
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=integer
+comment2.target=java.math.BigInteger\ factorial(java.math.BigInteger)
+comment2.text=\ Recursive\ method\ to\ calculate\ the\ factorial\ of\ a\ number.\r\n\ @params\ Input\ integer\r\n\ @return\ factorial\r\n
+numComments=3

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Fibonacci
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=index
+comment2.target=int\ fib(int)
+comment2.text=\ Return\ the\ Fibonacci\ number\ at\ a\ specific\ instance.\r\n\ @params\ index\r\n\ @return\ fibonacci\r\n
+comment3.params=index
+comment3.target=int\ fibRec(int)
+comment3.text=\ Return\ the\ Fibonacci\ number\ at\ a\ specific\ instance\ (recursive).\r\n\ @params\ index,\ counter\r\n\ @return\ array\ with\ fibonacci\ number\ and\ number\ of\ times\ the\ method\ was\ called.\r\n
+numComments=4

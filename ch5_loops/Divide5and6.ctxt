@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Divide5and6
+comment0.text=\r\n\ Program\ to\ display\ all\ numbers\ from\ 100\ to\ 1000\ (10\ per\ line)\ that\ are\ divisible\ by\ both\ 5\ and\ 6.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Divide5and6.java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+numComments=2

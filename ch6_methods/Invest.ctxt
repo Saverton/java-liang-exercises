@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Invest
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=investment\ mRate\ year
+comment2.target=double\ futureValue(double,\ double,\ int)
+comment2.text=\r\n\ Method\ to\ calculate\ future\ values\ of\ investment.\r\n
+numComments=3

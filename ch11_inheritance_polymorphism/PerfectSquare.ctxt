@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PerfectSquare
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=m
+comment2.target=java.util.ArrayList\ getFactors(int)
+comment2.text=\r\n\ Method\ to\ return\ an\ array\ list\ of\ all\ factors\ for\ an\ integer\ m.\r\n\ \r\n\ @params\ (integer\ m)\r\n\ @return\ (arrayList\ of\ factors)\r\n
+comment3.params=factors
+comment3.target=int\ getN(java.util.ArrayList)
+comment3.text=\r\n\ Method\ to\ find\ the\ product\ of\ all\ elements\ of\ an\ array\ list\ that\ appear\r\n\ an\ odd\ number\ of\ times.\r\n\ \r\n\ @params\ (ArrayList\ of\ integers)\r\n\ @return\ (product\ of\ all\ odd\ elements)\r\n
+numComments=4

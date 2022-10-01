@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=LargestElement
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=arr
+comment2.target=int\ largestElement(int[])
+comment2.text=\ Return\ the\ largest\ element\ in\ an\ array.\r\n\ @params\ Integer\ array\:\ int[]\r\n\ @return\ largest\ element\:\ int\r\n
+comment3.params=arr\ index
+comment3.target=int\ largestElement(int[],\ int)
+comment3.text=\ Return\ the\ largest\ element\ in\ an\ array.\r\n\ @params\ Integer\ array\:\ int[],\ index\:\ int\r\n\ @return\ largest\ element\:\ int\r\n
+numComments=4

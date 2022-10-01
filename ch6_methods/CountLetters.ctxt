@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CountLetters
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=s
+comment2.target=int\ countLetters(java.lang.String)
+comment2.text=\r\n\ Method\ to\ count\ the\ number\ of\ letters\ in\ a\ string.\r\n
+numComments=3

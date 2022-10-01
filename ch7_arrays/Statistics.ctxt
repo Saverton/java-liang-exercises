@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Statistics
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=double\ mean(double[])
+comment2.text=\r\n\ Method\ to\ compute\ mean\ of\ an\ array.\r\n
+comment3.params=array\ mean
+comment3.target=double\ deviation(double[],\ double)
+comment3.text=\r\n\ Method\ to\ compute\ standard\ deviation\ of\ an\ array.\r\n
+numComments=4

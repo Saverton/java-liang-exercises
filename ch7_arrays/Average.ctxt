@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Average
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=array
+comment2.target=int\ average(int[])
+comment2.text=\r\n\ Method\ to\ find\ the\ int\ average\ of\ an\ int\ array.\r\n
+comment3.params=array
+comment3.target=double\ average(double[])
+comment3.text=\r\n\ Method\ to\ find\ the\ double\ average\ of\ a\ double\ array.\r\n
+numComments=4

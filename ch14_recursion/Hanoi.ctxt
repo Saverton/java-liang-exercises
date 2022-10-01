@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hanoi
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=Main\ method\ to\ run\ program.
+comment2.params=n\ fromTower\ toTower\ auxTower
+comment2.target=int\ moveDisks(int,\ char,\ char,\ char)
+comment2.text=\ Method\ to\ move\ a\ disk\ from\ one\ tower\ to\ another.\r\n\ @params\ Disk\:\ int,\ move\ from\ tower\:\ char,\ move\ to\ tower\:\ char,\ aux\ tower\:\ char\r\n
+numComments=3

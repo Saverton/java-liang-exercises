@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=PolygonSubareas
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
+comment2.params=p
+comment2.target=double[]\ getIntersectingPoint(double[][])
+comment2.text=\r\n\ Method\ to\ find\ and\ return\ the\ intersection\ point\ of\ a\ set\ of\ 4\ points\r\n
+comment3.params=a\ b
+comment3.target=double[]\ linearEquation(double[][],\ double[])
+comment3.text=\r\n\ Method\ to\ solve\ a\ linear\ equation\ using\ Crammer's\ rule\r\n
+comment4.params=p
+comment4.target=double\ getTriangleArea(double[][])
+comment4.text=\r\n\ Method\ to\ get\ the\ area\ of\ a\ triangle\ given\ its\ vertex\ points\r\n
+comment5.params=points
+comment5.target=boolean\ sameLine(double[][])
+comment5.text=\r\n\ Method\ to\ find\ if\ a\ certain\ amount\ of\ points\ are\ on\ the\ same\ line.\r\n
+comment6.params=a
+comment6.target=double[]\ selectionSort(double[])
+comment6.text=\r\n\ Method\ to\ perform\ a\ simple\ selection\ sort.\r\n
+numComments=7
