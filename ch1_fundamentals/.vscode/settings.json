@@ -1,0 +1,7 @@
+{
+    "java.inlayHints.parameterNames.enabled": "none",
+    "java.codeGeneration.generateComments": true,
+    "java.templates.fileHeader": [
+    
+    ]
+}
