@@ -9,8 +9,6 @@
  * @author Scott M.
  */
 
-import java.util.Scanner;
-
 public class Exercise_2_18 {
     /** Main method to run program. */
     public static void main(String[] args) {
