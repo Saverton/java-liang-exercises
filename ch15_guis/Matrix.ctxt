@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Matrix
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=Main\ method\ to\ run\ program.
-comment2.params=stage
-comment2.target=void\ start(javafx.stage.Stage)
-comment2.text=\ Display\ a\ matrix\ of\ 0s\ and\ 1s.\r\n\ @params\ primary\ stage\:\ Stage\r\n
-numComments=3

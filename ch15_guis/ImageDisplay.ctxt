@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=ImageDisplay
-comment1.params=stage
-comment1.target=void\ start(javafx.stage.Stage)
-comment1.text=\ Create\ a\ window\ with\ 4\ images\ in\ a\ 2x2\ layout.\r\n\r\n\ @param\ \ stage\ the\ primary\ stage\ for\ this\ application.\r\n
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-comment2.text=Main\ method\ to\ run\ program.
-numComments=3
