@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=TextTester
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment1.text=\ Display\ 5\ text\ boxes\ in\ a\ row.\r\n\ @params\ stage\ to\ be\ populated\r\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=Main\ method\ to\ run\ program.
+numComments=3
