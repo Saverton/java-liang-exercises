@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Pyramid2
-comment0.text=\r\n\ Program\ to\ display\ a\ big\ 8-layer\ pyramid\ with\ powers\ of\ 2.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Pyramid2.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-numComments=2

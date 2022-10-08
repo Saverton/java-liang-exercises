@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=CancelErrors
-comment0.text=\r\n\ Program\ to\ demonstrate\ differences\ in\ summations\ of\ additions\ of\ small\ numbers\ from\ right\ to\ left\ and\ left\ to\ right.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ CancelErrors.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-numComments=2
