@@ -6,9 +6,7 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.Line;

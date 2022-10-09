@@ -1,7 +1,7 @@
-/** Program to display a 2x2 grid of images.
- * 
+/** 
+ * (Display images) Write a program that displays four images in a grid pane, as 
+ * shown in Figure 14.43a. 
  * @author Scott M.
- * ImageDisplay.java
  */
 
 import javafx.application.Application;
@@ -13,7 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-public class ImageDisplay extends Application
+public class Exercise_14_1 extends Application
 {
     /** Create a window with 4 images in a 2x2 layout.
      *

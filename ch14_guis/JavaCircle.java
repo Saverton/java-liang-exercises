@@ -11,7 +11,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 import javafx.scene.text.Font;
-import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 
 public class JavaCircle extends Application

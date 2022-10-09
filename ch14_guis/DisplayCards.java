@@ -13,7 +13,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import java.util.ArrayList;
 import java.io.File;
-import java.io.FileNotFoundException;
 
 public class DisplayCards extends Application {
     /** Main method to run program. */

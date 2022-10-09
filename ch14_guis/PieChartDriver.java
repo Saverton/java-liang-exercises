@@ -6,9 +6,6 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.Pane;
 import javafx.geometry.Insets;
 
 public class PieChartDriver extends Application {

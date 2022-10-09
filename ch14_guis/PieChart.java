@@ -3,17 +3,12 @@
  * PieChart.java
  */
 
-import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.ArcType;
 import javafx.scene.text.Text;
-import javafx.scene.layout.Pane;
-import javafx.geometry.Insets;
 
 public class PieChart extends Pane {
     private int elements;

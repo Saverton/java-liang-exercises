@@ -6,7 +6,6 @@
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.geometry.Insets;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Line;
