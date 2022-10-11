@@ -1,13 +1,16 @@
 /**
- * Program to calculate the average of 10 values entered into the console.
- * 
+ * Average an array) Write two overloaded methods that return the average of an 
+ * array with the following headers:
+ *      public static int average(int[] array)
+ *      public static double average(double[] array)
+ * Write a test program that prompts the user to enter ten double values, invokes this 
+ * method, and displays the average value.
  * @author Scott M.
- * Average.java
  */
 
 import java.util.Scanner;
 
-public class Average {
+public class Exercise_7_8 {
     /**
      * Main method to run program.
      */
@@ -19,11 +22,14 @@ public class Average {
         for (int i = 0; i < 10; i++) {
             array[i] = kb.nextDouble();
         }
+        kb.close();
         //4. Calculate & display average.
         System.out.print("Average is " + average(array));
     }
     /**
-     * Method to find the int average of an int array.
+     * Return the integer average of an integer array.
+     * @param array int[]: array of integers
+     * @return int: average
      */
     public static int average(int[] array) {
         int sum = 0;
@@ -33,7 +39,9 @@ public class Average {
         return sum / array.length;
     }
     /**
-     * Method to find the double average of a double array.
+     * Return the double/float average of a double array.
+     * @param array double[]: double array
+     * @return double: average
      */
     public static double average(double[] array) {
         double sum = 0;

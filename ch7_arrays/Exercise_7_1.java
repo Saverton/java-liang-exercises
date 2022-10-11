@@ -1,13 +1,19 @@
 /**
- * Program to grade a list of test scores out of the best score in the bunch.
- * 
+ * (Assign grades) Write a program that reads student scores, gets the best score, 
+ * and then assigns grades based on the following scheme:
+ * Grade is A if score is >= best - 10
+ * Grade is B if score is >= best - 20;
+ * Grade is C if score is >= best - 30;
+ * Grade is D if score is >= best - 40;
+ * Grade is F otherwise.
+ * The program prompts the user to enter the total number of students, then prompts 
+ * the user to enter all of the scores, and concludes by displaying the grades. 
  * @author Scott M.
- * Grades.java
  */
 
 import java.util.Scanner;
 
-public class Grades {
+public class Exercise_7_1 {
     /**
      * Main method to run program.
      */
@@ -17,6 +23,7 @@ public class Grades {
         
         System.out.print("Enter the number of students: ");
         students = kb.nextInt();
+        kb.close();
         
         int[] scores = new int[students];
         
@@ -29,7 +36,9 @@ public class Grades {
         printGrades(scores, getBestScore(scores));
     }
     /**
-     * Method to get the best score from an array of scores.
+     * Return the best (highest) score from an array of integer scores.
+     * @param scores int[]: array of scores
+     * @return int: best score
      */
     public static int getBestScore(int[] scores) {
         int max = scores[0];
@@ -43,17 +52,16 @@ public class Grades {
         return max;
     }
     /**
-     * Method to compare scores to max score and print grade.
+     * Print out a list of scores and their grade obtained by comparing to the best score.
+     * @param scores int[]: array of scores
+     * @param best int: best score
      */
     public static void printGrades(int[] scores, int best) {
         char[] grades = {'A', 'B', 'C', 'D', 'F'};
         int temp;
         
         for (int i = 0; i < scores.length; i++) {
-            temp = (best - scores[i] - 1) / 10;
-            if (temp > 4) {
-                temp = 4;
-            }
+            temp = Math.min((best - scores[i] - 1) / 10, 4);
             System.out.println("Student " + i + " score is " + scores[i] + " and grade is " + grades[temp]);
         }
     }

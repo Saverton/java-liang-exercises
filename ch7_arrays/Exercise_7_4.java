@@ -1,14 +1,14 @@
 /**
- * Program to read an array of scores of an unspecified length less than 100. The program will calculate the average score and then print how many
- * scores are above the average score.
- * 
+ * (Analyze scores) Write a program that reads an unspecified number of scores and 
+ * determines how many scores are above or equal to the average and how many 
+ * scores are below the average. Enter a negative number to signify the end of the 
+ * input. Assume that the maximum number of scores is 100.
  * @author Scott M.
- * Scores.java
  */
 
 import java.util.Scanner;
 
-public class Scores {
+public class Exercise_7_4 {
     /**
      * Main method to run program.
      */
@@ -27,6 +27,7 @@ public class Scores {
             }
             length++;
         }
+        kb.close();
         
         //2. Calculate the average score;
         for (int i = 0; i < length; i++) {

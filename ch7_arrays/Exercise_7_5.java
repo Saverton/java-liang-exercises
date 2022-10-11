@@ -1,13 +1,15 @@
 /**
- * Program to read an array of size 10, display the number of distinct numbers in the array, and then print the list of distinct numbers.
- * 
+ * (Print distinct numbers) Write a program that reads in ten numbers and displays 
+ * the number of distinct numbers and the distinct numbers separated by exactly one 
+ * space (i.e., if a number appears multiple times, it is displayed only once). (Hint:
+ * Read a number and store it to an array if it is new. If the number is already in the 
+ * array, ignore it.) After the input, the array contains the distinct numbers. 
  * @author Scott M.
- * DistinctNums.java
  */
 
 import java.util.Scanner;
 
-public class DistinctNums {
+public class Exercise_7_5 {
     /**
      * Main method to run program.
      */
@@ -22,6 +24,7 @@ public class DistinctNums {
         for (int i = 0; i < 10; i++) {
             list[i] = kb.nextInt();
         }
+        kb.close();
         
         //2. process the array, counting distinct numbers and adding distinct numbers to an array;
         for (int i = 0; i < list.length; i++) {
@@ -36,7 +39,11 @@ public class DistinctNums {
         printArray(distinct, count);
     }
     /**
-     * Method to perform a search on an array after a certain index for a specified key and return t/f
+     * Check if an array of integers contains a certain key after a specified start index.
+     * @param list int[]: the array to be searched
+     * @param key int: the key to search for
+     * @param startIndex int: the index to start searching (0=start of array)
+     * @return boolean: true = key was found in the array after startIndex, false otherwise
      */
     public static boolean searchArray(int[] list, int key, int startIndex) {
         for (int i = startIndex + 1; i < list.length; i++) {
@@ -47,11 +54,13 @@ public class DistinctNums {
         return false;
     }
     /**
-     * Method to print an array excluding values of 0.
+     * Print out every value in an integer array up to a specified index, excluding any 0s
+     * @param distinct int[]: array of integers
+     * @param stopIndex int: index to stop printing before
      */
-    public static void printArray(int[] distinct, int count) {
-        for (int i = 0; i < count; i++) {
-            System.out.print(distinct[i] + " ");
+    public static void printArray(int[] array, int stopIndex) {
+        for (int i = 0; i < stopIndex; i++) {
+            System.out.print(array[i] + " ");
         }
     }
 }

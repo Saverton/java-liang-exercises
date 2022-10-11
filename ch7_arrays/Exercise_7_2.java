@@ -1,13 +1,12 @@
 /**
- * Program to reverse the inputs of an array.
- * 
+ * (Reverse the numbers entered) Write a program that reads ten integers and displays 
+ * them in the reverse of the order in which they were read.
  * @author Scott M.
- * Reverse.java
  */
 
 import java.util.Scanner;
 
-public class Reverse {
+public class Exercise_7_2 {
     /**
      * Main method to run program.
      */
@@ -19,13 +18,16 @@ public class Reverse {
         for (int i = 0; i < 10; i++) {
             list[i] = kb.nextInt();
         }
+        kb.close();
         
         list = reverse(list);
         
         printArray(list);
     }
     /**
-     * Method to reverse an int array.
+     * Return a new array that is a copy in reverse order of another array.
+     * @param list int[]: the normal array
+     * @return int[]: the new reversed array
      */
     public static int[] reverse(int[] list) {
         int[] reverseList = new int[list.length];
@@ -37,7 +39,8 @@ public class Reverse {
         return reverseList;
     }
     /**
-     * Method to print an array.
+     * Print out each element of an array separated by commas
+     * @param int[]: array of integers
      */
     public static void printArray(int[] list) {
         for (int i = 0; i < list.length; i++) {
