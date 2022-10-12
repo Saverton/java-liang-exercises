@@ -1,11 +1,12 @@
 /**
- * Program to simulate picking cards from a deck of cards (with replacement) and finding how many picks are required to get a card from each suit.
- * 
+ * (Game: pick four cards) Write a program that picks four cards from a deck of 52 
+ * cards and computes their sum. An Ace, King, Queen, and Jack represent 1, 13, 
+ * 12, and 11, respectively. Your program should display the number of picks that 
+ * yields the sum of 24.
  * @author Scott M.
- * FourCards.java
  */
 
-public class FourCards {
+public class Exercise_7_29 {
     /**
      * Main method to run program.
      */

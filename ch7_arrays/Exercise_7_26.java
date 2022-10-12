@@ -1,13 +1,18 @@
 /**
- * Program to determine if two lists are identical (i.e. have the same contents).
- * 
+ * (Identical arrays) The arrays list1 and list2 are identical if they have the 
+ * same contents. Write a method that returns true if list1 and list2 are identical, 
+ * using the following header:
+ *      public static boolean equals(int[] list1, int[] list2)
+ * Write a test program that prompts the user to enter two lists of integers and displays 
+ * whether the two are identical. Here are the sample runs. Note that the first 
+ * number in the input indicates the number of the elements in the list. This number 
+ * is not part of the list.
  * @author Scott M.
- * Identical.java
  */
 
 import java.util.Scanner;
 
-public class Identical {
+public class Exercise_7_26 {
     /**
      * Main method to run program.
      */
@@ -25,11 +30,15 @@ public class Identical {
         for (int i = 0; i < list2.length; i++) {
             list2[i] = kb.nextInt();
         }
+        kb.close();
         
         System.out.print((equals(list1, list2)) ? "Two lists are identical" : "Two lists are not identical");
     }
     /**
-     * Method to determine if two arrays are identical in contents.
+     * Check if two arrays are strictly identical in their contents.
+     * @param list1 int[]: the first integer array
+     * @param list2 int[]: the second integer array
+     * @return boolean: true = arrays are identical, false otherwise
      */
     public static boolean equals(int[] list1, int[] list2) {
         if (list1.length != list2.length) {
@@ -43,10 +52,13 @@ public class Identical {
         return true;
     }
     /**
-     * Method to perform a linear search in an array, set the found item to the max index.
+     * Check if a key is inside an array before a given maximum index. If the key is found, swap it with the element at the max index.
+     * @param array int[]: array of integers
+     * @param key int: key to search for
+     * @param maxIndex int: index to stop searching at and place the key at (if found)
      */
     public static boolean contains(int[] array, int key, int maxIndex) {
-        int index, temp;
+        int temp;
         for (int i = 0; i < maxIndex; i++) {
             if (array[i] == key) {
                 temp = array[i];

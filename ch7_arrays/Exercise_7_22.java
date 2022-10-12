@@ -1,11 +1,12 @@
 /**
- * Program to generate solutions to the game "Eight Queens".
- * 
+ * (Game: Eight Queens) The classic Eight Queens puzzle is to place eight queens 
+ * on a chessboard such that no two queens can attack each other (i.e., no two queens 
+ * are on the same row, same column, or same diagonal). There are many possible 
+ * solutions. Write a program that displays one such solution. 
  * @author Scott M.
- * Queens.java
  */
 
-public class Queens {
+public class Exercise_7_22 {
     /**
      * Main method to run program.
      */
@@ -19,7 +20,8 @@ public class Queens {
         }
     }
     /**
-     * Method to print rows accordingly.
+     * Print a row on a chessboard.
+     * @param row int[]: array representing row
      */
     public static void printRow(int[] row) {
         System.out.print('|');
@@ -29,7 +31,12 @@ public class Queens {
         System.out.println();
     }
     /**
-     * Method to generate a row.
+     * Return a row on a chessboard given a list of exceptions (columns to avoid), and diagonal exceptions both forward and backward.
+     * @param execptions int[]: vertical exceptions for placing a queen.
+     * @param forwardDiagonalExceptions int[]: diagonal exceptions for placing a queen (bottom left to upper right)
+     * @param backwardDiagonalExceptions int[]: diagonal exceptions for placing a queen (upper left to bottom right)
+     * @param rowNum int: row index to be generated
+     * @return int[]: the generated row (0s = empty, 1s = queen)
      */
     public static int[] genRow(int[] exceptions, int[] forwardDiagonalExceptions, int[] backwardDiagonalExceptions, int rowNum) {
         int[] row = new int[8];

@@ -1,13 +1,18 @@
 /**
- * Program to simulate a game of hangman.
- * 
+ * (Game: hangman) Write a hangman game that randomly generates a word and 
+ * prompts the user to guess one letter at a time, as shown in the sample run. Each 
+ * letter in the word is displayed as an asterisk. When the user makes a correct 
+ * guess, the actual letter is then displayed. When the user finishes a word, display 
+ * the number of misses and ask the user whether to continue to play with another 
+ * word. Declare an array to store words, as follows:
+ *      // Add any words you wish in this array
+ *      String[] words = {"write", "that", ...};
  * @author Scott M.
- * Hangman.java
  */
 
 import java.util.Scanner;
 
-public class Hangman {
+public class Exercise_7_35 {
     /**
      * Main method to run program.
      */
@@ -61,11 +66,14 @@ public class Hangman {
                 guesses++;
             }
         }
-        
+        kb.close();
+
         System.out.print("\nThe word is " + WORD + "\nIt took you " + guesses + " incorrect guesses");
     }
     /**
-     * Method to convert an array to a string of text.
+     * Return a String from an array of chars.
+     * @param array char[]: array of characters
+     * @return String: resulting String
      */
     public static String arrayToString(char[] array) {
         String output = "";
@@ -75,7 +83,10 @@ public class Hangman {
         return output;
     }
     /**
-     * Method to search an array for a specific key.
+     * Return the index of a key found in an array, -1 if not found.
+     * @param array char[]: array of chars
+     * @param key char: char to search for
+     * @return int: index of the character in the array
      */
     public static int searchArray(char[] array, char key) {
         for (int i = 0; i < array.length; i++) {

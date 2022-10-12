@@ -1,13 +1,12 @@
 /**
- * Program to simplify the zodiac animal finder program from ch 3.
- * 
+ * (Culture: Chinese Zodiac) Simplify Listing 3.9 using an array of strings to store 
+ * the animal names.
  * @author Scott M.
- * Zodiac.java
  */
 
 import java.util.Scanner;
 
-public class Zodiac {
+public class Exercise_7_33 {
     /**
      * Main method to run program.
      */
@@ -18,6 +17,7 @@ public class Zodiac {
         
         System.out.print("Enter a year: ");
         year = kb.nextInt();
+        kb.close();
         
         System.out.print(zodiac[year % 12]);
     }

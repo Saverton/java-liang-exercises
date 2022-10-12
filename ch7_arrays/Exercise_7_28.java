@@ -1,13 +1,12 @@
 /**
- * Program to determine all possible combinations of two numbers from two lists of 10 numbers.
- * 
+ * (Math: combinations) Write a program that prompts the user to enter 10 integers 
+ * and displays all combinations of picking two numbers from the 10.
  * @author Scott M.
- * Combos.java
  */
 
 import java.util.Scanner;
 
-public class Combos {
+public class Exercise_7_28 {
     /**
      * Main method to run program.
      */
@@ -19,11 +18,13 @@ public class Combos {
         for (int i = 0; i < 10; i++) {
             list[i] = kb.nextInt();
         }
+        kb.close();
         
         printCombos(list);
     }
     /**
-     * Method to print all possible combinations of integers from an int list.
+     * Print all possible combinations of numbers in a given integer array.
+     * @param list int[]: integer array
      */
     public static void printCombos(int[] list) {
         int count = 0;

@@ -1,13 +1,16 @@
 /**
- * Program to sort chars in a string.
- * 
+ * (Sort characters in a string) Write a method that returns a sorted string using the 
+ * following header:
+ *      public static String sort(String s)
+ * For example, sort("acb") returns abc.
+ * Write a test program that prompts the user to enter a string and displays the sorted 
+ * string.
  * @author Scott M.
- * StringSort.java
  */
 
 import java.util.Scanner;
 
-public class StringSort {
+public class Exercise_7_34 {
     /**
      * Main method to run program.
      */
@@ -17,16 +20,17 @@ public class StringSort {
         
         System.out.print("Enter a string: ");
         sorted = sortString(kb.nextLine());
+        kb.close();
         
         System.out.print(sorted);
     }
     /**
-     * Method to sort a string.
+     * Return the alphabetically sorted version of a string.
+     * @param input String: string to sort
+     * @return String: sorted string
      */
     public static String sortString(String input) {
-        String output = "";
         int index;
-        char temp;
         //Sorting method
         for (int i = 1; i < input.length(); i++) {
             index = i;

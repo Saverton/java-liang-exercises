@@ -1,13 +1,18 @@
 /**
- * Program to merge two sorted lists into a new sorted list.
- * 
+ * (Merge two sorted lists) Write the following method that merges two sorted lists 
+ * into a new sorted list.
+ *      public static int[] merge(int[] list1, int[] list2)
+ * Implement the method in a way that takes at most list1.length + list2.
+ * length comparisons. Write a test program that prompts the user to enter two 
+ * sorted lists and displays the merged list. Here is a sample run. Note that the first 
+ * number in the input indicates the number of the elements in the list. This number 
+ * is not part of the list.
  * @author Scott M.
- * MergeLists.java
  */
 
 import java.util.Scanner;
 
-public class MergeLists {
+public class Exercise_7_31 {
     /**
      * Main method to run program.
      */
@@ -25,6 +30,7 @@ public class MergeLists {
         for (int i = 0; i < list2.length; i++) {
             list2[i] = kb.nextInt();
         }
+        kb.close();
         
         //Sort list1 and list2
         sortList(list1);
@@ -40,7 +46,10 @@ public class MergeLists {
         }
     }
     /**
-     * Method to merge two lists.
+     * Return a merged array from two arrays of integers
+     * @param list1 int[]: first array of integers
+     * @param list2 int[]: seconds array of integers
+     * @return int[]: merged array
      */
     public static int[] merge(int[] list1, int[] list2) {
         int[] list3 = new int[list1.length + list2.length];
@@ -55,7 +64,8 @@ public class MergeLists {
         return list3;
     }
     /**
-     * Method to sort a list.
+     * Sort an array of integers using a selection sort.
+     * @param array int[]: array of integers
      */
     public static void sortList(int[] array) {
         boolean doNextPass = false;
