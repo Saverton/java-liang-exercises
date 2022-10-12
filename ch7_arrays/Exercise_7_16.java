@@ -1,11 +1,17 @@
 /**
- * Program to calculate the time it takes to sort an array of 100,000 elements and perform a binary search for a random key.
- * 
+ * (Execution time) Write a program that randomly generates an array of 100,000 
+ * integers and a key. Estimate the execution time of invoking the linearSearch
+ * method in Listing 7.6. Sort the array and estimate the execution time of invoking 
+ * the binarySearch method in Listing 7.7. You can use the following code 
+ * template to obtain the execution time:
+ *      long startTime = System.currentTimeMillis();
+ *      perform the task;
+ *      long endTime = System.currentTimeMillis();
+ *      long executionTime = endTime - startTime;
  * @author Scott M.
- * ExecutionTime.java
  */
 
-public class ExecutionTime {
+public class Exercise_7_16 {
     /**
      * Main method to run program.
      */
@@ -39,7 +45,9 @@ public class ExecutionTime {
         System.out.print("Results were " + result1 + ", " + result2);
     }
     /**
-     * Method to generate an array of x integers.
+     * Return an integer array of a given length, populate it with random integers from 0 - 999.
+     * @param elements int: length of array
+     * @return int[]: array of random integers
      */
     public static int[] genArray(int elements) {
         int[] array = new int[elements];
@@ -49,7 +57,9 @@ public class ExecutionTime {
         return array;
     }
     /**
-     * Method to sort an array in ascending order.
+     * Return a sorted array in increasing numerical order.
+     * @param array int[]: array of integers
+     * @return int[]: sorted array
      */
     public static int[] sortArrayUp(int[] array) {
         int currentElement;
@@ -68,7 +78,10 @@ public class ExecutionTime {
         return array;
     }
     /**
-     * Method to perform a binary search for a specific key.
+     * Return the first index of a certain element in an array using a binary search.
+     * @param array int[]: integer array
+     * @param key int: key to search for
+     * @return int: first index of key, -1 if not found.
      */
     public static int binarySearch(int[] array, int key) {
         int low = 0, high = array.length, mid, index;
@@ -95,7 +108,10 @@ public class ExecutionTime {
         }
     }
     /**
-     * Method to perform a linear search for a specific key in an array.
+     * Return the index of a certain element in an array using a linear search.
+     * @param array int[]: integer array
+     * @param key int: key to search for
+     * @return int: first index of key, -1 if not found.
      */
     public static int linearSearch(int[] array, int key) {
         for (int i = 0; i < array.length; i++) {
@@ -106,7 +122,10 @@ public class ExecutionTime {
         return -1;
     }
     /**
-     * Method to perform a binary search for a key in an array without finding the earliest instance of that key.
+     * Return the index of a certain element in an array using a binary search.
+     * @param array int[]: integer array
+     * @param key int: key to search for
+     * @return int: index of key, -1 if not found.
      */
     public static int binarySearchShort(int[] array, int key) {
         int low = 0, high = array.length, mid;

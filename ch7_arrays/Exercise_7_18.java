@@ -1,13 +1,17 @@
 /**
- * Program to perform a "Bubble Sort" on a list of numbers.
- * 
+ * (Bubble sort) Write a sort method that uses the bubble-sort algorithm. The bubble-sort 
+ * algorithm makes several passes through the array. On each pass, successive 
+ * neighboring pairs are compared. If a pair is not in order, its values are swapped; 
+ * otherwise, the values remain unchanged. The technique is called a bubble sort or 
+ * sinking sort because the smaller values gradually “bubble” their way to the top 
+ * and the larger values “sink” to the bottom. Write a test program that reads in ten 
+ * double numbers, invokes the method, and displays the sorted numbers.
  * @author Scott M.
- * BubbleSort.java
  */
 
 import java.util.Scanner;
 
-public class BubbleSort {
+public class Exercise_7_18 {
     /**
      * Main method to run program.
      */
@@ -19,11 +23,14 @@ public class BubbleSort {
         for (int i = 0; i < testArray.length; i++) {
             testArray[i] = kb.nextDouble();
         }
+        kb.close();
         
         printArray(bubbleSort(testArray));
     }
     /**
-     * Method to perform a bubble sort.
+     * Return a sorted array of doubles using a double sort.
+     * @param array double[]: array to sort
+     * @return double[]: sorted array
      */
     public static double[] bubbleSort(double[] array) {
         boolean doNextPass = false;
@@ -42,7 +49,8 @@ public class BubbleSort {
         return array;
     }
     /**
-     * Method to print a double array.
+     * Print an array of doubles separated by commas.
+     * @param list double[]: array
      */
     public static void printArray(double[] list) {
         for (int i = 0; i < list.length; i++) {

@@ -1,13 +1,15 @@
 /**
- * Program to use a revised selection sort.
- * 
+ * (Revise selection sort) In Section 7.11, you used selection sort to sort an array. 
+ * The selection-sort method repeatedly finds the smallest number in the current 
+ * array and swaps it with the first. Rewrite this program by finding the largest number 
+ * and swapping it with the last. Write a test program that reads in ten double 
+ * numbers, invokes the method, and displays the sorted numbers.
  * @author Scott M.
- * SelectionSort.java
  */
 
 import java.util.Scanner;
 
-public class SelectionSort {
+public class Exercise_7_20 {
     /**
      * Main method to run program.
      */
@@ -19,13 +21,16 @@ public class SelectionSort {
         for (int i = 0; i < array.length; i++) {
             array[i] = kb.nextInt();
         }
+        kb.close();
         
         array = selectionSort(array);
         
-        Reverse.printArray(array);
+        printArray(array);
     }
     /**
-     * Method to perform a selection sort.
+     * Return a sorted array of integers using a selection sort.
+     * @param array int[]: array of integers
+     * @return int[]: sorted array
      */
     public static int[] selectionSort(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
@@ -47,5 +52,14 @@ public class SelectionSort {
             }
         }
         return array;
+    }
+    /**
+     * Print out each element of an array separated by commas
+     * @param int[]: array of integers
+     */
+    public static void printArray(int[] list) {
+        for (int i = 0; i < list.length; i++) {
+            System.out.print((i == list.length - 1) ? list[i] : list[i] + ", ");
+        }
     }
 }

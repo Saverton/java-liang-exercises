@@ -1,13 +1,13 @@
 /**
- * Program where Students names and test scores are input via scanner, sorted in descending order of scores, and printed as such.
- * 
+ * (Sort students) Write a program that prompts the user to enter the number of students, 
+ * the students’ names, and their scores, and prints student names in decreasing 
+ * order of their scores.
  * @author Scott M.
- * Students.java
  */
 
 import java.util.Scanner;
 
-public class Students {
+public class Exercise_7_17 {
     /**
      * Main method to run program.
      */
@@ -29,13 +29,16 @@ public class Students {
         for (int i = 0; i < scores.length; i++) {
             scores[i] = kb.nextInt();
         }
-        
+        kb.close();
+
         sortScores(scores, names);
         
         printScores(scores, names);
     }
     /**
-     * Method to sort students scores descendingly and match names accordingly.
+     * Sort an array of scores, keep twin array of names consistent with it's indexes.
+     * @param scores int[]: integer array of test scores
+     * @param names String[]: String array of student names
      */
     public static void sortScores(int[] scores, String[] names) {
         int currentScore;
@@ -58,7 +61,9 @@ public class Students {
         }
     }
     /**
-     * Method to print names and their respective scores.
+     * Print student names and their corresponding test scores from an array of names and scores.
+     * @param scores int[]: integer array of student scores
+     * @param names String[]: String array of student names
      */
     public static void printScores(int[] scores, String[] names) {
         System.out.printf("%-10s: %s\n", "Name", "Score");
