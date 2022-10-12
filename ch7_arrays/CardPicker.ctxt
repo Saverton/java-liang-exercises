@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=CardPicker
-comment0.text=\r\n\ Program\ to\ simulate\ picking\ cards\ from\ a\ deck\ of\ cards\ (with\ replacement)\ and\ finding\ how\ many\ picks\ are\ required\ to\ get\ a\ card\ from\ each\ suit.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ CardPicker.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-numComments=2

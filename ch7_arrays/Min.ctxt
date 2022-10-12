@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Min
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-comment2.params=array
-comment2.target=double\ min(double[])
-comment2.text=\r\n\ Method\ to\ find\ the\ minimum\ value\ of\ an\ array.\r\n
-numComments=3

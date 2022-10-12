@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=RandNum
-comment0.text=\r\n\ Program\ to\ get\ a\ random\ number\ that\ excludes\ the\ numbers\ passed\ in\ the\ args.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ RandNum.java\r\n
-comment1.params=numbers
-comment1.target=int\ getRandom(int[])
-comment1.text=\r\n\ Method\ to\ generate\ a\ random\ number\ excluding\ the\ nums\ in\ the\ array\ passed\ in\ the\ arguments.\r\n
-numComments=2
