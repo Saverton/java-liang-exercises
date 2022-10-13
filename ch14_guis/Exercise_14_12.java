@@ -1,6 +1,12 @@
-/** Program to generate a window with a bar chart.
+/** 
+ * (Display a bar chart) Write a program that uses a bar chart to display the percentages 
+ * of the overall grade represented by projects, quizzes, midterm exams, and the 
+ * final exam, as shown in Figure 14.46b. Suppose that projects take 20 percent and 
+ * are displayed in red, quizzes take 10 percent and are displayed in blue, midterm 
+ * exams take 30 percent and are displayed in green, and the final exam takes 40
+ * percent and is displayed in orange. Use the Rectangle class to display the bars. 
+ * Interested readers may explore the JavaFX BarChart class for further study.
  * @author Scott M.
- * BarChart.java
  */
 
 import javafx.application.Application;
@@ -13,14 +19,14 @@ import javafx.scene.text.Text;
 import javafx.scene.layout.Pane;
 import javafx.geometry.Insets;
 
-public class BarChart extends Application {
+public class Exercise_14_12 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Create a bar chart window. 
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         String[] labels = {"Project", "Quiz", "Midterm", "Final"};
@@ -34,11 +40,11 @@ public class BarChart extends Application {
     }
     
     /** Create a bar chart with an array of names and bars.
-     * @param Array of Names of categories: String[]
-     * @param Array of quantities: int[]
-     * @param horizontal scale (width of bars): int
-     * @param vertical scale (height of 1 int in pixels): int
-     * @return bar graph: Pane
+     * @param names String[]: names of categories
+     * @param quantities int[]: quantities of each category
+     * @param hScale int: horizontal scale in pixels
+     * @param vScale int: vertical scale in pixels
+     * @return Pane: drawn bar chart
      * Precondition: names and quantities arrays must be the same length.
      */
     public static HBox createBarChart(String[] names, int[] quantities, int hScale, int vScale) {
@@ -61,8 +67,8 @@ public class BarChart extends Application {
     }
     
     /** Return max value in an integer array.
-     * @param Integer array: int[]
-     * @return max value: int
+     * @param arr int[]: array of integers
+     * @return int: max value
      */
     public static int getMax(int[] arr) {
         int max = arr[0];

@@ -1,6 +1,7 @@
-/** Program to display a Smiley Face.
+/** 
+ * (Paint a smiley face) Write a program that paints a smiley face, as shown in 
+ * Figure 14.46a.
  * @author Scott M.
- * SmileyFace.java
  */
 
 import javafx.application.Application;
@@ -15,14 +16,14 @@ import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 
-public class SmileyFace extends Application {
+public class Exercise_14_11 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Set up the window to display the fans. 
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         Pane face = drawFace();
@@ -35,7 +36,7 @@ public class SmileyFace extends Application {
     }
     
     /** Draw a Smiley Face.
-     * @return Smiley Face drawing: Pane
+     * @return Pane: smiley face drawing
      */
     public static Pane drawFace() {
         Pane face = new Pane();

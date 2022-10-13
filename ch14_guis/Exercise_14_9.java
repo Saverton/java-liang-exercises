@@ -1,6 +1,7 @@
-/** Program to display four drawings of fans in a 2x2 grid.
+/** 
+ * (Create four fans) Write a program that places four fans in a GridPane with two 
+ * rows and two columns, as shown in Figure 14.45b.
  * @author Scott M.
- * FourFans.java
  */
 
 import javafx.application.Application;
@@ -14,14 +15,14 @@ import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 
-public class FourFans extends Application {
+public class Exercise_14_9 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Set up the window to display the fans. 
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         GridPane grid = new GridPane();
@@ -42,7 +43,7 @@ public class FourFans extends Application {
     }
     
     /** Draw a fan in a pane.
-     * @return Fan drawing: Pane
+     * @return Pane: drawing of a fan
      */
     public static Pane drawFan() {
         Pane fan = new Pane();

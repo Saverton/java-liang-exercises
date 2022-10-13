@@ -1,8 +1,18 @@
-/** Class creates pane of a Pie chart.
+/** 
+ * (Display a pie chart) Write a program that uses a pie chart to display the percentages 
+ * of the overall grade represented by projects, quizzes, midterm exams, and 
+ * the final exam, as shown in Figure 14.46c. Suppose that projects take 20 percent 
+ * and are displayed in red, quizzes take 10 percent and are displayed in blue, 
+ * midterm exams take 30 percent and are displayed in green, and the final exam 
+ * takes 40 percent and is displayed in orange. Use the Arc class to display the pies. 
+ * Interested readers may explore the JavaFX PieChart class for further study. 
  * @author Scott M.
- * PieChart.java
  */
 
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.geometry.Insets;
 import javafx.scene.paint.Color;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
@@ -10,13 +20,38 @@ import javafx.scene.shape.Arc;
 import javafx.scene.shape.ArcType;
 import javafx.scene.text.Text;
 
-public class PieChart extends Pane {
+public class Exercise_14_13 extends Application {
+    /** Main method to run program. */
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+    
+    /** Create a bar chart window. 
+     * @param stage Stage: stage to set
+     */
+    public void start(Stage stage) {
+        String[] labels = {"Project", "Quiz", "Midterm", "Final"};
+        double[] proportions = {0.2, 0.1, 0.3, 0.4};
+        PieChart chart = new PieChart(4);
+        chart.setProportions(proportions);
+        chart.setNames(labels);
+        chart.setPadding(new Insets(15, 10, 10, 10));
+        chart.paintChart();
+        
+        Scene scene = new Scene(chart);
+        stage.setScene(scene);
+        stage.setTitle("Pie Chart");
+        stage.show();
+    }
+}
+
+class PieChart extends Pane {
     private int elements;
     private double[] proportions;
     private String[] names;
     
     /** Construct a pie chart with x amount of elements.
-     * @param number of elements: int
+     * @param elements int: number of elements/slices
      */
     public PieChart(int elements) {
         this.elements = elements;
@@ -24,10 +59,10 @@ public class PieChart extends Pane {
     
     /** Set an array of double quantities to proportions. return true if assigning
      * is successful, false otherwise.
-     * @param list of proportions: double[]
-     * @return true if assigning is successful, false otherwise
-     * Precondition: List of proportions must be of size (elements) and all quantities
-     *      must have a total sum of 1.0.
+     * @param proportions double[]: list of proportions
+     * @return boolean: true = successfully set proportions list, false otherwise
+     * Precondition: List of proportions must be of size (this.elements) and all quantities
+     *      must have a total sum of 1.0 (within 0.001).
      */
     public boolean setProportions(double[] proportions) {
         boolean successful = false;
@@ -41,8 +76,8 @@ public class PieChart extends Pane {
     }
     
     /** Return the sum of elements in a double array.
-     * @param double array: double[]
-     * @return sum: double
+     * @param arr double[]: array of doubles
+     * @return double: sum of elements
      */
     private static double getSum(double[] arr) {
         double sum = 0.0;
@@ -55,8 +90,8 @@ public class PieChart extends Pane {
     }
     
     /** Set an array of subject names for each slice of the pie chart. returns true if assigning is successful, false otherwise.
-     * @param array of labels: String[]
-     * @return true if assigning is successful, false otherwise
+     * @param names String[]: array of labels for slices
+     * @return boolean: true = successful assignment, false otherwise
      * Precondition: length of array of labels is equal to (elements)
      */
     public boolean setNames(String[] names) {
@@ -70,7 +105,7 @@ public class PieChart extends Pane {
         return (successful);
     }
     
-    /** Paint a pie chart graphic into the pane.
+    /** Paint the pie chart graphic into the pane.
      * Precondition: arrays of labels and proportions are not null.
      */
     public void paintChart() {

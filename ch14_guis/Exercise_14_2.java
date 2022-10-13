@@ -1,7 +1,8 @@
-/** Program to display a window with a randomized tic tac toe board.
- * 
+/** 
+ * (Tic-tac-toe board) Write a program that displays a tic-tac-toe board, as shown 
+ * in Figure 14.43b. A cell may be X, O, or empty. What to display at each cell is 
+ * randomly decided. The X and O are images in the files x.gif and o.gif.
  * @author Scott M.
- * TicTacToeBoard.java
  */
 
 import javafx.application.Application;
@@ -13,14 +14,14 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 
-public class TicTacToeBoard extends Application {
+public class Exercise_14_2 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Create a window with randomized tic tac toe board.
-     * @params stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         GridPane pane = new GridPane();

@@ -1,6 +1,8 @@
-/** Program to display a checkerboard.
+/** 
+ * (Game: display a checkerboard) Write a program that displays a checkerboard 
+ * in which each white and black cell is a Rectangle with a fill color black or 
+ * white, as shown in Figure 14.44c. 
  * @author Scott M.
- * Checkerboard.java
  */
 
 import javafx.application.Application;
@@ -11,7 +13,7 @@ import javafx.stage.Stage;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.paint.Color;
 
-public class Checkerboard extends Application
+public class Exercise_14_6 extends Application
 {
     /** Main method to run program. */
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class Checkerboard extends Application
     }
     
     /** Display a checkerboard.
-     * @params main stage: Stage
+     * @params stage Stage: stage to set
      */
     public void start(Stage stage) {
         boolean fillRect = false;

@@ -1,6 +1,8 @@
-/** Program to display a cylinder.
+/**
+ * (Display a cylinder) Write a program that draws a cylinder, as shown in 
+ * Figure 14.45b. You can use the following method to set the dashed stroke for an arc:
+ * arc.getStrokeDashArray().addAll(6.0, 21.0);
  * @author Scott M.
- * Cylinder.java
  */
 
 import javafx.application.Application;
@@ -14,14 +16,14 @@ import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 
-public class Cylinder extends Application {
+public class Exercise_14_10 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Set up the window to display the fans. 
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         Pane cylinder = drawCylinder();
@@ -34,7 +36,7 @@ public class Cylinder extends Application {
     }
     
     /** Draw a cylinder.
-     * @return Cylinder drawing: Pane
+     * @return Pane: cylinder drawing
      */
     public static Pane drawCylinder() {
         Pane cylinder = new Pane();

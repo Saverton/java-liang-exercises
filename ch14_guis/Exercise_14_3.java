@@ -1,6 +1,9 @@
-/** Program to display three random playing cards.
+/**
+ * (Display three cards) Write a program that displays three cards randomly 
+ * selected from a deck of 52, as shown in Figure 14.43c. The card image files 
+ * are named 1.png, 2.png, …, 52.png and stored in the image/card directory. 
+ * All three cards are distinct and selected randomly.
  * @author Scott M.
- * ThreeCards.java
  */
 
 import javafx.application.Application;
@@ -14,14 +17,14 @@ import javafx.geometry.Pos;
 import java.io.File;
 import java.util.ArrayList;
 
-public class ThreeCards extends Application {
+public class Exercise_14_3 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Shuffle and display three cards.
-     * @params stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         ArrayList<Image> cards = getCards();
@@ -42,7 +45,7 @@ public class ThreeCards extends Application {
     }
     
     /** Return an arrayList of playing cards.
-     * @return Deck of Cards: ArrayList
+     * @return ArrayList: deck of cards
      */
     public static ArrayList<Image> getCards() {
         File directory = new File("cards");

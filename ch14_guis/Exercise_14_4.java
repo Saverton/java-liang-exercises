@@ -1,8 +1,8 @@
-/** Program to display 5 text boxes rotated 90 degrees in a horizontal row. Each text
- * box has randomized font, color, and opacity.
- * 
+/** 
+ * (Color and font) Write a program that displays five texts vertically, as shown in 
+ * Figure 14.44a. Set a random color and opacity for each text and set the font of 
+ * each text to Times Roman, bold, italic, and 22 pixels. 
  * @author Scott M.
- * TextTester.java
  */
 
 import javafx.application.Application;
@@ -17,9 +17,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 
-public class TextTester extends Application {
+public class Exercise_14_4 extends Application {
     /** Display 5 text boxes in a row.
-     * @params stage to be populated
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         HBox pane = new HBox();

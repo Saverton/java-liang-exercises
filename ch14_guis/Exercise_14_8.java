@@ -1,7 +1,7 @@
-/** Program to display a window containing all 52 playing cards in a standard deck
- * of cards.
+/** 
+ * (Display 54 cards) Expand Exercise 14.3 to display all 54 cards (including two 
+ * jokers), nine per row. The image files are jokers and are named 53.jpg and 54.jpg. 
  * @author Scott M.
- * DisplayCards.java
  */
 
 import javafx.application.Application;
@@ -14,14 +14,14 @@ import javafx.scene.image.Image;
 import java.util.ArrayList;
 import java.io.File;
 
-public class DisplayCards extends Application {
+public class Exercise_14_8 extends Application {
     /** Main method to run program. */
     public static void main(String[] args) {
         Application.launch(args);
     }
     
     /** Display 52 playing cards in a 13x4 array.
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     public void start(Stage stage) {
         ArrayList<Image> cards = new ArrayList<Image>();
@@ -44,7 +44,7 @@ public class DisplayCards extends Application {
     }
     
     /** Return an arrayList of playing cards.
-     * @return Deck of Cards: ArrayList
+     * @return ArrayList: deck of cards
      */
     public static ArrayList<Image> getCards() {
         File directory = new File("cards");

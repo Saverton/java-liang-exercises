@@ -1,7 +1,8 @@
-/** Program to display a window with the phrase "Welcome to Java" around a circle.
- * 
+/** 
+ * (Characters around circle) Write a program that displays a string Welcome to 
+ * Java around the circle, as shown in Figure 14.44b. Hint: You need to display each 
+ * character in the right location with appropriate rotation using a loop.
  * @author Scott M.
- * JavaCircle.java
  */
 
 import javafx.application.Application;
@@ -13,7 +14,7 @@ import javafx.scene.text.Text;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-public class JavaCircle extends Application
+public class Exercise_14_5 extends Application
 {
     /** Main method to run program. */
     public static void main(String[] args) {
@@ -21,15 +22,15 @@ public class JavaCircle extends Application
     }
     
     /** Display a window with "Welcome To Java" displayed in a circle.
-     * @params Stage
+     * @params stage Stage: stage to set
      */
     public void start(Stage stage) {
-        Pane pane = new Pane();
+        Pane pane;
         String message = "Welcome to Java ";
         
         //Format and populate the pane
+        pane = circleMessage(message, 150);
         pane.setPadding(new Insets(10, 20, 10, 20));
-        circleMessage(pane, message, 150);
         
         //Create a scene and place it in the primary Stage
         Scene scene = new Scene(pane);
@@ -39,9 +40,12 @@ public class JavaCircle extends Application
     }
     
     /** Place the letters into a circle on a pane.
-     * @params pane to populate: Pane, message to display: String
+     * @param message String: message to display in circle
+     * @param radius int: radius of circle in pixels
+     * @return Pane: pane containing circle message
      */
-    public void circleMessage(Pane pane, String message, int radius) {
+    public Pane circleMessage(String message, int radius) {
+        Pane pane = new Pane();
         double angleChange = (Math.PI * 2 / message.length());
         int fontSize = (int)(((2 * Math.PI) * radius) / message.length()) - 2;
         for (int i = 0; i < message.length(); i++) {
@@ -50,5 +54,6 @@ public class JavaCircle extends Application
             character.setFont(Font.font("Times New Roman", FontWeight.BOLD, fontSize));
             pane.getChildren().add(character);
         }
+        return pane;
     }
 }

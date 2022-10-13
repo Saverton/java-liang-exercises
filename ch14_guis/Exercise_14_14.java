@@ -1,7 +1,8 @@
 /**
- * Display a Rectanguloid that resizes with the window.
+ * (Display a rectanguloid) Write a program that displays a rectanguloid, as shown 
+ * in Figure  14.47a. The cube should grow and shrink as the window grows or 
+ * shrinks.
  * @author Scott M.
- * Rectanguloid.java
  */
 
 import javafx.application.Application;
@@ -13,7 +14,7 @@ import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 
 
-public class Rectanguloid extends Application
+public class Exercise_14_14 extends Application
 {
     /** Main method to run program. */
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Rectanguloid extends Application
     }
     
     /** Create and display a window with a resizable Rectanguloid.
-     * @param primary stage: Stage
+     * @param stage Stage: stage to set
      */
     @Override
     public void start(Stage stage) {
