@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class Lib {
+public class Library {
     /**
      * Return a 2d array of integers populated with user-entered data.
      * @param rows int: number of rows
