@@ -1,13 +1,19 @@
 /**
- * Program to play a 2 player game of TicTacToe.
- * 
+ * (Game: play a tic-tac-toe game) In a game of tic-tac-toe, two players take turns 
+ * marking an available cell in a 3 * 3 grid with their respective tokens (either 
+ * X or O). When one player has placed three tokens in a horizontal, vertical, or 
+ * diagonal row on the grid, the game is over and that player has won. A draw (no 
+ * winner) occurs when all the cells on the grid have been filled with tokens and 
+ * neither player has achieved a win. Create a program for playing tic-tac-toe.
+ * The program prompts two players to enter an X token and O token alternately. 
+ * Whenever a token is entered, the program redisplays the board on the 
+ * console and determines the status of the game (win, draw, or continue).
  * @author Scott M.
- * TicTacToe.java
  */
 
 import java.util.Scanner;
 
-public class TicTacToe {
+public class Exercise_8_9 {
     /**
      * Main method to run program.
      */
@@ -30,7 +36,7 @@ public class TicTacToe {
             do {
                 move = inputMove(turn);
             } while (board[move[0]][move[1]] != ' ');
-            placeTile(board, turn, move);
+            placeMark(board, turn, move);
             //At end of each move, check if there are any 3 in a row or if the board is full.
             if (checkWin(board, turn)) {
                 printBoard(board);
@@ -46,7 +52,8 @@ public class TicTacToe {
         }
     }
     /**
-     * Method to print a board.
+     * Print a Tic-Tac-Toe board given a 2d char array
+     * @param board char[][]: 3x3 array of ' 's, 'X's, and 'O's representing tic tac toe board
      */
     public static void printBoard(char[][] board) {
         for (int i = 0; i < 13; i++) {
@@ -65,29 +72,36 @@ public class TicTacToe {
         System.out.println();
     }
     /**
-     * Method to input a move for a player.
+     * Return an integer array with coordinates for a player's input, taken in from the console.
+     * @param turn int: turn number (used to determine which player inputs)
+     * @return int[]: coordinates to place X or O
      */
     public static int[] inputMove(int turn) {
         Scanner kb = new Scanner (System.in);
         int[] move = new int[2];
         
-        System.out.print("Enter a row (0, 1, or 2) for player ");
-        System.out.print((turn % 2 == 0) ? "X: " : "O: ");
+        System.out.print("Enter a row (0, 1, or 2) for player " + ((turn % 2 == 0) ? "X: " : "O: "));
         move[0] = kb.nextInt();
-        System.out.print("Enter a column (0, 1, or 2) for player ");
-        System.out.print((turn % 2 == 0) ? "X: " : "O: ");
+        System.out.print("Enter a column (0, 1, or 2) for player " + ((turn % 2 == 0) ? "X: " : "O: "));
         move[1] = kb.nextInt();
+        kb.close();
         
         return move;
     }
     /**
-     * Method to place a tile at the appropriate spot based on a move input.
+     * Insert a mark onto the tic tac toe board given the turn (to determine X or O) and move coordinates.
+     * @param board char[][]: tic tac toe board
+     * @param turn int: turn number
+     * @param coordinates int[]: coordinates to place mark
      */
-    public static void placeTile(char[][] board, int turn, int[] move) {
-        board[move[0]][move[1]] = (turn % 2 == 0) ? 'X' : 'O';
+    public static void placeMark(char[][] board, int turn, int[] coordinates) {
+        board[coordinates[0]][coordinates[1]] = (turn % 2 == 0) ? 'X' : 'O';
     }
     /**
-     * Method to check if tic tac toe is won
+     * Check if the tic tac toe board is won.
+     * @param board char[][]: tic tac toe board
+     * @param turn int: turn number
+     * @return boolean: true = game is won, false otherwise
      */
     public static boolean checkWin(char[][] board, int turn) {
         char winChar = (turn % 2 == 0) ? 'X' : 'O';
@@ -137,7 +151,9 @@ public class TicTacToe {
         return win;
     }
     /**
-     * Method to check if the board is full.
+     * Check if a tic tac toe board is full, rendering the game over as a tie.
+     * @param board char[][]: tic tac toe board
+     * @return boolean: true = board is full (tie), false otherwise
      */
     public static boolean checkFull(char[][] board) {
         boolean full = true;

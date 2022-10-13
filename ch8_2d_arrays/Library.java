@@ -7,9 +7,12 @@
 
 import java.util.Scanner;
 
-public class Functions {
+public class Lib {
     /**
-     * Method to create an int two-dimensional array with a scanner
+     * Return a 2d array of integers populated with user-entered data.
+     * @param rows int: number of rows
+     * @param columns int: number of columns
+     * @return int[][]: 2d array of integers
      */
     public static int[][] createInt2(int rows, int columns) {
         Scanner kb = new Scanner (System.in);
@@ -21,10 +24,14 @@ public class Functions {
                 array[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         return array;
     }
     /**
-     * Method to create an double two-dimensional array with a scanner
+     * Return a 2d array of doubles populated with user-entered data.
+     * @param rows int: number of rows
+     * @param columns int: number of columns
+     * @return double[][]: 2d array of doubles
      */
     public static double[][] createDouble2(int rows, int columns) {
         Scanner kb = new Scanner (System.in);
@@ -36,12 +43,16 @@ public class Functions {
                 array[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         return array;
     }
     /**
-     * Method to sum a row in an int array.
+     * Return the sum of a specific row in a 2d integer array.
+     * @param array int[][]: 2d integer array
+     * @param row int: row index to sum
+     * @return int: sum of row
      */
-    public static int sumRowInt(int[][] array, int row) {
+    public static int sumRow(int[][] array, int row) {
         int sum = 0;
         for (int i = 0; i < array[row].length; i++) {
             sum += array[row][i];
@@ -49,9 +60,12 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to sum a row in a double array.
+     * Return the sum of a specific row in a 2d double array.
+     * @param array double[][]: 2d double array
+     * @param row int: row index to sum
+     * @return double: sum of row
      */
-    public static double sumRowDouble(double[][] array, int row) {
+    public static double sumRow(double[][] array, int row) {
         double sum = 0;
         for (int i = 0; i < array[row].length; i++) {
             sum += array[row][i];
@@ -59,9 +73,12 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to sum a column in an int array.
+     * Return the sum of a specific column in a 2d integer array.
+     * @param array int[][]: 2d integer array
+     * @param column int: column index to sum
+     * @return int: sum of column
      */
-    public static int sumColumnInt(int[][] array, int column) {
+    public static int sumColumn(int[][] array, int column) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i][column];
@@ -69,9 +86,12 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to sum a column in a double array.
+     * Return the sum of a specific column in a 2d double array.
+     * @param array double[][]: 2d double array
+     * @param column int: column index to sum
+     * @return double: sum of column
      */
-    public static double sumColumnDouble(double[][] array, int column) {
+    public static double sumColumn(double[][] array, int column) {
         double sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i][column];
@@ -79,9 +99,11 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to sum the major diagonal in an int array.
+     * Return the sum of the major diagonal in a 2d integer array
+     * @param array int[][]: 2d integer array
+     * @return int: sum of major diagonal
      */
-    public static int sumMajorDiagInt(int[][] array) {
+    public static int sumMajorDiag(int[][] array) {
         int sum = 0;
         for (int i = 0; i < Math.min(array.length, array[0].length); i++) {
             sum += array[i][i];
@@ -89,9 +111,11 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to sum the major diagonal in a double array.
+     * Return the sum of the major diagonal in a 2d double array
+     * @param array double[][]: 2d double array
+     * @return double: sum of major diagonal
      */
-    public static double sumMajorDiagDouble(double[][] array) {
+    public static double sumMajorDiag(double[][] array) {
         double sum = 0;
         for (int i = 0; i < Math.min(array.length, array[0].length); i++) {
             sum += array[i][i];
@@ -99,9 +123,12 @@ public class Functions {
         return sum;
     }
     /**
-     * Method to find minimum of an int array.
+     * Return the index of the minimum value in an integer array.
+     * @param array int[]: array of integers
+     * @param startingIndex int: index to begin searching
+     * @return int: index of minimum value
      */
-    public static int minInt(int[] array, int startingIndex) {
+    public static int minIndex(int[] array, int startingIndex) {
         int min = startingIndex;
         for (int j = startingIndex; j < array.length; j++) {
             if (array[j] < array[min]) {
@@ -111,9 +138,12 @@ public class Functions {
         return min;
     }
     /**
-     * Method to find minimum index of a double array.
+     * Return the minimum value in an double array.
+     * @param array double[]: array of doubles
+     * @param startingIndex int: index to begin searching
+     * @return int: index of minimum value
      */
-    public static int minDouble(double[] array, int startingIndex) {
+    public static int minIndex(double[] array, int startingIndex) {
         int min = startingIndex;
         for (int j = startingIndex; j < array.length; j++) {
             if (array[j] < array[min]) {
@@ -123,11 +153,13 @@ public class Functions {
         return min;
     }
     /**
-     * Method to sort a single dimensional int array.
+     * Sort a single dimensional integer array.
+     * @param array int[]: array of integers
+     * @param startingIndex int: index to begin sorting from
      */
-    public static void sortIntArray(int[] array, int startingIndex) {
+    public static void sortArray(int[] array, int startingIndex) {
         for (int i = startingIndex; i < array.length; i++) {
-            int min = minInt(array, 0), temp;
+            int min = minIndex(array, 0), temp;
             
             temp = array[i];
             array[i] = array[min];
@@ -135,11 +167,13 @@ public class Functions {
         }
     }
     /**
-     * Method to sort a single dimensional double array.
+     * Sort a single dimensional double array.
+     * @param array double[]: array of doubles
+     * @param startingIndex int: index to begin sorting from
      */
-    public static void sortDoubleArray(double[] array, int startingIndex) {
+    public static void sortArray(double[] array, int startingIndex) {
         for (int i = startingIndex; i < array.length; i++) {
-            int min = minDouble(array, 0); 
+            int min = minIndex(array, 0); 
             double temp;
             
             temp = array[i];
@@ -148,7 +182,9 @@ public class Functions {
         }
     }
     /**
-     * Method to fill an array with a single element.
+     * Fill a 2d integer array with a single element
+     * @param array int[][]: 2d array of integers
+     * @param element int: element to fill array with
      */
     public static void fill(int[][] array, int element) {
         for (int i = 0; i < array.length; i++) {
@@ -158,7 +194,20 @@ public class Functions {
         }
     }
     /**
-     * Method to print an int multidimensional Array.
+     * Fill a 2d double array with a single element
+     * @param array double[][]: 2d array of doubles
+     * @param element double: element to fill array with
+     */
+    public static void fill(double[][] array, double element) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                array[i][j] = element;
+            }
+        }
+    }
+    /**
+     * Print a 2d integer array.
+     * @param array int[][]: 2d array of integers
      */
     public static void printArray(int[][] array) {
         for (int i = 0; i < array.length; i++) {
@@ -169,7 +218,8 @@ public class Functions {
         }
     }
     /**
-     * Method to print a double multidimensional Array.
+     * Print a 2d double array
+     * @param array double[][]: 2d double array
      */
     public static void printArray(double[][] array) {
         for (int i = 0; i < array.length; i++) {
@@ -180,7 +230,10 @@ public class Functions {
         }
     }
     /**
-     * Method to generate a multidimensional array of 0s and 1s.
+     * Return a 2d array with x columns and y rows that is populated randomly with 0s and 1s.
+     * @param rows int: number of rows
+     * @param columns int: number of columns
+     * @return int[][]: generated array of 0s and 1s
      */
     public static int[][] genArray(int rows, int columns) {
         int[][] array = new int[rows][columns];

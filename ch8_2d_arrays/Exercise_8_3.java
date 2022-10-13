@@ -1,11 +1,10 @@
 /**
- * Program to grade a multiple choice exam and display scores in ascending order.
- * 
+ * (Sort students on grades) Rewrite Listing 8.2, GradeExam.java, to display the 
+ * students in increasing order of the number of correct answers.
  * @author Scott M.
- * GradeExam.java
  */
 
-public class GradeExam {
+public class Exercise_8_3 {
     /**
      * Main method to run program.
      */
@@ -43,13 +42,14 @@ public class GradeExam {
         }
     }
     /**
-     * Method to sort a single dimensional array.
+     * Sort the first column of a 2d integer array.
+     * @param array int[][]: 2d integer array
      */
     public static void sort(int[][] array) {
         int min, temp;
         for (int i = 0; i < array[0].length; i++) {
             //find min
-            min = min(array[0], i);
+            min = minIndex(array[0], i);
             
             //switch minimum value to lowest index
             temp = array[0][i];
@@ -63,9 +63,12 @@ public class GradeExam {
         }
     }
     /**
-     * Method to find minimum of an array.
+     * Return the index of the minimum value in an integer array.
+     * @param array int[]: array of integers
+     * @param startingIndex int: index to begin searching
+     * @return int: index of minimum value
      */
-    public static int min(int[] array, int startingIndex) {
+    public static int minIndex(int[] array, int startingIndex) {
         int min = startingIndex;
         for (int j = startingIndex; j < array.length; j++) {
             if (array[j] < array[min]) {
