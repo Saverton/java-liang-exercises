@@ -1,14 +1,15 @@
 /**
- * Program to take a user entered array (size 3x3) and create a cloned version
- * with each row sorted in increasing numerical order.
- * 
+ * (Row sorting) Implement the following method to sort the rows in a two 
+ * dimensional array. A new array is returned and the original array is intact.
+ *      public static double[][] sortRows(double[][] m)
+ * Write a test program that prompts the user to enter a 3 * 3 matrix of double 
+ * values and displays a new row-sorted matrix.
  * @author Scott M.
- * RowSorting.java
  */
 
 import java.util.Scanner;
 
-public class RowSorting
+public class Exercise_8_26
 {
     /**
      * Main method to run program
@@ -27,6 +28,7 @@ public class RowSorting
                 array[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         sortedArray = sortRows(array);
         
@@ -42,7 +44,9 @@ public class RowSorting
     }
     
     /**
-     * Method to sort the rows of a 2d array.
+     * Return a 2d array that has each row sorted in sequential order.
+     * @param array double[][]: 2d double array
+     * @return double[][]: 2d double array with rows sorted
      */
     public static double[][] sortRows(double[][] array)
     {
@@ -69,7 +73,10 @@ public class RowSorting
     }
     
     /**
-     * Method to get the minimum index of an array from starting value j
+     * Return the minimum index of an array starting from a specific index.
+     * @param array double[]: array to search
+     * @param j int: starting index
+     * @return int: minumum index after starting index
      */
     public static int getMinIndex(double[] array, int j)
     {

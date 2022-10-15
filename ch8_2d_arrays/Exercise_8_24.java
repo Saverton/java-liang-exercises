@@ -1,14 +1,13 @@
 /**
- * Program to take input from the user to check if a solution to a 9x9
- * Sudoku puzzle is valid or not.
- * 
+ * (Check Sudoku solution) Listing 8.4 checks whether a solution is valid by checking 
+ * whether every number is valid in the board. Rewrite the program by checking 
+ * whether every row, every column, and every small box has the numbers 1 to 9. 
  * @author Scott M.
- * SudokuCheck.java
  */
 
 import java.util.Scanner;
 
-public class SudokuCheck
+public class Exercise_8_24
 {
     /**
      * Main method to run program.
@@ -26,6 +25,7 @@ public class SudokuCheck
                 sudoku[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
         if (isValid(sudoku))
         {
@@ -38,7 +38,9 @@ public class SudokuCheck
     }
     
     /**
-     * Method to check if a sudoku solution is valid
+     * Check if a sudoku solution is valid.
+     * @param sudoku int[][]: sudoku puzzle solution
+     * @return boolean: true = solution is valid, false otherwise
      */
     public static boolean isValid(int[][] sudoku)
     {
@@ -101,8 +103,9 @@ public class SudokuCheck
     }
     
     /**
-     * Method to check if a 9 digit int array has exclusively the numbers
-     * 1-9 contained within it.
+     * Check if a given array has a valid set of integers from 1 to 9.
+     * @param array int[]: array to check
+     * @return boolean: true = set has numbers 1-9 (is valid), false otherwise
      */
     public static boolean validSet(int[] array)
     {

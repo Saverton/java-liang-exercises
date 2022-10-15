@@ -1,17 +1,15 @@
 /**
- * Program to determine the central city, the city with the lowest total distance
- * to all other cities, of a list of X city coordinates input
- * by the user, then returns that city with its total distance to all other
- * cities.
- * 
+ * (Central city) Given a set of cities, the central city is the city that has the shortest 
+ * total distance to all other cities. Write a program that prompts the user to enter 
+ * the number of the cities and the locations of the cities (coordinates), and finds 
+ * the central city and its total distance to all other cities. 
  * @author Scott M.
- * CentralCity.java
  */
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class CentralCity
+public class Exercise_8_21
 {
     /**
      * Main method to run program.
@@ -37,6 +35,7 @@ public class CentralCity
                 cities[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         distances = getDistances(cities);
         centralCityIndex = minIndex(distances);
@@ -46,7 +45,9 @@ public class CentralCity
     }
     
     /**
-     * Method to get total distances to each coordinate point from one index of an array.
+     * Return a double array of total distances from each city to every other city.
+     * @param cities double[][]: array of cities
+     * @return double[]: list of total distances from each city to every other city.
      */
     public static double[] getDistances(double[][] cities)
     {
@@ -64,7 +65,9 @@ public class CentralCity
     }
     
     /**
-     * Method to return the minimum index of a 1d array
+     * Return the minimum index of a double array.
+     * @param array double[]: array to search
+     * @return int: index of minimum value
      */
     public static int minIndex(double[] array)
     {

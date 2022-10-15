@@ -1,14 +1,15 @@
 /**
- * Program to take a user defined 2d array and sort each column in ascending numerical
- * order.
- * 
+ * (Column sorting) Implement the following method to sort the columns in a two
+ * dimensional array. A new array is returned and the original array is intact.
+ *      public static double[][] sortColumns(double[][] m)
+ * Write a test program that prompts the user to enter a 3 * 3 matrix of double 
+ * values and displays a new column-sorted matrix.
  * @author Scott M.
- * ColumnSorting.java
  */
 
 import java.util.Scanner;
 
-public class ColumnSorting
+public class Exercise_8_27
 {
     /**
      * Main method to run program.
@@ -27,6 +28,7 @@ public class ColumnSorting
                 array[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         sortedArray = sortColumns(array);
         
@@ -42,8 +44,9 @@ public class ColumnSorting
     }
     
     /**
-     * Method to create a clone of an array and return a sorted version of that
-     * array.
+     * Return a nondestructively sorted array that has each column sorted in sequential order.
+     * @param array double[][]: array to sort
+     * @return double[][]: array with sorted columns
      */
     public static double[][] sortColumns(double[][] array)
     {

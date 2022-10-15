@@ -1,12 +1,11 @@
 /**
- * Program to generate a 6x6 2d array of 0s and 1s, then process each row and column and returns
- * whether or not that row or column has an even number of 1s.
- * 
+ * (Even number of 1s) Write a program that generates a 6-by-6 two-dimensional 
+ * matrix filled with 0s and 1s, displays the matrix, and checks if every row and 
+ * every column have an even number of 1s.
  * @author Scott M.
- * MatrixProcessing.java
  */
 
-public class MatrixProcessing
+public class Exercise_8_22
 {
     /**
      * Main method to run program.
@@ -48,7 +47,8 @@ public class MatrixProcessing
     }
     
     /**
-     * Method to generate a 6x6 array of 0s and 1s
+     * Return a new 6x6 matrix populated randomly with 0s and 1s
+     * @return int[][]: generated 2d array
      */
     public static int[][] genArray()
     {
@@ -66,7 +66,9 @@ public class MatrixProcessing
     }
     
     /**
-     * Method to return if an array has an even number of 1s
+     * Check if an array has an even number of 1s.
+     * @param array int[]: array to check
+     * @return boolean: true = array has even number of 1s, false otherwise
      */
     public static boolean checkArray(int[] array)
     {

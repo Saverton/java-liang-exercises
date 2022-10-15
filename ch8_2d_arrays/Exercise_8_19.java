@@ -1,14 +1,18 @@
 /**
- * Program to process an array to check if there are any rows, columns, or
- * diagonals with four consecutive equal entries.
- * 
+ * (Pattern recognition: four consecutive equal numbers) Write the following 
+ * method that tests whether a two-dimensional array has four consecutive numbers 
+ * of the same value, either horizontally, vertically, or diagonally. 
+ *      public static boolean isConsecutiveFour(int[][] values) 
+ * Write a test program that prompts the user to enter the number of rows and columns 
+ * of a two-dimensional array and then the values in the array and displays 
+ * true if the array contains four consecutive numbers with the same value.
+ * Otherwise, display false.
  * @author Scott M.
- * FourConsecutive.java
  */
 
 import java.util.Scanner;
 
-public class FourConsecutive {
+public class Exercise_8_19 {
     /**
      * Main method to run program.
      */
@@ -20,24 +24,31 @@ public class FourConsecutive {
         System.out.print("Enter the number of rows followed by the number of columns in the array: ");
         rows = kb.nextInt();
         columns = kb.nextInt();
-        array = new int[rows][columns];
+        kb.close();
         
-        generate(array);
-        Functions.printArray(array);
+        array = generate2dArray(rows, columns);
+        printArray(array);
         System.out.print((consecutiveFour(array)) ? "There is a consecutive four" : "There isn't a consecutive four");
     }
     /**
-     * Method to fill a 2 dimensional array with random ints from 0-9.
+     * Return a 2d array with a given number of rows and columns populated with random integers from 0-9
+     * @param rows int: number of rows
+     * @param columns int: number of columns
+     * @return int[][]: generated array
      */
-    public static void generate(int[][] array) {
+    public static int[][] generate2dArray(int rows, int columns) {
+        int[][] array = new int[rows][columns];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int)(Math.random() * 10);
             }
         }
+        return array;
     }
     /**
-     * Method to check for four consecutive numbers in an array.
+     * Check if a 2d array of integers has any set of consecutive four numbers vertically, horizontally, or diagonally.
+     * @param array int[][]: array to check
+     * @return boolean: true = consecutive four is found, false otherwise
      */
     public static boolean consecutiveFour(int[][] array) {
         if (array.length < 4 || array[0].length < 4) {
@@ -113,5 +124,17 @@ public class FourConsecutive {
             }
         }
         return false;
+    }
+    /**
+     * Print a 2d integer array.
+     * @param array int[][]: 2d array of integers
+     */
+    public static void printArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }

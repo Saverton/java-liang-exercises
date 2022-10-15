@@ -1,14 +1,16 @@
 /**
- * Program to intake 2 3x3 arrays from the user and determine if they hold identical contents,
- * regardless of the order of said contents.
- * 
+ * (Identical arrays) The two-dimensional arrays m1 and m2 are identical if they 
+ * have the same contents. Write a method that returns true if m1 and m2 are identical, 
+ * using the following header:
+ *      public static boolean equals(int[][] m1, int[][] m2)
+ * Write a test program that prompts the user to enter two 3 * 3 arrays of integers 
+ * and displays whether the two are identical.
  * @author Scott M.
- * Identical.java
  */
 
 import java.util.Scanner;
 
-public class Identical
+public class Exercise_8_29
 {
     /**
      * Main method to run program.
@@ -36,6 +38,7 @@ public class Identical
                 m2[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
         if (equals(m1, m2))
         {
@@ -48,8 +51,10 @@ public class Identical
     }
     
     /**
-     * Method to evaluate whether or not 2 arrays are identical in contents, regardless
-     * of the order of said contents.
+     * Check whether two arrays are identical, but don't necessarily have each element in the same exact order.
+     * @param m1 int[][]: first array
+     * @param m2 int[][]: second array
+     * @return boolean: true = arrays are identical, false otherwise
      */
     public static boolean equals(int[][] m1, int[][] m2)
     {
@@ -75,8 +80,10 @@ public class Identical
     }
     
     /**
-     * Method to return true or false if an array contains a specific key, then removes
-     * that key from the array.
+     * Check if a 2d array contains a specific key, and remove it when found.
+     * @param array int[][]: 2d array to search
+     * @param key int: key to search for
+     * @return boolean: true = key was found and removed, false otherwise
      */
     public static boolean search(int[][] array, int key)
     {

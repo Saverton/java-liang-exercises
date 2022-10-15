@@ -1,14 +1,20 @@
 /**
- * Program to solve a system of 2 linear equations in the form ax + by = c, where the user
- * enters a 2d array for the coefficients of each equation.
- * 
+ * (Algebra: solve linear equations) Write a method that solves the following 
+ * 2 * 2 system of linear equations:
+ * a00x + a01y = b0          b0a11 - b1a01               b1a00 - b0a10
+ * a10x + a11y = b1     x = -----------------       y = -----------------
+ *                           a00a11 - a01a10             a00a11 - a01a10
+ * The method header is
+ *      public static double[] linearEquation(double[][] a, double[] b)
+ * The method returns null if a00a11 - a01a10 is 0. Write a test program that 
+ * prompts the user to enter a00, a01, a10, a11, b0, and b1, and displays the result. If 
+ * a00a11 - a01a10 is 0, report that “The equation has no solution.” 
  * @author Scott M.
- * LinearEquations.java
  */
 
 import java.util.Scanner;
 
-public class LinearEquations
+public class Exercise_8_30
 {
     /**
      * Main method to run program.
@@ -33,7 +39,8 @@ public class LinearEquations
         {
             b[i] = kb.nextDouble();
         }
-        
+        kb.close();
+
         solution = linearEquation(a, b);
         
         if (solution == null)
@@ -47,7 +54,10 @@ public class LinearEquations
     }
     
     /**
-     * Method to solve a linear equation using Crammer's rule
+     * Return an array of roots for a given linear equation, solved using Cramer's rule.
+     * @param a double[][]: array containing a, b, c, d (left sides)
+     * @param b double[][]: array containing e, f (right sides)
+     * @return double[]: array of roots of equation, null if no real roots
      */
     public static double[] linearEquation(double[][] a, double[] b)
     {

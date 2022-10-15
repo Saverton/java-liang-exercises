@@ -1,13 +1,19 @@
 /**
- * Program to sort a 2d array primarily by row, but then by column.
- * 
+ * (Sort two-dimensional array) Write a method to sort a two-dimensional array 
+ * using the following header:
+ *      public static void sort(int m[][])
+ *  The method performs a primary sort on rows and a secondary sort on columns. 
+ * For example, the following array 
+ *      {{4, 2},{1, 7},{4, 5},{1, 2},{1, 1},{4, 1}}
+ * will be sorted to 
+ *      {{1, 1},{1, 2},{1, 7},{4, 1},{4, 2},{4, 5}}.
  * @author Scott M.
  * Sort2dArray.java
  */
 
 import java.util.Scanner;
 
-public class Sort2dArray {
+public class Exercise_8_16 {
     /**
      * Main method to run program.
      */
@@ -21,8 +27,9 @@ public class Sort2dArray {
                 array[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
-        sortRowSubsets(sortRows(array)) ;
+        Sort2dArray(array);
         
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -32,7 +39,10 @@ public class Sort2dArray {
         }
     }
     /**
-     * Method to sort arrays in an array based on subsequent entries.
+     * Return a 2d integer array sorted such that any rows that share first indexes will be sorted by subsequent indexes.
+     * @param array int[][]: array to sort similar rows
+     * @return int[][]: sorted array
+     * Precondition: array must already be sorted by first indexes of sub-arrays
      */
     public static int[][] sortRowSubsets(int[][] array) {
         for (int i = 1; i < array.length; i++) {
@@ -51,7 +61,9 @@ public class Sort2dArray {
         return array;
     }
     /**
-     * Method to sort rows of a 2d array by first index.
+     * Return a 2d integer array sorted by the first index of each row.
+     * @param array int[][]: array to sort
+     * @return int[][]: sorted array
      */
     public static int[][] sortRows(int[][] array) {
         for (int i = 1; i < array.length; i++) {
@@ -65,5 +77,13 @@ public class Sort2dArray {
             }
         }
         return array;
+    }
+    /**
+     * Sort a 2d array by indexes of each sub-array without sorting the sub-arrays.
+     * @param array int[][]: array to sort
+     * @return int[][]: sorted array
+     */
+    public static int[][] Sort2dArray(int[][] array) {
+        return sortRowSubsets(sortRows(array));
     }
 }

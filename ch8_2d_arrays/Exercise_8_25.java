@@ -1,14 +1,16 @@
 /**
- * Program to determine if a user entered 3x3 matrix is classified as a "Markov Matrix"
- * in which each element is positive and the sum of each column is equal to 1.
- * 
+ * (Markov matrix) An n * n matrix is called a positive Markov matrix if each 
+ * element is positive and the sum of the elements in each column is 1. Write the 
+ * following method to check whether a matrix is a Markov matrix. 
+ *      public static boolean isMarkovMatrix(double[][] m)
+ * Write a test program that prompts the user to enter a 3 * 3 matrix of double 
+ * values and tests whether it is a Markov matrix.
  * @author Scott M.
- * MarkovMatrix.java
  */
 
 import java.util.Scanner;
 
-public class MarkovMatrix
+public class Exercise_8_25
 {
     /**
      * Main method to run program.
@@ -25,6 +27,7 @@ public class MarkovMatrix
             {
                 matrix[i][j] = kb.nextDouble();
             }
+            kb.close();
         }
         
         if (isMarkovMatrix(matrix))
@@ -38,7 +41,11 @@ public class MarkovMatrix
     }
     
     /**
-     * Method to determine if a matrix is a Markov matrix
+     * Check if a given 2d array is considered a markov matrix by the rules:
+     *  1. each element is positive.
+     *  2. the sum of the elements in each column is 1.
+     * @param matrix double[][]: 2d array or matrix
+     * @return boolean: true = matrix is markov matrix, false otherwise
      */
     public static boolean isMarkovMatrix(double[][] matrix)
     {

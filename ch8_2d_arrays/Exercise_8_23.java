@@ -1,15 +1,17 @@
 /**
- * Program to intake a matrix of 0s and 1s from the user, and assume that the matrix
- * follows a rule that all rows and columns must have an even number of 1s. The program
- * will return the first cell in the matrix that disobeys this rule.
- * 
+ * (Game: find the flipped cell) Suppose you are given a 6-by-6 matrix filled with 
+ * 0s and 1s. All rows and all columns have an even number of 1s. Let the user flip 
+ * one cell (i.e., flip from 1 to 0 or from 0 to 1) and write a program to find which 
+ * cell was flipped. Your program should prompt the user to enter a 6-by-6 array 
+ * with 0s and 1s and find the first row r and first column c where the even number 
+ * of the 1s property is violated (i.e., the number of 1s is not even). The flipped cell 
+ * is at (r, c). 
  * @author Scott M.
- * FlippedCell.java
  */
 
 import java.util.Scanner;
 
-public class FlippedCell
+public class Exercise_8_23
 {
     /**
      * Main method to run program.
@@ -29,6 +31,7 @@ public class FlippedCell
                 matrix[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
         for (int i = 0; !errorFound && i < matrix.length; i++)
         {
@@ -62,7 +65,9 @@ public class FlippedCell
     }
     
     /**
-     * Method to return if a row has an even number of 1s
+     * Check if an array has an even number of 1s.
+     * @param array int[]: array to check
+     * @return boolean: true = array has even number of 1s, false otherwise
      */
     public static boolean checkArray(int[] array)
     {

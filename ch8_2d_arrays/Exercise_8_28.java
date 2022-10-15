@@ -1,15 +1,16 @@
 /**
- * Program to intake 2 3x3 arrays from the user, then determine if these
- * two arrays are strictly identical, meaning each corresponding element 
- * is the same in both arrays.
- * 
+ * (Strictly identical arrays) The two-dimensional arrays m1 and m2 are strictly
+ * identical if their corresponding elements are equal. Write a method that returns 
+ * true if m1 and m2 are strictly identical, using the following header:
+ *      public static boolean equals(int[][] m1, int[][] m2)
+ * Write a test program that prompts the user to enter two 3 * 3 arrays of 
+ * integers and displays whether the two are strictly identical. 
  * @author Scott M.
- * StrictlyIdentical.java
  */
 
 import java.util.Scanner;
 
-public class StrictlyIdentical
+public class Exercise_8_28
 {
     /**
      * Main method to run program.
@@ -28,6 +29,7 @@ public class StrictlyIdentical
                 m1[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
         System.out.print("Enter list2: ");
         for (int i = 0; i < m2.length; i++)
@@ -49,7 +51,10 @@ public class StrictlyIdentical
     }
     
     /**
-     * Method to evaluate whether or not two 2d arrays are identical.
+     * Check if two 2d arrays are strictly identical.
+     * @param m1 int[][]: first 2d array
+     * @param m2 int[][]: second 2d array
+     * @return boolean: true = arrays are strictly identical, false otherwise
      */
     public static boolean equals(int[][] m1, int[][] m2)
     {

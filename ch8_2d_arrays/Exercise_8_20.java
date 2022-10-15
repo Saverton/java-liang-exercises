@@ -1,13 +1,13 @@
 /**
- * Program to host a heated game of CONNECT FOUR!
- * 
+ * (Game: connect four) Connect four is a two-player board game in which the 
+ * players alternately drop colored disks into a seven-column, six-row vertically 
+ * suspended grid, as shown below.
  * @author Scott M.
- * ConnectFour.java
  */
 
 import java.util.Scanner;
 
-public class ConnectFour {
+public class Exercise_8_20 {
     /**
      * Main method to run program.
      */
@@ -29,11 +29,14 @@ public class ConnectFour {
             inputChip(board, column, turn);
             turn++;
         }
+        kb.close();
         printBoard(board);
         System.out.print("Player " + checkWin(board) + " wins");
     }
     /**
-     * Method to check if a player has won connect 4
+     * Check if a player has won connect four by checking for any sequence of consecutive four numbers (vertically, horizontally, or diagonally) corresponging ot a player's number.
+     * @param array int[][]: connect4 board
+     * @return int: winning player's number OR 0 if no player wins
      */
     public static int checkWin(int[][] array) {
         if (array.length < 4 || array[0].length < 4) {
@@ -127,7 +130,9 @@ public class ConnectFour {
         return 0;
     }
     /**
-     * Method to check if the board is full.
+     * Check if a connect4 board is entirely full.
+     * @param array int[][]: connect4 board
+     * @return boolean: true = board is full, false otherwise
      */
     public static boolean boardFull(int[][] array) {
         for (int i = 0; i < array.length; i++) {
@@ -140,7 +145,8 @@ public class ConnectFour {
         return true;
     }
     /**
-     * Method to print the board for connect 4
+     * Print a connect 4 board.
+     * @param board int[][]: connect4 board
      */
     public static void printBoard(int[][] board) {
         for (int i = 1; i <= board[0].length; i++) {
@@ -159,7 +165,10 @@ public class ConnectFour {
         System.out.println('-');
     }
     /**
-     * Method to input a chip in a user defined column
+     * Add a "chip" to selected column on the connect 4 board.
+     * @param board int[][]: connect 4 board
+     * @param column int: column to add chip in
+     * @param turn int: game turn, used to determine which player dropped
      */
     public static void inputChip(int[][] board, int column, int turn) {
         for (int i = board.length - 1; i >= 0; i--) {
@@ -170,7 +179,10 @@ public class ConnectFour {
         }
     }
     /**
-     * Method to check if a column input is valid
+     * Check if a column input is valid on the connect 4 board
+     * @param board int[][]: connect4 board
+     * @param column int: column selected
+     * @return boolean: true = selection is valid, false otherwise
      */
     public static boolean validEntry(int[][] board, int column) {
         if (column < 0 || column >= board[0].length) {
