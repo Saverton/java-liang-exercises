@@ -1,17 +1,15 @@
 /**
- * The program will first intake four coordinate points from the user that define an
- * abstract quadrilateral shape. The program will divide this quadrilateral into
- * 4 distinct triangles using the intersection of opposite lines, then find the areas of
- * these 4 triangles and display them in increasing order.
- * 
+ * (Geometry: polygon subareas) A convex 4-vertex polygon is divided into four 
+ * triangles, as shown in Figure 8.9.
+ * Write a program that prompts the user to enter the coordinates of four vertices and 
+ * displays the areas of the four triangles in increasing order. 
  * @author Scott M.
- * PolygonSubareas.java
  */
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class PolygonSubareas
+public class Exercise_8_33
 {
     /**
      * Main method to run program.
@@ -32,6 +30,7 @@ public class PolygonSubareas
                 points[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         //sets up points array for intersection points method
         for (int i = 0; i < points[1].length; i++)
@@ -81,7 +80,9 @@ public class PolygonSubareas
     }
     
     /**
-     * Method to find and return the intersection point of a set of 4 points
+     * Return the intersection point of two lines defined by four points. 
+     * @param p double[][]: array of points (line1=(x1,y1)->(x2,y2);line2=(x3,y3)->(x4,y4))
+     * @return double[]: intersecting point
      */
     public static double[] getIntersectingPoint(double[][] p)
     {
@@ -100,7 +101,10 @@ public class PolygonSubareas
     }
     
     /**
-     * Method to solve a linear equation using Crammer's rule
+     * Return a set of roots of a linear equation given the variables in Crammer's rule.
+     * @param a double[][]: left side of Crammer's rule vars (a, b, c, d)
+     * @param b double[]: right side of Crammer's rule vars (e, f)
+     * @return double[]: roots of linear equation
      */
     public static double[] linearEquation(double[][] a, double[] b)
     {
@@ -118,13 +122,15 @@ public class PolygonSubareas
     }
     
     /**
-     * Method to get the area of a triangle given its vertex points
+     * Return the area of a triangle given it's vertices.
+     * @param p double[][]: array of vertices
+     * @return double: area of triangle
      */
     public static double getTriangleArea(double[][] p)
     {
         double area, s, product;
         double[] sides = new double[3];
-        if (sameLine(p))
+        if (onSameLine(p))
         {
             area = 0;
         }
@@ -146,16 +152,16 @@ public class PolygonSubareas
     }
     
     /**
-     * Method to find if a certain amount of points are on the same line.
+     * Check if an array of points are all on the same line in a 2d coordinate grid
+     * @param points double[][]: array of points {{p1x, p1y}, {p2x, p2y}, ...}
+     * @return boolean: true = the points are all on the same line, false otherwise
+     * Precondition: there must be at least 2 points in the points array
      */
-    public static boolean sameLine(double[][] points) 
-    {
+    public static boolean onSameLine(double[][] points) {
         double slope = (points[1][1] - points[0][1]) / (points[1][0] - points[0][0]);
         
-        for (int i = 2; i < points.length; i++) 
-        {
-            if (slope != (points[i][1] - points[0][1]) / (points[i][0] - points[0][0])) 
-            {
+        for (int i = 2; i < points.length; i++) {
+            if (Math.abs(slope - ((points[i][1] - points[0][1]) / (points[i][0] - points[0][0]))) > 0.001) {
                 return false;
             }
         }
@@ -163,7 +169,9 @@ public class PolygonSubareas
     }
     
     /**
-     * Method to perform a simple selection sort.
+     * Return a sorted array using a selection sort.
+     * @param a double[]: array to sort
+     * @return double[]: sorted array
      */
     public static double[] selectionSort(double[] a)
     {

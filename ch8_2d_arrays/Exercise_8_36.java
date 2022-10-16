@@ -1,14 +1,15 @@
 /**
- * Program to have the user enter a size for a 2d array representing a latin square.
- * The program will determine whether or not the square is a latin square.
- * 
+ * (Latin square) A Latin square is an n-by-n array filled with n different Latin letters, 
+ * each occurring exactly once in each row and once in each column. Write a
+ * program that prompts the user to enter the number n and the array of characters, 
+ * as shown in the sample output, and checks if the input array is a Latin square. 
+ * The characters are the first n characters starting from A.
  * @author Scott M.
- * LatinSquare.java
  */
 
 import java.util.Scanner;
 
-public class LatinSquare
+public class Exercise_8_36
 {
     /**
      * Main method to run program.
@@ -36,6 +37,7 @@ public class LatinSquare
                 }
             }
         }
+        kb.close();
         
         if (isLatinSquare(square))
         {
@@ -48,7 +50,9 @@ public class LatinSquare
     }
     
     /**
-     * Method to determine if a 2d array of letters is a latin square
+     * Check if a 2d array of characters is a latin square.
+     * @param s char[][]: 2d array of characters
+     * @return boolean: true = character array is a latin square, false otherwise
      */
     public static boolean isLatinSquare(char[][] s)
     {
@@ -77,7 +81,9 @@ public class LatinSquare
     }
     
     /**
-     * Method to determine if an array of chars has unique chars
+     * Check if an array of characters is a row in a latin square.
+     * @param r char[]: array of chars
+     * @return boolean: true = char array is a latin square, false otherwise
      */
     public static boolean isLatinRow(char[] r)
     {
@@ -98,7 +104,10 @@ public class LatinSquare
     }
     
     /**
-     * Method to check if an array contains a certain key
+     * Check if an array contains a certain key.
+     * @param t char[]: array of characters
+     * @param k char: key char to look for
+     * @return boolean: true = array contains char, false otherwise
      */
     public static boolean contains(char[] t, char k)
     {

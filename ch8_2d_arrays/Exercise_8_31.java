@@ -1,14 +1,19 @@
 /**
- * Program to find the intersection point of 2 lines defined by a pair of user
- * defined coordinates.
- * 
+ * (Geometry: intersecting point) Write a method that returns the intersecting point of 
+ * two lines. The intersecting point of the two lines can be found by using the formula 
+ * shown in Programming Exercise 3.25. Assume that (x1, y1) and (x2, y2) are the 
+ * two points on line 1 and (x3, y3) and (x4, y4) are on line 2. The method header is
+ *      public static double[] getIntersectingPoint(double[][] points)
+ * The points are stored in a 4-by-2 two-dimensional array points with 
+ * (points[0][0], points[0][1]) for (x1, y1). The method returns the intersecting 
+ * point or null if the two lines are parallel. Write a program that prompts 
+ * the user to enter four points and displays the intersecting point. 
  * @author Scott M.
- * IntersectingPoint.java
  */
 
 import java.util.Scanner;
 
-public class IntersectingPoint
+public class Exercise_8_31
 {
     /**
      * Main method to run program.
@@ -27,6 +32,7 @@ public class IntersectingPoint
                 points[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         intersection = getIntersectingPoint(points);
         
@@ -41,7 +47,9 @@ public class IntersectingPoint
     }
     
     /**
-     * Method to find and return the intersection point of a set of 4 points
+     * Return the intersection point of two lines defined by four points. 
+     * @param p double[][]: array of points (line1=(x1,y1)->(x2,y2);line2=(x3,y3)->(x4,y4))
+     * @return double[]: intersecting point
      */
     public static double[] getIntersectingPoint(double[][] p)
     {
@@ -60,7 +68,10 @@ public class IntersectingPoint
     }
     
     /**
-     * Method to solve a linear equation using Crammer's rule
+     * Return a set of roots of a linear equation given the variables in Crammer's rule.
+     * @param a double[][]: left side of Crammer's rule vars (a, b, c, d)
+     * @param b double[]: right side of Crammer's rule vars (e, f)
+     * @return double[]: roots of linear equation
      */
     public static double[] linearEquation(double[][] a, double[] b)
     {

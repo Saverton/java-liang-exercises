@@ -1,14 +1,21 @@
 /**
- * Program to have the user enter a size and fill an array row by row with 0s and 1s.
- * The program will then find the largest block of 1s in the array.
- * 
+ * (Largest block) Given a square matrix with the elements 0 or 1, write a program 
+ * to find a maximum square submatrix whose elements are all 1s. Your program 
+ * should prompt the user to enter the number of rows in the matrix. The program 
+ * then displays the location of the first element in the maximum square submatrix 
+ * and the number of the rows in the submatrix.
+ * Your program should implement and use the following method to find the maximum 
+ * square submatrix:
+ *      public static int[] findLargestBlock(int[][] m)
+ * The return value is an array that consists of three values. The first two values are 
+ * the row and column indices for the first element in the submatrix, and the third 
+ * value is the number of the rows in the submatrix.
  * @author Scott M.
- * LargestBlock.java
  */
 
 import java.util.Scanner;
 
-public class LargestBlock
+public class Exercise_8_35
 {
     /**
      * Main method to run program.
@@ -32,6 +39,7 @@ public class LargestBlock
                 matrix[i][j] = kb.nextInt();
             }
         }
+        kb.close();
         
         largestBlock = findLargestBlock(matrix);
         
@@ -39,7 +47,9 @@ public class LargestBlock
     }
     
     /**
-     * Method to find the largest square submatrix in a larger matrix of 0s and 1s
+     * Return the largest square submatrix in a 2d array of 0s and 1s
+     * @param m int[][]: array of 0s and 1s
+     * @return int[]: largest square submatrix, indexes: (0=row index,1=column index,2=size of submatrix)
      */
     public static int[] findLargestBlock(int[][] m)
     {
@@ -66,7 +76,12 @@ public class LargestBlock
     }
     
     /**
-     * Method to determine if a submatrix has all 1s
+     * Check if a submatrix contains entirely 1s
+     * @param m int[][]: matrix of 0s and 1s
+     * @param y int: row index of submatrix
+     * @param x int: column index of submatrix
+     * @param k int: size of submatrix
+     * @return boolean: true = submatrix has all 1s, false otherwise
      */
     public static boolean allOnes(int[][] m, int y, int x, int k)
     {

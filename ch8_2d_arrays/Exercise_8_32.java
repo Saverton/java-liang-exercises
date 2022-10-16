@@ -1,14 +1,19 @@
 /**
- * Program to find the area of a triangle given it's 3 vertex points.
- * 
+ * (Geometry: area of a triangle) Write a method that returns the area of a triangle 
+ * using the following header:
+ * public static double getTriangleArea(double[][] points)
+ * The points are stored in a 3-by-2 two-dimensional array points with points[0]
+ * [0] and points[0][1] for (x1, y1). The triangle area can be computed using the 
+ * formula in Programming Exercise 2.19. The method returns 0 if the three points 
+ * are on the same line. Write a program that prompts the user to enter three points of 
+ * a triangle and displays the triangle's area.
  * @author Scott M.
- * TriangleArea.java
  */
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class TriangleArea
+public class Exercise_8_32
 {
     /**
      * Main method to run program.
@@ -28,6 +33,7 @@ public class TriangleArea
                 points[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         area = getTriangleArea(points);
         
@@ -42,13 +48,15 @@ public class TriangleArea
     }
     
     /**
-     * Method to get the area of a triangle given its vertex points
+     * Return the area of a triangle given it's vertices.
+     * @param p double[][]: array of vertices
+     * @return double: area of triangle
      */
     public static double getTriangleArea(double[][] p)
     {
         double area, s, product;
         double[] sides = new double[3];
-        if (sameLine(p))
+        if (onSameLine(p))
         {
             area = 0;
         }
@@ -68,18 +76,17 @@ public class TriangleArea
         }
         return area;
     }
-    
     /**
-     * Method to find if a certain amount of points are on the same line.
+     * Check if an array of points are all on the same line in a 2d coordinate grid
+     * @param points double[][]: array of points {{p1x, p1y}, {p2x, p2y}, ...}
+     * @return boolean: true = the points are all on the same line, false otherwise
+     * Precondition: there must be at least 2 points in the points array
      */
-    public static boolean sameLine(double[][] points) 
-    {
+    public static boolean onSameLine(double[][] points) {
         double slope = (points[1][1] - points[0][1]) / (points[1][0] - points[0][0]);
         
-        for (int i = 2; i < points.length; i++) 
-        {
-            if (slope != (points[i][1] - points[0][1]) / (points[i][0] - points[0][0])) 
-            {
+        for (int i = 2; i < points.length; i++) {
+            if (Math.abs(slope - ((points[i][1] - points[0][1]) / (points[i][0] - points[0][0]))) > 0.001) {
                 return false;
             }
         }

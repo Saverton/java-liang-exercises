@@ -1,14 +1,17 @@
 /**
- * Program to find the rightmost lowest point from a list of user
- * entered points.
- * 
+ * (Geometry: rightmost lowest point) In computational geometry, often you need 
+ * to find the rightmost lowest point in a set of points. Write the following method 
+ * that returns the rightmost lowest point in a set of points.
+ * public static double[]
+ * getRightmostLowestPoint(double[][] points)
+ * Write a test program that prompts the user to enter the coordinates of six points 
+ * and displays the rightmost lowest point. 
  * @author Scott M.
- * RightmostLowest.java
  */
 
 import java.util.Scanner;
 
-public class RightmostLowest
+public class Exercise_8_34
 {
     /**
      * Main method to run program.
@@ -27,6 +30,7 @@ public class RightmostLowest
                 points[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         rl = getRightmostLowestPoint(points);
         
@@ -34,7 +38,9 @@ public class RightmostLowest
     }
     
     /**
-     * Method to find the rightmost lowest point in a 2d array of points.
+     * Return the point that is the furthest right and lowest point in an array of points.
+     * @param p double[][]: array of points
+     * @return double[]: rightmost lowest point
      */
     public static double[] getRightmostLowestPoint(double[][] p)
     {
