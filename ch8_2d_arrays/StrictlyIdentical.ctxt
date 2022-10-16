@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=StrictlyIdentical
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-comment2.params=m1\ m2
-comment2.target=boolean\ equals(int[][],\ int[][])
-comment2.text=\r\n\ Method\ to\ evaluate\ whether\ or\ not\ two\ 2d\ arrays\ are\ identical.\r\n
-numComments=3

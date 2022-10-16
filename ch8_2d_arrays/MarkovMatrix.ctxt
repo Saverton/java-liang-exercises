@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=MarkovMatrix
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-comment2.params=matrix
-comment2.target=boolean\ isMarkovMatrix(double[][])
-comment2.text=\r\n\ Method\ to\ determine\ if\ a\ matrix\ is\ a\ Markov\ matrix\r\n
-numComments=3
