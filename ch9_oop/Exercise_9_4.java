@@ -1,14 +1,13 @@
 /**
- * Program to test the Random class by generating the first 50 ints using the
- * seed "1000"
- * 
+ * (Use the Random class) Write a program that creates a Random object with seed 
+ * 1000 and displays the first 50 random integers between 0 and 100 using the 
+ * nextInt(100) method
  * @author Scott M.
- * RandomClass.java
  */
 
 import java.util.Random;
 
-public class RandomClass
+public class Exercise_9_4
 {
     /**
      * Main method to run program.
