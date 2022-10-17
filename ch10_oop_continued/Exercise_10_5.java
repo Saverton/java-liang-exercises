@@ -1,14 +1,15 @@
 /**
- * Program to intake an integer value from the user, create a stack object containing
- * all of it's prime factors, then display that stack by popping it.
- * 
+ * (Displaying the prime factors) Write a program that prompts the user to enter 
+ * a positive integer and displays all its smallest factors in decreasing order. For 
+ * example, if the integer is 120, the smallest factors are displayed as 5, 3, 2, 2,
+ * 2. Use the StackOfIntegers class to store the factors (e.g., 2, 2, 2, 3, 5) and 
+ * retrieve and display them in reverse order.
  * @author Scott M.
- * PrimeFactors.java
  */
 
 import java.util.Scanner;
 
-public class PrimeFactors
+public class Exercise_10_5
 {
     /**
      * Main method to run program.
@@ -21,6 +22,7 @@ public class PrimeFactors
         
         System.out.print("Enter an integer: ");
         value = kb.nextInt();
+        kb.close();
 
         for (int i = 2; value > 1; i++)
         {
