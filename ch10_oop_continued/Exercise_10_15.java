@@ -1,13 +1,18 @@
 /**
- * Program to find the bounding rectangle of a 2D array of 5 coordinate points.
- * 
+ * (Geometry: the bounding rectangle) A bounding rectangle is the minimum rectangle 
+ * that encloses a set of points in a two-dimensional plane, as shown in 
+ * Figure 10.24d. Write a method that returns a bounding rectangle for a set of 
+ * points in a two-dimensional plane, as follows:
+ *      public static MyRectangle2D getRectangle(double[][] points)
+ * The Rectangle2D class is defined in Programming Exercise 10.13. Write a 
+ * test program that prompts the user to enter five points and displays the bounding 
+ * rectangle’s center, width, and height.
  * @author Scott M.
- * BoundingRectangle.java
  */
 
 import java.util.Scanner;
 
-public class BoundingRectangle
+public class Exercise_10_15
 {
     /**
      * Main method to run program.
@@ -26,6 +31,7 @@ public class BoundingRectangle
                 points[i][j] = kb.nextDouble();
             }
         }
+        kb.close();
         
         boundingRect = new Rectangle2D(getCenterPoint(points, 0), getCenterPoint(points, 1), getColumnMax(points, 0) - getColumnMin(points, 0), 
                                        getColumnMax(points, 1) - getColumnMin(points, 1));
@@ -34,10 +40,10 @@ public class BoundingRectangle
     }
     
     /**
-     * Method to get the max value of a column in a 2D array
-     * 
-     * @params (the 2D array to be examined) (the column that will be processed)
-     * @return (max of the column)
+     * Return the maximum element of a column in a 2d double array.
+     * @param arr double[][]: 2d array
+     * @param col int: column index
+     * @return double: max element
      */
     public static double getColumnMax(double[][] arr, int col)
     {
@@ -50,10 +56,9 @@ public class BoundingRectangle
     }
     
     /**
-     * Method to get the min value of a column in a 2D array
-     * 
-     * @params (the 2D array to be examined) (the column that will be processed)
-     * @return (min of the column)
+     * Return the minimum element of a column in a 2d double array.
+     * @param arr double[][]: 2d array
+     * @return col int: column index
      */
     public static double getColumnMin(double[][] arr, int col)
     {
@@ -66,11 +71,10 @@ public class BoundingRectangle
     }
     
     /**
-     * Method to find the center value (average of max and min) for a certain column
-     * in a 2D double array.
-     * 
-     * @params (the 2D array to be examined) (the column that will be processed)
-     * @return (the center point between the max and min of the column)
+     * Return the average of the maximum and minimum of a column (center point) in a 2d array.
+     * @param arr double[][]: 2d array
+     * @param col int: column index
+     * @return double: center point
      */
     public static double getCenterPoint(double[][] arr, int col)
     {
@@ -83,10 +87,9 @@ public class BoundingRectangle
     }
     
     /**
-     * Method to return the max value of an array
-     * 
-     * @params (the array to be examined)
-     * @return (the max value)
+     * Return the maximum element of a double array.
+     * @param arr double[]: array
+     * @return double: maximum element
      */
     public static double getMax(double[] arr)
     {
@@ -102,10 +105,9 @@ public class BoundingRectangle
     }
     
     /**
-     * Method to return the min value of an array
-     * 
-     * @params (the array to be examined)
-     * @return (the min value)
+     * Return the minimum element of a double array.
+     * @param arr double[]: array
+     * @return double: minimum element
      */
     public static double getMin(double[] arr)
     {

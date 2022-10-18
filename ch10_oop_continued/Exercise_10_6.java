@@ -1,12 +1,12 @@
 /**
- * Program to create an Integer Stack that stores all prime numbers less than 120,
- * then displays the stack (in decreasing order);
- * 
+ * (Displaying the prime numbers) Write a program that displays all the prime 
+ * numbers less than 120 in decreasing order. Use the StackOfIntegers class 
+ * to store the prime numbers (e.g., 2, 3, 5, ...) and retrieve and display them in 
+ * reverse order.
  * @author Scott M.
- * PrimeNums.java
  */
 
-public class PrimeNums
+public class Exercise_10_6
 {
     /**
      * Main method to run program.
