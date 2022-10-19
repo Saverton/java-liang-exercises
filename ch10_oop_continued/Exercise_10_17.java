@@ -1,13 +1,14 @@
 /**
- * Program to find and display the first 10 square numbers greater than Long.MAX.
- * 
+ * (Square numbers) Find the first ten square numbers that are greater than 
+ * Long.MAX_VALUE. A square number is a number in the form of n2. 
+ * For example, 4, 9, and 16 are square numbers. Find an efficient approach to run your 
+ * program fast.
  * @author Scott M.
- * BigSquareInts.java
  */
 
 import java.math.BigInteger;
 
-public class BigSquareInts
+public class Exercise_10_17
 {
     /**
      * Main method to run program.
@@ -16,7 +17,6 @@ public class BigSquareInts
     {
         BigInteger[] ints = new BigInteger[10];
         BigInteger val = new BigInteger("" + (long)Math.sqrt(Long.MAX_VALUE));
-        int square = (int)Math.floor(Math.sqrt(Long.MAX_VALUE));
         
         for (int i = 0; i < ints.length; i++)
         {

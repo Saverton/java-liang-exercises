@@ -1,13 +1,18 @@
 /**
- * Program to find and display all Mersenne primes (2^p - 1) for values of p from 2 - 100.
- * 
+ * (Mersenne prime) A prime number is called a Mersenne prime if it can be written 
+ * in the form 2p - 1 for some positive integer p. Write a program that finds 
+ * all Mersenne primes with p … 100 and displays the output as shown below. 
+ *          p   2^p – 1
+ *          2   3
+ *          3   7
+ *          5   31
+ *          ...
  * @author Scott M.
- * BigMersennePrimes.java
  */
 
 import java.math.BigInteger;
 
-public class BigMersennePrimes
+public class Exercise_10_19
 {
     /**
      * Main method to run program.

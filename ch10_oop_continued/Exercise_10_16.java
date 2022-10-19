@@ -1,14 +1,12 @@
 /**
- * Program to find and display the first 10 integers with 50 digits that are divisible by
- * either 2 or 3.
- * 
+ * (Divisible by 2 or 3) Find the first ten numbers with 50 decimal digits that are 
+ * divisible by 2 or 3.
  * @author Scott M.
- * BigIntsDivisible.java
  */
 
 import java.math.BigInteger;
 
-public class BigIntsDivisible
+public class Exercise_10_16
 {
     /**
      * Main method to run program.
