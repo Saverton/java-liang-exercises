@@ -1,13 +1,19 @@
 /**
- * Program to calculate "e" to higher accuracy using the BigDecimal class.
- * 
+ * (Approximate e) Programming Exercise 5.26 approximates e using the following 
+ * series:
+ *           1      1      1      1            1
+ * e = 1 + ---- + ---- + ---- + ---- + ... + ----
+ *          1!     2!     3!     4!           i!
+ * In order to get better precision, use BigDecimal with 25 digits of precision in 
+ * the computation. Write a program that displays the e value for i = 100, 200, . . ., 
+ * and 1000.
  * @author Scott M.
- * BigE.java
  */
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
-public class BigE
+public class Exercise_10_20
 {
     /**
      * Main method to run program.
@@ -25,7 +31,7 @@ public class BigE
                 {
                     factorial = factorial.multiply(new BigDecimal("" + k));
                 }
-                e = e.add(BigDecimal.ONE.divide(factorial, 25, BigDecimal.ROUND_HALF_UP));
+                e = e.add(BigDecimal.ONE.divide(factorial, 25, RoundingMode.HALF_UP));
             }
             System.out.println(i + "\t" + e);
         }

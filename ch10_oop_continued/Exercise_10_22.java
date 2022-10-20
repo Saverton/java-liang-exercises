@@ -1,18 +1,28 @@
 /**
- * My version of the Java String class, implemented all by me! (wow)
- * 
+ * (Implement the String class) The String class is provided in the Java library. 
+ * Provide your own implementation for the following methods (name the new 
+ * class MyString1):
+ *      public MyString1(char[] chars);
+ *      public char charAt(int index);
+ *      public int length();
+ *      public MyString1 substring(int begin, int end);
+ *      public MyString1 toLowerCase();
+ *      public boolean equals(MyString1 s);
+ *      public static MyString1 valueOf(int i);
  * @author Scott M.
- * MyString1.java
  */
 
-public class MyString1
+public class Exercise_10_22 {
+    // no test method
+}
+
+class MyString1
 {
     private char[] myString;
     
     /**
-     * Constructor to make an array of chars to represent a string.
-     * 
-     * @params (array of chars to craft a string from)
+     * Construct a new MyString object given an array of chars.
+     * @param chars char[]: char array
      */
     public MyString1(char[] chars)
     {
@@ -21,10 +31,9 @@ public class MyString1
     }
     
     /**
-     * Method to return the char at a specific index of the string.
-     * 
-     * @params (the index of the string to be searched)
-     * @return (the char at that index, '' if no index found)
+     * Return the character at a specific index of the MyString.
+     * @param index int: index of String
+     * @return char: char at index, '' if index out of bounds
      */
     public char charAt(int index)
     {
@@ -39,9 +48,8 @@ public class MyString1
     }
     
     /**
-     * Method to return the length of the MyString1 object.
-     * 
-     * @return (the length of the String)
+     * Return the length of the MyString.
+     * @return int: length of MyString
      */
     public int length()
     {
@@ -49,11 +57,10 @@ public class MyString1
     }
     
     /**
-     * Method to return a substring of a MyString1 object in the form
-     * of another MyString1.
-     * 
-     * @params (the start index) (the end index)
-     * @return (the substring)
+     * Return a substring MyString from a start index (inclusive) to an end index (non-inclusive).
+     * @param start int: start index
+     * @param end int: end index
+     * @return MyString1: substring
      */
     public MyString1 substring(int start, int end)
     {
@@ -73,9 +80,8 @@ public class MyString1
     }
     
     /**
-     * Method to convert the entire String to lowercase.
-     * 
-     * @return (the MyString1 object in all lowercase)
+     * Return an all lowercase version of this MyString.
+     * @return MyString1: lowercase MyString
      */
     public MyString1 toLowerCase()
     {
@@ -92,11 +98,9 @@ public class MyString1
     }
     
     /**
-     * Method to check if this MyString1 object equals another MyString1.
-     * 
-     * @params (the other MyString1 object)
-     * @return (true: this MyString1 and MyString1 s are equal, false: this MyString1 and Mystring1
-     *          s aren't equal)
+     * Check if this MyString1 is equal to another MyString1 object.
+     * @param s MyString1: other String
+     * @return boolean: true = two MyString1s are equal, false otherwise
      */
     public boolean equals(MyString1 s)
     {
@@ -119,10 +123,9 @@ public class MyString1
     }
     
     /**
-     * Method to return a MyString1 object representing an int param.
-     * 
-     * @params (the int value to be Stringed)
-     * @return (the MyString1 object)
+     * Return a MyString1 Object given an integer value.
+     * @param i int: integer
+     * @return MyString1: integer string
      */
     public static MyString1 valueOf(int i)
     {
@@ -150,9 +153,8 @@ public class MyString1
     }
     
     /**
-     * Method to return a MyString1 object as an actual String.
-     * 
-     * @return (String form of char[])
+     * Return a normal Java String equivalent of this MyString1 object.
+     * @return String: String equivalent to MyString1
      */
     public String toString()
     {

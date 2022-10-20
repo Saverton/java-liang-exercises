@@ -1,14 +1,12 @@
 /**
- * Program to find and display the first 10 integers greater than Long.MAX_VALUE that are divisible by
- * either 5 or 6.
- * 
+ * (Divisible by 5 or 6) Find the first ten numbers greater than Long.MAX_VALUE
+ * that are divisible by 5 or 6.
  * @author Scott M.
- * BigIntsDivisible2.java
  */
 
 import java.math.BigInteger;
 
-public class BigIntsDivisible2
+public class Exercise_10_21
 {
     /**
      * Main method to run program.

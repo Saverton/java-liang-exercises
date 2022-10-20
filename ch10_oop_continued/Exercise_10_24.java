@@ -1,20 +1,21 @@
 /**
- * My own implementation of the Character class. Has methods to
- * check and set letter case, get int value, check for digit/letter,
- * and convert between a 1 digit int and the chars for numbers.
- * 
+ * (Implement the Character class) The Character class is provided in the Java 
+ * library. Provide your own implementation for this class. Name the new class 
+ * MyCharacter.
  * @author Scott M.
- * MyCharacter.java
  */
 
-public class MyCharacter
+public class Exercise_10_24 {
+    // no test method
+}
+
+class MyCharacter
 {
     private char c;
     
     /**
-     * Constructor to create a char object.
-     * 
-     * @params (the char to set to this object)
+     * Construct a new MyCharacter given a primitive char.
+     * @param c char: character
      */
     public MyCharacter(char c)
     {
@@ -22,7 +23,7 @@ public class MyCharacter
     }
     
     /**
-     * Constructor to create a default char object.
+     * Construct a default char object equivalent to ''.
      */
     public MyCharacter()
     {
@@ -30,9 +31,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to return the char.
-     * 
-     * @return (the character this object holds)
+     * Return the char represented by this MyCharacter object.
+     * @return char: character
      */
     public char getChar()
     {
@@ -40,9 +40,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to set the char this object references.
-     * 
-     * @params (the new char)
+     * Set the character that this MyCharacter object holds.
+     * @param c char: character
      */
     public void setChar(char c)
     {
@@ -50,9 +49,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to get the int value of this char.
-     * 
-     * @return (int value for this char)
+     * Return the ASCII code of this char.
+     * @return int: ASCII code
      */
     public int getInt()
     {
@@ -60,9 +58,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to check if the char is uppercase.
-     * 
-     * @return (true: is uppercase, false: is not uppercase)
+     * Check if Character is uppercase.
+     * @return boolean: true = character is uppercase, false otherwise.
      */
     public boolean isUpperCase()
     {
@@ -70,9 +67,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to check if the char is lowercase.
-     * 
-     * @return (true: is lowercase, false: is not lowercase)
+     * Check if Character is lowercase.
+     * @return boolean: true = character is lowercase, false otherwise.
      */
     public boolean isLowerCase()
     {
@@ -80,9 +76,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to check if the char is a digit.
-     * 
-     * @return (true: is digit, false: is not digit)
+     * Check if Character is a Digit.
+     * @return boolean: true = character is digit, false otherwise
      */
     public boolean isDigit()
     {
@@ -90,9 +85,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to check if the char is a letter.
-     * 
-     * @return (true: is letter, false: is not letter)
+     * Check if Character is a letter.
+     * @return boolean: true = character is letter, false otherwise
      */
     public boolean isLetter()
     {
@@ -100,7 +94,7 @@ public class MyCharacter
     }
     
     /**
-     * Method to convert this char to uppercase.
+     * Convert Character to uppercase.
      */
     public void toUpperCase()
     {
@@ -111,7 +105,7 @@ public class MyCharacter
     }
     
     /**
-     * Method to convert this char to lowercase.
+     * Convert this character to lowercase.
      */
     public void toLowerCase()
     {
@@ -122,10 +116,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to return an int from 0 to 9 representing this char
-     * if it represents a digit, else, it returns -1.
-     * 
-     * @return (integer version of char)
+     * Return the integer that this character represents. if it is not a digit, return -1.
+     * @return int: integer
      */
     public int toInt()
     {
@@ -140,10 +132,8 @@ public class MyCharacter
     }
     
     /**
-     * Method to set this MyCharacter object to a char representing an
-     * integer from 0 to that is entered. else, no change.
-     * 
-     * @params (the integer to be made into a char)
+     * Set char to digit equivalent to single digit integer.
+     * @param i int: single digit integer
      */
     public void setValueOf(int i)
     {
