@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=DisplayBrackets
-comment0.text=\r\n\ Program\ to\ display\ tax\ brackets\ from\ 2001\ and\ 2009\ using\ the\ Tax\ class.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ DisplayBrackets.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-comment2.params=taxYear\ start\ finish\ year
-comment2.target=void\ displayBracket(Tax,\ int,\ int,\ java.lang.String)
-numComments=3

@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=QueueTest
-comment0.text=\r\n\ Program\ to\ test\ the\ Queue\ class\ by\ creating\ a\ Queue\ of\ length\ 20\ with\ the\ summation\r\n\ of\ that\ number.\ Then,\ dequeue\ each\ element\ and\ display.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ QueueTest.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-numComments=2

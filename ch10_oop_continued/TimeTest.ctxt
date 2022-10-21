@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=TimeTest
-comment0.text=\r\n\ Program\ to\ test\ the\ Time\ Class.\ The\ test\ program\ creates\ 3\ time\ objects,\ using\ each\r\n\ of\ the\ three\ possible\ constructors,\ and\ displays\ their\ values.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ TimeTest.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Main\ method\ to\ run\ program.\r\n
-comment2.params=t
-comment2.target=void\ printTime(Time)
-numComments=3
