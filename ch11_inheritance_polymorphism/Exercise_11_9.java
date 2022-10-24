@@ -1,15 +1,15 @@
 /**
- * Program to recreate the 0-1 matrix largest rows and columns program from chapter 8, but
- * this time using ArrayLists to store the indexes of the largest rows and columns.
- * 
+ * (Largest rows and columns) Write a program that randomly fills in 0s and 1s
+ * into an n-by-n matrix, prints the matrix, and finds the rows and columns with the 
+ * most 1s. (Hint: Use two ArrayLists to store the row and column indices with 
+ * the most 1s.) 
  * @author Scott M.
- * Matrix1.java
  */
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Matrix1
+public class Exercise_11_9
 {
     /**
      * Main method to run program.
@@ -18,12 +18,13 @@ public class Matrix1
     {
         Scanner kb = new Scanner(System.in);
         int[][] matrix;
-        int n, rowSize = 0, colSize = 0;
+        int rowSize = 0, colSize = 0;
         ArrayList<Integer> row = new ArrayList<>();
         ArrayList<Integer> col = new ArrayList<>();
         
         System.out.print("Enter the array size n: ");
         matrix = genMatrix(kb.nextInt());
+        kb.close();
         
         System.out.println("The random array is");
         
@@ -85,10 +86,9 @@ public class Matrix1
     }
     
     /**
-     * Method to generate a random matrix of size n.
-     * 
-     * @params (array side dimension)
-     * @return (random array of 0s and 1s)
+     * Return a randomly generated binary matrix of size n by n.
+     * @param n int: array size
+     * @return int[][]: binary matrix
      */
     public static int[][] genMatrix(int n)
     {
