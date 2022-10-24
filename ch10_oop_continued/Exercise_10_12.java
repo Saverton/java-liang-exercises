@@ -200,3 +200,362 @@ class Triangle2D
         return overlaps;
     }
 }
+
+class Line
+{
+    private Point p1, p2;
+    
+    /**
+     * Construct a new Line with a start and end point.
+     * @param p1 Point: start point
+     * @param p2 Point: end point
+     */
+    public Line(Point p1, Point p2)
+    {
+        this.p1 = p1;
+        this.p2 = p2;
+    }
+    
+    /**
+     * Return the start point.
+     * @return Point: start point
+     */
+    public Point getP1()
+    {
+        return p1;
+    }
+    
+    /**
+     * Return the end point
+     * @return Point: end point
+     */
+    public Point getP2()
+    {
+        return p2;
+    }
+    
+    /**
+     * Return the length of the line segment from point 1 to point 2.
+     * @return double: length of line segment
+     */
+    public double getLength()
+    {
+        return Math.sqrt(Math.pow(this.p2.getX() - this.p1.getX(), 2) + Math.pow(this.p2.getY() - this.p1.getY(), 2));
+    }
+    
+    /**
+     * Return the slope of the line.
+     * @return double: slope
+     */
+    public double getSlope()
+    {
+        double slope;
+        if (this.p1.getX() == this.p2.getX())
+        {
+            slope = 0;
+        }
+        else
+        {
+            slope = (this.p2.getY() - this.p1.getY()) / (this.p2.getX() - this.p1.getX());
+        }
+        return slope;
+    }
+    
+    /**
+     * Check if a specific point is on the line.
+     * @param p3 Point: 3rd point
+     * @return boolean: true = point is on the line, false otherwise
+     */
+    public boolean hasPoint(Point p3)
+    {
+        boolean hasPoint;
+        if (this.getSlope() == 0)
+        {
+            if ((this.p1.getX() == p3.getX() && this.p2.getX() == p3.getX()) || (this.p1.getY() == p3.getY() && this.p2.getY() == p3.getY()))
+            {
+                hasPoint = true;
+            }
+            else
+            {
+                hasPoint = false;
+            }
+        }
+        else
+        {
+            hasPoint = Math.round(this.getSlope() * 10000) == Math.round(new Line(this.p1, p3).getSlope() * 10000);
+        }
+        return hasPoint;
+    }
+    
+    /**
+     * Check if a point is on the line segment between point 1 and point 2.
+     * @param p3 Point: 3rd point
+     * @return boolean: true = point is on line segment, false otherwise
+     */
+    public boolean hasPointOnSegment(Point p3)
+    {
+        boolean hasPoint = true;
+        if (!this.hasPoint(p3))
+        {
+            hasPoint = false;
+        }
+        if (hasPoint && (p3.getX() < Math.min(this.p1.getX(), this.p2.getX()) || p3.getX() > Math.max(this.p1.getX(), this.p2.getX())))
+        {
+            hasPoint = false;
+        }
+        if (hasPoint && (p3.getY() < Math.min(this.p1.getY(), this.p2.getY()) || p3.getY() > Math.max(this.p1.getY(), this.p2.getY())))
+        {
+            hasPoint = false;
+        }
+        return hasPoint;
+    }
+    
+    /**
+     * Check if a point is on the Ray extending from point 1 infinitely in the direction of point 2.
+     * @param p3 Point: 3rd point
+     * @return boolean: true = point is on ray, false otherwise
+     */
+    public boolean hasPointOnRay(Point p3)
+    {
+        boolean hasPoint = true;
+        double xRel, yRel;
+        xRel = this.p1.getX() - this.p2.getX();
+        yRel = this.p1.getY() - this.p2.getY();
+        if (!this.hasPoint(p3))
+        {
+            hasPoint = false;
+        }
+        if (xRel < 0 && yRel < 0)
+        {
+            if (p3.getX() < this.p1.getX() || p3.getY() < this.p1.getY())
+            {
+                hasPoint = false;
+            }
+        }
+        else if (xRel > 0 && yRel < 0)
+        {
+            if (p3.getX() > this.p1.getX() || p3.getY() < this.p1.getY())
+            {
+                hasPoint = false;
+            }
+        }
+        else if (xRel > 0 && yRel > 0)
+        {
+            if (p3.getX() > this.p1.getX() || p3.getY() > this.p1.getY())
+            {
+                hasPoint = false;
+            }
+        }
+        else if (xRel < 0 && yRel > 0)
+        {
+            if (p3.getX() < this.p1.getX() || p3.getY() > this.p1.getY())
+            {
+                hasPoint = false;
+            }
+        }
+        return hasPoint;
+    }
+    
+    /**
+     * Return the point at which this line intersects with another, null if lines don't intersect.
+     * @param l2 Line: second line
+     * @return Point: intersection, null if doesn't exist
+     */
+    public Point getIntersection(Line l2)
+    {
+        double[] inputs = new double[6];
+        inputs[0] = this.p1.getY() - this.p2.getY();
+        inputs[1] = -1 * (this.p1.getX() - this.p2.getX());
+        inputs[2] = l2.p1.getY() - l2.p2.getY();
+        inputs[3] = -1 * (l2.p1.getX() - l2.p2.getX());
+        inputs[4] = (this.p1.getY() - this.p2.getY()) * this.p1.getX() - (this.p1.getX() - this.p2.getX()) * this.p1.getY();
+        inputs[5] = (l2.p1.getY() - l2.p2.getY()) * l2.p1.getX() - (l2.p1.getX() - l2.p2.getX()) * l2.p1.getY();
+        LinearEquation intersection = new LinearEquation(inputs);
+        if (!intersection.isSolvable())
+        {
+            return null;
+        }
+        else
+        {
+            return new Point(intersection.getX(), intersection.getY());
+        }
+    }
+    
+    /**
+     * Check if this Line segment intersects with another Line Segment. 
+     * @param l2 Line: second line
+     * @return boolean: true = line segments intersect, false otherwise
+     */
+    public boolean segmentIntersects(Line l2)
+    {
+        boolean intersects = true;
+        Point ip = getIntersection(l2);
+        if (ip == null)
+        {
+            intersects = false;
+        }
+        if (intersects && (!this.hasPointOnSegment(ip) || !l2.hasPointOnSegment(ip)))
+        {
+            intersects = false;
+        }
+        return intersects;
+    }
+    
+    /**
+     * Check if this ray extending from point 1 infinitely towards point 2 intersects with a ray created in the same way from another Line object.
+     * @param l2 Line: second line
+     * @return boolean: true = the rays intersect, false otherwise
+     */
+    public boolean rayIntersects(Line l2)
+    {
+        boolean intersects = true;
+        Point ip = getIntersection(l2);
+        if (ip == null)
+        {
+            intersects = false;
+        }
+        if (intersects && (!this.hasPointOnRay(ip) || !l2.hasPointOnSegment(ip)))
+        {
+            intersects = false;
+        }
+        return intersects;
+    }
+}
+
+class LinearEquation
+{
+    /**
+     * Object that defines a Linear Equation object
+     */
+    private double a, b, c, d, e, f;
+    
+    /**
+     * Construct a new Linear equation with a, b, c, d, e, and f in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @param vars double...: list of 6 doubles
+     */
+    public LinearEquation(double... vars)
+    {
+        this.a = vars[0];
+        this.b = vars[1];
+        this.c = vars[2];
+        this.d = vars[3];
+        this.e = vars[4];
+        this.f = vars[5];
+    }
+    
+    /**
+     * Return variable "a" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "a"
+     */
+    public double getA()
+    {
+        return this.a;
+    }
+    
+    /**
+     * Return variable "b" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "b"
+     */
+    public double getB()
+    {
+        return this.b;
+    }
+    
+    /**
+     * Return variable "c" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "c"
+     */
+    public double getC()
+    {
+        return this.c;
+    }
+    
+    /**
+     * Return variable "d" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "d"
+     */
+    public double getD()
+    {
+        return this.d;
+    }
+    
+    /**
+     * Return variable "e" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "e"
+     */
+    public double getE()
+    {
+        return this.e;
+    }
+    
+    /**
+     * Return variable "f" in:
+     *      ax + by = e
+     *      cx + dy = f
+     * @return double: variable "f"
+     */
+    public double getF()
+    {
+        return this.f;
+    }
+    
+    /**
+     * Check if this pair of linear equations are solvable.
+     * @return boolean: true = equations are solvable, false otherwise
+     */
+    public boolean isSolvable()
+    {
+        boolean solvable = true;
+        if (this.a * this.d - this.b * this.c == 0)
+        {
+            solvable = false;
+        }
+        return solvable;
+    }
+    
+    /**
+     * Return "x" where:
+     *           ed - bf
+     *      x = ---------
+     *           ad - bc
+     * @return double: x
+     */
+    public double getX()
+    {
+        double x = 0;
+        if (this.isSolvable())
+        {
+            x = (this.e * this.d - this.b * this.f) / (this.a * this.d - this.b * this.c);
+        }
+        return x;
+    }
+    
+    /**
+     * Return "y" where:
+     *           af - ec
+     *      y = ---------
+     *           ad - bc
+     * @return double: y
+     */
+    public double getY()
+    {
+        double y = 0;
+        if (this.isSolvable())
+        {
+            y = (this.a * this.f - this.e * this.c) / (this.a * this.d - this.b * this.c);
+        }
+        return y;
+    }
+}

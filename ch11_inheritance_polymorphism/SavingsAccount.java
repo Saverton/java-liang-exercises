@@ -9,9 +9,9 @@
 public class SavingsAccount extends Account
 {
     /**
-     * Constructer to call the Account constructor.
-     * 
-     * @params (Accound ID, initial balance)
+     * Construct a new Savings account with a specific ID and initial balance.
+     * @param id int: account id
+     * @param initialBalance double: account balance
      */
     public SavingsAccount(int id, double initialBalance)
     {
@@ -19,10 +19,8 @@ public class SavingsAccount extends Account
     }
     
     /**
-     * Overrided withdraw method that does not withdraw funds beyond the account's
-     * contents.
-     * 
-     * @params (amount to withdraw)
+     * Withdraw a specific amount from the account, print an insufficient funds message if the withdrawal exceeds the balance.
+     * @param withdrawal double: withdrawal amount
      */
     @Override
     public void withdraw(double withdrawal)

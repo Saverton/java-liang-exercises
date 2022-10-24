@@ -9,9 +9,9 @@
 public class CheckingAccount extends Account
 {
     /**
-     * Constructer to call the Account constructor.
-     * 
-     * @params (Accound ID, initial balance)
+     * Construct a Checking Account with a specific account id and initial balance
+     * @param id int: account id
+     * @params initialBalance double: account balance
      */
     public CheckingAccount(int id, double initialBalance)
     {
@@ -19,10 +19,8 @@ public class CheckingAccount extends Account
     }
     
     /**
-     * Overridden withdrawal method that allows withdrawal up to a 10% balance
-     * overdraft.
-     * 
-     * @params (Amount withdrawn)
+     * Withdraw a specific amount from the Checking Account, if the withdrawal exceeds the balance try overdrafting and print a message with the status of the overdraft.
+     * @param withdrawal double: withdrawal amount
      */
     @Override
     public void withdraw(double withdrawal)
