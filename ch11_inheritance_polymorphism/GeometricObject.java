@@ -15,11 +15,9 @@ public class GeometricObject
     private Date dateCreated;
     
     /**
-     * Constructor to create a Geometric object with a specified
-     * color and fill status.
-     * 
-     * @params (color of the geometric object) (true: object is filled, false:
-     *          object is outlined)
+     * Construct a Geometric Object with a specific color and whether or not it is filled.
+     * @param color String: color of Geometric Object
+     * @param filled boolean: true = Geometric object is drawn filled, false otherwise
      */
     public GeometricObject(String color, boolean filled)
     {
@@ -29,8 +27,7 @@ public class GeometricObject
     }
     
     /**
-     * Overloaded no-arg constructor to create a default geometric object
-     * that is white and not filled.
+     * Construct a default Geometric object colored white and not filled in.
      */
     public GeometricObject()
     {
@@ -38,9 +35,8 @@ public class GeometricObject
     }
     
     /**
-     * Method to get the color of this geometric object.
-     * 
-     * @return (the color of the geometric object)
+     * Return the color of this Geometric Object.
+     * @return String: color
      */
     public String getColor()
     {
@@ -48,9 +44,8 @@ public class GeometricObject
     }
     
     /**
-     * Method to set the color of this geometric object.
-     * 
-     * @params (the new color of this geometric object)
+     * Set the color of this Geometric Object.
+     * @param color String: color
      */
     public void setColor(String color)
     {
@@ -58,9 +53,8 @@ public class GeometricObject
     }
     
     /**
-     * Method to check if the geometric object is filled.
-     * 
-     * @return (true: the object is filled, false: the object is outlined)
+     * Check if the Geometric Object is filled.
+     * @return boolean: true = Geometric Object is filled, false otherwise
      */
     public boolean isFilled()
     {
@@ -68,9 +62,8 @@ public class GeometricObject
     }
     
     /**
-     * Method to set whether or not the geometric object is filled.
-     * 
-     * @params (true: set to filled, false: set to outlined)
+     * Set the fill status of this Geometric Object.
+     * @param filled boolean: true = Geometric object is filled, false otherwise
      */
     public void setFilled(boolean filled)
     {
@@ -78,10 +71,8 @@ public class GeometricObject
     }
     
     /**
-     * Method to get the date this object was created in the form of a 
-     * java.util.Date object.
-     * 
-     * @return (The date this object was created)
+     * Return the date on which this Geometric Object was created.
+     * @return java.util.Date: date created
      */
     public Date getDateCreated()
     {
@@ -89,11 +80,11 @@ public class GeometricObject
     }
     
     /**
-     * Method to override the default toString() method. Returns a string that
-     * shows the color, whether or not the object is filled, and the date the
-     * object was created.
-     * 
-     * @return (String representing the object)
+     * Return a String with information about this Geometric Object formatted as:
+     *      Color:  <color>
+     *      Filled: <fill status>
+     *      <Date created>
+     * @return String: Geometric Object info
      */
     public String toString()
     {

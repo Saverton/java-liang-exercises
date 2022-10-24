@@ -10,13 +10,14 @@ public class Staff extends Employee
     private String title;
     
     /**
-     * Constructor to create a staff member with a specified name, address, phone
-     * number, email, office number, salary, and title, hired on today's
-     * date.
-     * 
-     * @params (staff name, staff address, staff phone number, staff email,
-     *          staff office number, staff salary, staff office hours, staff
-     *          rank)
+     * Construct a new Staff member with a specific name, address, phone number, email, office number, salary, and title.
+     * @param name String: full name
+     * @param address String: home address
+     * @param phoneNumber String: phone number
+     * @param email String: email address
+     * @param officeNumber int: office number
+     * @param salary int: annual salary
+     * @param title String: employee's title
      */
     public Staff(String name, String address, String phoneNumber, String email,
                    int officeNumber, int salary, String title)
@@ -26,9 +27,9 @@ public class Staff extends Employee
     }
     
     /**
-     * Overridden toString() method to return a String representing a Staff member.
-     * 
-     * @return (String representing Staff Member)
+     * Return a String with info about the Staff member formatted as:
+     *      Staff: <full name>
+     * @return String: staff info
      */
     @Override
     public String toString()

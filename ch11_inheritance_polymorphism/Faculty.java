@@ -11,13 +11,15 @@ public class Faculty extends Employee
     private int rank;
     
     /**
-     * Constructor to create a Faculty member with a specified name, address, phone
-     * number, email, office number, salary, office hours, and rank, hired on today's
-     * date.
-     * 
-     * @params (faculty name, faculty address, faculty phone number, faculty email,
-     *          faculty office number, faculty salary, faculty office hours, faculty
-     *          rank)
+     * Construct a new Faculty with a specific name, address, phone number, email, office number, salary, office hours, and rank.
+     * @param name String: full name
+     * @param address String: home address
+     * @param phoneNumber String: phone number
+     * @param email String: email address
+     * @param officeNumber int: office number
+     * @param salary int: annual salary
+     * @param officeHours String: office hours
+     * @param rank int: faculty rank
      */
     public Faculty(String name, String address, String phoneNumber, String email,
                    int officeNumber, int salary, String officeHours, int rank)
@@ -28,9 +30,9 @@ public class Faculty extends Employee
     }
     
     /**
-     * Overridden toString() method to return a String representing a Faculty member.
-     * 
-     * @return (String representing Faculty Member)
+     * Return a String with info about the Faculty formatted as:
+     *      Faculty: <full name>
+     * @return String: faculty info
      */
     @Override
     public String toString()

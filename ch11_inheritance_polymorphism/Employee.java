@@ -13,11 +13,13 @@ public class Employee extends Person
     protected MyDate dateHired;
     
     /**
-     * Constructor to create an Employee with a specified name, address, phoneNumber,
-     * email, office, and salary, hired on today's date.
-     * 
-     * @params (Employee name, Employee address, Employee phone number, Employee email
-     *          Employee's office number, Employee's salary)
+     * Construct a new Employee with a specific nama, address, phone number, email, office number, and salary.
+     * @param name String: full name
+     * @param address String: home address
+     * @param phoneNumber String: phone number
+     * @param email String: email address
+     * @param officeNumber int: office number address
+     * @param salary int: annual salary
      */
     public Employee(String name, String address, String phoneNumber, String email,
                     int officeNumber, int salary)
@@ -29,9 +31,9 @@ public class Employee extends Person
     }
     
     /**
-     * Overridden toString() method to return a String representation of the Employee.
-     * 
-     * @return (String representing the Employee)
+     * Return a String with info about the employee formatted as:
+     *      Employee: <full name>
+     * @return String: employee info
      */
     @Override
     public String toString()
