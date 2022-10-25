@@ -1,15 +1,13 @@
 /**
- * Program to generate an addition quiz with 10 questions, has the user enter
- * answers until they are correct.
- * 
+ * (Addition quiz) Rewrite Listing 5.1 RepeatAdditionQuiz.java to alert the user 
+ * if an answer is entered again. Hint: use an array list to store answers. 
  * @author Scott M.
- * AdditionQuiz2.java
  */
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class AdditionQuiz2
+public class Exercise_11_16
 {
     /**
      * Main method to run program.
@@ -34,13 +32,15 @@ public class AdditionQuiz2
                 System.out.print("What is " + question[0] + " + " + question[1] + "? ");
                 answer = kb.nextInt();
                 if (answers.contains(answer))
-                    System.out.println("Already entered " + answer + ".");
+                    System.out.println("You already entered " + answer + ".");
                 else
                     answers.add(answer);
             } while (!answers.contains(question[0] + question[1]));
+            System.out.println("You got it!");
             if (answers.size() == 1)
                 correct++;
         }
+        kb.close();
         
         System.out.print("\n" + correct + "/" + QUESTIONS + " correct");
     }

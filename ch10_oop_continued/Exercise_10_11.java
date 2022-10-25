@@ -176,3 +176,94 @@ class Circle2D
         return dist > Math.min(this.radius, circle.radius) && this.radius + circle.radius > dist;
     }
 }
+
+class Point
+{
+    private double x, y;
+    
+    /**
+     * Construct a new Point with a specific x and y coordinate.
+     * @param x double: x position
+     * @param y double: y position
+     */
+    public Point(double x, double y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+    
+    /**
+     * Construct a default point at 0, 0.
+     */
+    public Point()
+    {
+        this(0, 0);
+    }
+    
+    /**
+     * Return the x position of the point.
+     * @return double: x position
+     */
+    public double getX()
+    {
+        return this.x;
+    }
+    
+    /**
+     * Return the y position of the point.
+     * @return double: y position
+     */
+    public double getY()
+    {
+        return this.y;
+    }
+    
+    /**
+     * Set the x position of the Point.
+     * @param x double: x position
+     */
+    public void setX(double x)
+    {
+        this.x = x;
+    }
+    
+    /**
+     * Set the y position of the Point.
+     * @param y double: y position
+     */
+    public void setY(double y)
+    {
+        this.y = y;
+    }
+    
+    /**
+     * Return the distance between this point and another x and y position.
+     * @param x double: x position
+     * @param y double: y position
+     * @return double: distance
+     */
+    public double getDistance(double x, double y)
+    {
+        return Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
+    }
+    
+    /**
+     * Return the distance between this Point and another Point.
+     * @param p Point: other point
+     * @return double: distance
+     */
+    public double getDistance(Point p)
+    {
+        return this.getDistance(p.x, p.y);
+    }
+    
+    /**
+     * Return a String with information about the Point formatted as:
+     *      [<x>, <y>]
+     * @return String: Point info
+     */
+    public String toString()
+    {
+        return "[" + x + ", " + y + "]";
+    }
+}

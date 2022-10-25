@@ -61,7 +61,7 @@ class Person
     @Override
     public String toString()
     {
-        return "Person: " + this.name;
+        return "Name: " + this.name;
     }
 }
 
@@ -91,7 +91,7 @@ class Student extends Person
     @Override
     public String toString()
     {
-        return "Student: " + this.name;
+        return super.toString() + "\nStatus: " + this.status;
     }
 }
 
@@ -126,7 +126,7 @@ class Employee extends Person
     @Override
     public String toString()
     {
-        return "Employee: " + this.name;
+        return super.toString() + "\nOffice Number: " + this.officeNumber + "\nSalary: " + this.salary;
     }
 }
 
@@ -162,7 +162,7 @@ class Faculty extends Employee
     @Override
     public String toString()
     {
-        return "Faculty: " + this.name;
+        return super.toString() + "\nOffice Hours: " + this.officeHours + "\nRank: " + this.rank;
     }
 }
 
@@ -195,6 +195,6 @@ class Staff extends Employee
     @Override
     public String toString()
     {
-        return "Staff: " + this.name;
+        return super.toString() + "\nTitle: " + this.title;
     }
 }

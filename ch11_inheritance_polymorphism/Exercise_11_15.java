@@ -1,25 +1,22 @@
 /**
- * Polygon class represents a convex polygon defined by a list of points going counterclockwise around the polygon starting and ending with the same point.
- * 
+ * (Area of a convex polygon) A polygon is convex if it contains any line segments 
+ * that connects two points of the polygon. Write a program that prompts the user to 
+ * enter the number of points in a convex polygon, then enter the points clockwise, 
+ * and display the area of the polygon. 
  * @author Scott M.
- * Polygon.java
  */
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Polygon
-{
-    private double[][] points;
-    private static Scanner kb = new Scanner(System.in);
-    
+public class Exercise_11_15 {
     /**
-     * construct a polygon by inputting number of sides and points.
+     * Main method to run program.
      */
-    public Polygon()
-    {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        Polygon p;
         System.out.print("Enter number of sides: ");
-        points = new double[kb.nextInt() + 1][2];
+        double[][] points = new double[kb.nextInt() + 1][2];
         System.out.println("Enter an array of coordinates starting with point1, then going clockwise around the polygon:");
         for (int i = points.length - 1; i > 0; i--)
         {
@@ -33,12 +30,19 @@ public class Polygon
                 }
             }
         }
+        kb.close();
+        p = new Polygon(points);
+        System.out.print("The total area is " + p.getArea());
     }
+}
+
+class Polygon
+{
+    private double[][] points;
     
     /**
-     * construct a polygon with a specified Array of points.
-     * 
-     * @params (points)
+     * Construct a Polygon with a given array of points.
+     * @param points double[][]: array of points (p[i][0]=x, p[i][1]=y)
      */
     public Polygon(double[][] points)
     {
@@ -46,9 +50,8 @@ public class Polygon
     }
     
     /**
-     * Method to return the Array of points that defines the polygon.
-     * 
-     * @return (array of points)
+     * Return the array of points making up this Polygon.
+     * @return double[][]: array of points
      */
     public double[][] getPoints()
     {
@@ -56,9 +59,8 @@ public class Polygon
     }
     
     /**
-     * Method to get the determinant of the points list.
-     * 
-     * @return (determinant)
+     * Return the determinant of the list of points of this Polygon.
+     * @return double: determinant
      */
     private double getDeterminant()
     {
@@ -82,9 +84,8 @@ public class Polygon
     }
     
     /**
-     * Method to get the area of the polygon.
-     * 
-     * @return (area of polygon)
+     * Return the area of this Polygon.
+     * @return double: area
      */
     public double getArea()
     {
