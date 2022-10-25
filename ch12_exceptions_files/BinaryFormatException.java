@@ -12,13 +12,17 @@ public class BinaryFormatException extends NumberFormatException {
         this("(null)");
     }
     
-    /** Construct a BinaryFormatException that holds the exception string */
+    /** Construct a BinaryFormatException that holds the invalid binary String.
+     * @param bin String: invalid binary String
+     */
     public BinaryFormatException(String bin) {
         super("invalid binary format");
         this.bin = bin;
     }
     
-    /** Return a message about the exception */
+    /** Return a String with info about the exception 
+     * @return String: exception info
+     */
     @Override
     public String getMessage() {
         return (super.getMessage() + " " + bin);

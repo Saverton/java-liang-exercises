@@ -1,15 +1,18 @@
 /**
- * Calculator class that uses the String[] args to perform a basic operation.
- * 
+ * (NumberFormatException) Listing 7.9, Calculator.java, is a simple commandline 
+ * calculator. Note that the program terminates if any operand is nonnumeric.
+ * Write a program with an exception handler that deals with nonnumeric operands; 
+ * then write another program without using an exception handler to achieve the 
+ * same objective. Your program should display a message that informs the user of 
+ * the wrong operand type before exiting (see Figure 12.12).
  * @author Scott M.
- * Calculator.java
  */
 
-public class Calculator {
+public class Exercise_12_1 {
     /** Main method to run program */
-    public static void main(String[] args) throws NonNumericOperandException {
+    public static void main(String[] args) throws NumberFormatException {
         if (args.length != 3) {
-            System.out.println("Usage: java Calculator operand1 operator operand2");
+            System.out.println("Usage: java Exercise_12_1.java operand1 operator operand2");
             System.exit(0);
         }
         
@@ -19,7 +22,7 @@ public class Calculator {
             for (int i = 0; i < args.length; i += 2) {
                 for (int j = 0; j < args[i].length(); j++) {
                     if (!Character.isDigit(args[i].charAt(j))) {
-                        throw new NonNumericOperandException(args[i]);
+                        throw new NumberFormatException(args[i]);
                     }
                 }
             }
@@ -40,10 +43,8 @@ public class Calculator {
             
             System.out.print(args[0] + " " + args[1] + " " + args[2] + " = " + result);
         }
-        catch (NonNumericOperandException ex) {
+        catch (NumberFormatException ex) {
             System.out.print(ex);
         }
-        
-        
     }
 }

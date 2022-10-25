@@ -12,13 +12,17 @@ public class HexFormatException extends NumberFormatException {
         this("(null)");
     }
     
-    /** Construct a HexFormatException that holds the exception string */
+    /** Construct a HexFormatException that holds the invalid hex string.
+     * @param hex String: invalid hex String
+     */
     public HexFormatException(String hex) {
         super("invalid hex format");
         this.hex = hex;
     }
     
-    /** Return a message regarding this exception */
+    /** Return a String with info about this exception 
+     * @return String: exception info
+     */
     @Override
     public String getMessage() {
         return (super.getMessage() + " " + hex);

@@ -1,13 +1,15 @@
 /**
- * Program to test handling an array out of bounds exception.
- * 
+ * (ArrayIndexOutOfBoundsException) Write a program that meets the following requirements:
+ * ■ Creates an array with 100 randomly chosen integers.
+ * ■ Prompts the user to enter the index of the array, then displays the corresponding 
+ *   element value. If the specified index is out of bounds, display the 
+ *   message Out of Bounds.
  * @author Scott M.
- * ArrayOutOfBounds.java
  */
 
 import java.util.Scanner;
 
-public class ArrayOutOfBounds {
+public class Exercise_12_3 {
     /** Main method to run program */
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
@@ -24,5 +26,6 @@ public class ArrayOutOfBounds {
         catch (ArrayIndexOutOfBoundsException ex) {
             System.out.print("Out of bounds");
         }
+        kb.close();
     }
 }
