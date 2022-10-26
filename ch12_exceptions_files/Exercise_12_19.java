@@ -1,15 +1,15 @@
-/** Program to count the amount of words in Lincoln's Gettysburg address.
- * 
+/** 
+ * (Count words) Write a program that counts the number of words in President 
+ * Abraham Lincoln’s Gettysburg address from 
+ * http://cs.armstrong.edu/liang/data/Lincoln.txt.
  * @author Scott M.
- * Lincoln.java
  */
 
 import java.util.Scanner;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-public class Lincoln {
+public class Exercise_12_19 {
     /** Main method to run program. */
     public static void main(String[] args) {
         int count = 0;

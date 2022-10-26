@@ -1,14 +1,16 @@
-/** Program to take a text file and return basic information about it.
- * 
+/** 
+ * (Count characters, words, and lines in a file) Write a program that will count 
+ * the number of characters, words, and lines in a file. Words are separated by 
+ * whitespace characters. The file name should be passed as a command-line 
+ * argument, as shown in Figure 12.13.
  * @author Scott M.
- * TextFileInfo.java
  */
 
 import java.io.File;
 import java.util.Scanner;
 import java.io.IOException;
 
-public class TextFileInfo {
+public class Exercise_12_13 {
     /** Main method to run program */
     public static void main(String[] args) throws IOException {
         File file;
@@ -25,9 +27,10 @@ public class TextFileInfo {
                 String currentLine = input.nextLine();
                 Scanner thisLine = new Scanner(currentLine);
                 while (thisLine.hasNext()) {
-                    String currentWord = thisLine.next();
+                    thisLine.next();
                     words++;
                 }
+                thisLine.close();
                 characters += currentLine.length();
                 lines++;
             }

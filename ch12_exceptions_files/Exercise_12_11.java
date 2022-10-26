@@ -1,7 +1,10 @@
-/** Program to remove all instances of a specified String from a text file.
- * 
+/** 
+ * (Remove text) Write a program that removes all the occurrences of a specified 
+ * string from a text file. For example, invoking
+ * java Exercise12_11 John filename
+ * removes the string John from the specified file. Your program should get the 
+ * arguments from the command line.
  * @author Scott M.
- * TextRemover.java
  */
 
 import java.util.Scanner;
@@ -9,7 +12,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.io.IOException;
 
-public class TextRemover {
+public class Exercise_12_11 {
     /** Main method to run program. */
     public static void main(String[] args) throws IOException {
         File file = new File(args[1]);
@@ -36,7 +39,12 @@ public class TextRemover {
         }
     }
     
-    /** Method to get the index of a certain phrase in a String */
+    /**
+     * Return the index of a phrase within a larger String.
+     * @param str String: larger string
+     * @param phrase String: phrase to search for
+     * @return int: phrase index
+     */
     public static int getPhraseIndex(String str, String phrase) {
         for (int i = 0; i < str.length() - phrase.length() + 1; i++) {
             if (str.substring(i, i + phrase.length()).equals(phrase))

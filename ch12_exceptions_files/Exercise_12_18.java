@@ -1,6 +1,13 @@
-/** Program to add a package statement to all files under a directory.
+/** 
+ * (Add package statement) Suppose you have Java source files under the directories 
+ * chapter1, chapter2, . . . , chapter34. Write a program to insert the 
+ * statement package chapteri; as the first line for each Java source file under 
+ * the directory chapteri. Suppose chapter1, chapter2, . . . , chapter34
+ * are under the root directory srcRootDirectory. The root directory and 
+ * chapteri directory may contain other folders and files. Use the following 
+ * command to run the program:
+ *      java Exercise_12_18 srcRootDirectory
  * @author Scott M.
- * RemovePackageStatement.java
  */
 
 import java.util.Scanner;
@@ -8,7 +15,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.io.IOException;
 
-public class RemovePackageStatement {
+public class Exercise_12_18 {
     /** Main method to run program. */
     public static void main(String[] args) throws IOException {
         File directory = new File(args[0]);
@@ -29,10 +36,12 @@ public class RemovePackageStatement {
             boolean inserted = false;
             String fileString = "";
             read = new Scanner(file);
-            while (read.hasNext()) {
+            while (read.hasNext() && !inserted) {
                 String thisLine = read.nextLine();
-                if (thisLine.contains("package " + dirName))
-                    continue;
+                if (thisLine.contains("*/")) {
+                    inserted = true;
+                    thisLine += "\npackage " + dirName + ";";
+                }
                 fileString += thisLine + "\n";
             }
             read.close();

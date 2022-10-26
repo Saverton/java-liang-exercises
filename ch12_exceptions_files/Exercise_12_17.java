@@ -1,8 +1,7 @@
-/** Program to simulate a game of hangman, based on the last exercise of Chapter
- * 7, but this time pulling the word bank from a text file called 'hangman.txt'.
- * 
+/** 
+ * (Game: hangman) Rewrite Programming Exercise 7.35. The program reads the 
+ * words stored in a text file named hangman.txt. Words are delimited by spaces.
  * @author Scott M.
- * Hangman2.java
  */
 
 import java.io.File;
@@ -10,17 +9,17 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Hangman2 {
+public class Exercise_12_17 {
     /** Main method to run program. */
     public static void main(String[] args) {
-        ArrayList<String> wordBank = new ArrayList<>();
         Scanner kb = new Scanner(System.in);
         String word, display = "";
         int count = 0;
         ArrayList<Character> guessedLetters = new ArrayList<>();
-        
+        ArrayList<String> wordBank = new ArrayList<>();
+
         try {
-            getWords(wordBank);
+            wordBank = getWords();
         }
         catch (IOException ex) {
             System.out.print("Word bank does not exist or cannot be read: terminating program");
@@ -68,20 +67,24 @@ public class Hangman2 {
                 System.out.println("Invalid guess. Try again.");
             }
         } while (display.contains("*"));
+        kb.close();
         
         System.out.print("The word was " + word + "\nIt took you " + count + " guesses");
     }
     
-    /** Method to insert all words in a text file called hangman.txt into an ArrayList
-     * word bank.
-     * @params word bank
+    /** 
+     * Return a word bank (arrayList of Strings) from the text file "hangman.txt" containing all possible words in hangman.
+     * @return ArrayList<String>: word bank
      */
-    public static void getWords(ArrayList<String> bank) throws IOException {
+    public static ArrayList<String> getWords() throws IOException {
+        ArrayList<String> bank = new ArrayList<>();
         File wordFile = new File("hangman.txt");
         Scanner input = new Scanner(wordFile);
         
         while (input.hasNext()) {
             bank.add(input.next());
         }
+        input.close();
+        return bank;
     }
 }

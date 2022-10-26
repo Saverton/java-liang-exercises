@@ -1,8 +1,9 @@
-/** Program to check for a text file with 100 random integers written in it. If it doesn't exist
- * create one, then reads and displays the integers sorted from smallest to largest.
- * 
+/** 
+ * (Write/read data) Write a program to create a file named Exercise12_15.txt if 
+ * it does not exist. Write 100 integers created randomly into the file using text 
+ * I/O. Integers are separated by spaces in the file. Read the data back from the 
+ * file and display the data in increasing order.
  * @author Scott M.
- * FileReader.java
  */
 
 import java.io.File;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-public class FileReader {
+public class Exercise_12_15 {
     /** Main method to run program. */
     public static void main(String[] args) throws IOException {
         File file = new File("Exercise_12_15.txt");

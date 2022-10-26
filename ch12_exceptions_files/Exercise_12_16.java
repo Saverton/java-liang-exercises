@@ -1,21 +1,22 @@
-/** Program to replace an old String in a text file with a new String.
- * 
+/** 
+ * (Replace text) Listing 12.16, ReplaceText.java, gives a program that replaces 
+ * text in a source file and saves the change into a new file. Revise the program to 
+ * save the change into the original file. For example, invoking
+ *      java Exercise12_16 file oldString newString
+ * replaces oldString in the source file with newString.
  * @author Scott M.
- * ReplaceText.java
  */
 
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
-public class ReplaceText {
+public class Exercise_12_16 {
     /** Main method to run program. */
     public static void main(String[] args) throws IOException {
         String oldString = args[1], newString = args[2], fileString = "";
         File file = new File(args[0]);
-        ArrayList<Integer> indexes = new ArrayList<>();
         
         try (Scanner input = new Scanner(file)) {
             while (input.hasNext()) {

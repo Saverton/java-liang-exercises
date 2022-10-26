@@ -1,8 +1,13 @@
-/** Program to reformat a java text file from next-line style to end-of-line
- * style.
- * 
+/** 
+ * (Reformat Java source code) Write a program that converts the Java source 
+ * code from the next-line brace style to the end-of-line brace style. For example, 
+ * the following Java source in (a) uses the next-line brace style. Your program 
+ * converts it to the end-of-line brace style in (b).
+ * Your program can be invoked from the command line with the Java source
+ * code file as the argument. It converts the Java source code to a new format. For 
+ * example, the following command converts the Java source-code file Test.java
+ * to the end-of-line brace style.
  * @author Scott M.
- * CodeReformatter.java
  */
 
 import java.io.File;
@@ -10,7 +15,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 import java.io.IOException;
 
-public class CodeReformatter {
+public class Exercise_12_12 {
     /** Main method to run program */
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
