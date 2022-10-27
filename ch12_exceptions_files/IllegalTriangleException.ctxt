@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=IllegalTriangleException
-comment0.text=\ Exception\ class\ that\ is\ thrown\ when\ a\ triangle\ with\ impossible\ side\ lengths\ is\ created.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ IllegalTriangleException.java\r\n
-comment1.params=
-comment1.target=IllegalTriangleException()
-comment1.text=Construct\ a\ new\ exception
-comment2.params=
-comment2.target=java.lang.String\ getMessage()
-numComments=3

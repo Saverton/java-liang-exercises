@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=BinToDec2
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=Main\ method\ to\ run\ program
-comment2.params=binaryString
-comment2.target=int\ binToDec(java.lang.String)
-comment2.text=\ Method\ to\ convert\ a\ Binary\ number\ String\ to\ an\ integer\r\n\ @params\ Binary\ number\r\n\ @return\ integer\r\n
-numComments=3

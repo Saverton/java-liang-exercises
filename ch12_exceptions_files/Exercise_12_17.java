@@ -88,3 +88,10 @@ public class Exercise_12_17 {
         return bank;
     }
 }
+
+class NonLetterGuessException extends Exception {
+    /** Construct a default NonLetterGuessException */
+    public NonLetterGuessException() {
+        super("Invalid Letter Entered");
+    }
+}

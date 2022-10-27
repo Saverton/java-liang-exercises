@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Calculator
-comment0.text=\r\n\ Calculator\ class\ that\ uses\ the\ String[]\ args\ to\ perform\ a\ basic\ operation.\r\n\ \r\n\ @author\ Scott\ M.\r\n\ Calculator.java\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=Main\ method\ to\ run\ program
-numComments=2
